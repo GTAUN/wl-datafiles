@@ -75,10 +75,11 @@ Dialog:
       
       开发: mk124
       功能设计: mk124
-      设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS
+      设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       数据采集: mk124, 52_PLA
-      测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR
-      感谢: vvg, yezhizhu, Luck, Waunny
+      测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      翻译: (English) mk124, 52_PLA; (Russian) hitman249
+      感谢: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       本组件是新未来世界项目的一部分。
       本组件使用 AGPL v3 许可证开放源代码。
