@@ -1,0 +1,12 @@
+mongodb:
+    host: "localhost:27017"
+    dbName: "VehicleManager"
+    user: ""
+    pass: ""
+    
+menuCommand:
+    vehicleManager: /v
+    myVehicle: /myveh
+    
+nearbyVehicleDialog:
+    distance: 500.0

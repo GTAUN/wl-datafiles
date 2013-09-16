@@ -1,0 +1,63 @@
+﻿
+Name:
+  Simple: 'VehMgr'
+  Full: 'Vehicle Manager'
+
+Time:
+  HMS: '%1$d hours %2$d min %3$d sec'
+  Never: 'Never'
+
+Dialog:
+  EmptyVehicleListDialog:
+    Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
+    Item: '%2$s  Model: %3$d  Distance: %4$1.0f m'
+    ItemAdmin: '%2$s (ID: %1$d)    Model: %3$d  Distance: %4$1.0f m'
+    
+  GlobalStatisticDialog:
+    Caption: '#Name.Simple#: Global statistics for all vehicles'
+    TextFormat: |
+      #Dialog.GlobalStatisticDialog.Caption#
+      Total spawns: %1$d
+      Total damage: %2$1.1f cars
+      Total driving times: %3$d
+      Total driving time: %4$s
+      Total miles driven: %5$1.3f km
+      Avg. driving speed: %6$1.2f km/h
+      Avg. consumption rate: %7$1.1f cars / 10 min
+      Last updated: %8$s
+    
+  VehicleManagerDialog:
+    Caption: '#Name.Full#'
+    CurrentVehicle: 'Current Vehicle ...'
+    MyVehicle: 'My Vehicle ...'
+    SpawnVehicle: 'Spawn a Vehicle ...'
+    NearbyEmptyVehicle: 'Browse Nearby Empty Vehicles ...'
+    DrivingAndRidingRecord: 'Driving And Riding Record ...'
+    PersonalPreferences: 'Personal Preferences ...'
+    ShowPersonalStatistics: 'Show Personal Statistics'
+    ShowGlobalStatistics: 'Show Global Statistics'
+    ShowHelpMessage: 'Show Help Message'
+    ShowAboutMessage: 'About Vehicle Manager'
+  
+  HelpDialog:
+    Caption: '#Name.Simple#: Help Message'
+    Text: 'Not yet available...'
+    
+  AboutDialog:
+    Caption: '#Name.Simple#: About #Name.Full#'
+    TextFormat: |
+      --- The New WL-World : Vehicle Manager Plugin ---
+      Version: %1$s (Build %2$d)
+      Build date: %3$s
+      
+      Developer: mk124
+      Design: mk124
+      Design Assistant: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS
+      Data Collector: mk124, 52_PLA
+      Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR
+      Thanks: vvg, yezhizhu, Luck, Waunny
+      
+      This component is part of The New WL-World project.
+      This component uses the AGPL v3 license.
+      Prohibit the use in any commercial or profit-purpose servers.
+    
