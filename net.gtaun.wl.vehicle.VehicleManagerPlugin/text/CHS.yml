@@ -7,6 +7,10 @@ Time:
   HMS: '%1$d小时 %2$d分 %3$d秒'
   Never: '从未'
 
+Vehicle:
+  Normal: '车辆'
+  Owned: '我的车子'
+
 Dialog:
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: 附近空车列表 (%1$d/%2$d)'
@@ -15,7 +19,7 @@ Dialog:
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: 所有车辆的全局统计信息'
-    TextFormat: |
+    Text: |
       #Dialog.GlobalStatisticDialog.Caption#
       累计刷车次数: %1$d
       累计损伤花费: %2$1.1f辆
@@ -26,18 +30,37 @@ Dialog:
       平均爆车速率: %7$1.1f辆 / 10分钟
       最后更新时间: %8$s
       
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (模型: %3$d, HP: %4$1.0f％)'
+    GetOn: '上车'
+    OwnThisVehicle: '成为我的车子'
+    FetchAndGetOn: '传送到身边并上车'
+    Repair: '修复车子'
+    Flip: '翻转车子'
+    ChangeColor: '改变颜色'
+    KickPassengers: '踢掉乘客'
+    Modifications: '改装车子'
+    LockDoors: '锁车门'
+    PersonalStatistics: '显示此车辆的个人统计信息'
+    GlobalStatistics: '显示此车辆的全局统计信息'
+    GetOnMessage: '#Name.Simple#: 你已传送到车子 %1$s 里了。'
+    OwnMessage: '#Name.Simple#: 车子 %1$s 已成为您的专属座驾！'
+    FetchMessage: '#Name.Simple#: 车子 %1$s 已传送到你身边！'
+    KickPassengerMessage: '#Name.Simple#: 你被司机 %1$s 给踢下车了！'
+    KickCompleteMessage: '#Name.Simple#: 已踢出 %1$d 个乘客！'
+    
   VehicleManagerDialog:
     Caption: '#Name.Full#'
     CurrentVehicle: '当前车辆 ...'
     MyVehicle: '我的车辆 ...'
-    SpawnVehicle: '刷车 ...'
+    CreateVehicle: '刷车 ...'
     NearbyEmptyVehicle: '搜寻附近空车 ...'
     DrivingAndRidingRecord: '驾驶和乘坐记录 ...'
     PersonalPreferences: '个人偏好设置 ...'
-    ShowPersonalStatistics: '显示个人统计信息'
-    ShowGlobalStatistics: '显示全局统计信息'
-    ShowHelpMessage: '显示帮助信息'
-    ShowAboutMessage: '关于车管系统'
+    PersonalStatistics: '显示个人统计信息'
+    GlobalStatistics: '显示全局统计信息'
+    Help: '显示帮助信息'
+    About: '关于车管系统'
   
   HelpDialog:
     Caption: '#Name.Simple#: 帮助信息'
@@ -45,7 +68,7 @@ Dialog:
     
   AboutDialog:
     Caption: '#Name.Simple#: 关于#Name.Full#'
-    TextFormat: |
+    Text: |
       --- 新未来世界 车辆管理系统组件 ---
       版本: %1$s (Build %2$d)
       编译时间: %3$s

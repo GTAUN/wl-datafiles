@@ -7,6 +7,10 @@ Time:
   HMS: '%1$d hours %2$d min %3$d sec'
   Never: 'Never'
 
+Vehicle:
+  Normal: 'Vehicle'
+  Owned: 'My Vehicle'
+  
 Dialog:
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
@@ -15,7 +19,7 @@ Dialog:
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: Global statistics for all vehicles'
-    TextFormat: |
+    Text: |
       #Dialog.GlobalStatisticDialog.Caption#
       Total spawns: %1$d
       Total damage: %2$1.1f cars
@@ -25,19 +29,38 @@ Dialog:
       Avg. driving speed: %6$1.2f km/h
       Avg. consumption rate: %7$1.1f cars / 10 min
       Last updated: %8$s
+  
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (Model: %3$d, HP: %4$1.0f％)'
+    GetOn: 'Get On'
+    OwnThisVehicle: 'Own This Vehicle'
+    FetchAndGetOn: 'Fetch and Get On'
+    Repair: 'Repair'
+    Flip: 'Flip'
+    ChangeColor: 'Change Color'
+    KickPassengers: 'Kick Passengers'
+    Modifications: 'Modifications'
+    LockDoors: 'Lock Doors'
+    PersonalStatistics: 'Show Personal Statistics'
+    GlobalStatistics: 'Show Global Statistics'
+    GetOnMessage: '#Name.Simple#: You have entered the vehicle %1$s.'
+    OwnMessage: '#Name.Simple#: You already own the car %1$s!'
+    FetchMessage: '#Name.Simple#: The car %1$s has been taken to your side!'
+    KickPassengerMessage: '#Name.Simple#: Driver %1$s kick you get off!'
+    KickCompleteMessage: '#Name.Simple#: Has kicked %1$d passengers!'
     
   VehicleManagerDialog:
     Caption: '#Name.Full#'
     CurrentVehicle: 'Current Vehicle ...'
     MyVehicle: 'My Vehicle ...'
-    SpawnVehicle: 'Spawn a Vehicle ...'
+    CreateVehicle: 'Create New Vehicle ...'
     NearbyEmptyVehicle: 'Browse Nearby Empty Vehicles ...'
     DrivingAndRidingRecord: 'Driving And Riding Record ...'
     PersonalPreferences: 'Personal Preferences ...'
-    ShowPersonalStatistics: 'Show Personal Statistics'
-    ShowGlobalStatistics: 'Show Global Statistics'
-    ShowHelpMessage: 'Show Help Message'
-    ShowAboutMessage: 'About Vehicle Manager'
+    PersonalStatistics: 'Show Personal Statistics'
+    GlobalStatistics: 'Show Global Statistics'
+    Help: 'Show Help Message'
+    About: 'About Vehicle Manager'
   
   HelpDialog:
     Caption: '#Name.Simple#: Help Message'
@@ -45,7 +68,7 @@ Dialog:
     
   AboutDialog:
     Caption: '#Name.Simple#: About #Name.Full#'
-    TextFormat: |
+    Text: |
       --- The New WL-World : Vehicle Manager Plugin ---
       Version: %1$s (Build %2$d)
       Build date: %3$s
