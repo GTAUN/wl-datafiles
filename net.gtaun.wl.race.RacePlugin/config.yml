@@ -1,0 +1,9 @@
+mongodb:
+    host: "localhost:27017"
+    dbName: "WlRace"
+    user: ""
+    pass: ""
+    
+command:
+    menu:
+        raceMainMenu: /r
