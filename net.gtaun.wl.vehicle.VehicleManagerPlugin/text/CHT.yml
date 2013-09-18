@@ -1,4 +1,10 @@
-﻿
+﻿#####
+# Traditional Chinese by JoJLlmAn.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
 Name:
   Simple: '車管'
   Full: '車輛管理系統'
@@ -87,7 +93,7 @@ Textdraw:
     RacingExtMessage: '[RACING]'
     
     StatusMark:
-      Off: '~w~-'
+      OffMark: '~w~-'
       AutoRepair: '~g~R'
       InfiniteNitrous: '~r~N'
       AutoFlip: '~b~F'

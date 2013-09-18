@@ -1,4 +1,10 @@
-﻿
+﻿#####
+# Simplified Chinese by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
 Name:
   Simple: '车管'
   Full: '车辆管理系统'
@@ -87,7 +93,7 @@ Textdraw:
     RacingExtMessage: '[RACING]'
     
     StatusMark:
-      Off: '~w~-'
+      OffMark: '~w~-'
       AutoRepair: '~g~R'
       InfiniteNitrous: '~r~N'
       AutoFlip: '~b~F'
