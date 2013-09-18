@@ -260,11 +260,11 @@ Dialog:
       本组件禁止在任何商业或盈利性服务器上使用。
     
   VehicleResprayDialog:
-    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %4$d, HP: %5$1.0f％)'
-    Item: '\t\t\t%1$s▇{FFFFFF} 颜色: %2$d %1$s▇'
+    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Item: '			%1$s▇{FFFFFF} 颜色: %2$d %1$s▇'
     
   VehicleResprayGroupDialog:
     Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
-    Item: '\t\t\t'
+    Item: '			'
     ColorBlockText: '▇'
     
