@@ -1,0 +1,270 @@
+
+Name:
+  Simple: '車管'
+  Full: '車輛管理系統'
+
+Time:
+  HMS: '%1$d小時 %2$d分 %3$d秒'
+  Never: '從未'
+  NA: 'N/A'
+  
+Unit:
+  M: '米'
+  KM: '公里'
+  KMH: 'km/h'
+  KPH: 'KPH'
+
+Vehicle:
+  Normal: '車輛'
+  Owned: '我的車子'
+  
+  Type:
+    Bicycle: '自行車'
+    Motorbike: '摩托車'
+    Car: '普通車子'
+    Trailer: '拖車'
+    RemoteControl: '遙控裝置'
+    Train: '火車'
+    Boat: '船隻'
+    Aircraft: '飛機'
+    Helicopter: '直升機'
+    Tank: '坦克'
+    Unknown: '未知'
+    
+  SortMode:
+    Text: '排序方式'
+    Hot: '人氣'
+    UseCount: '使用次數'
+    Seats: '座位數'
+    Type: '類型'
+  
+Statistic:
+  Type:
+    Driver: '駕駛'
+    Passenger: '乘坐'
+    Racing: '賽車'
+    Unknown: '未知'
+  
+  MoveWay:
+    OnFoot: '步行'
+    Multiple: '多種移動方式'
+  
+Component:
+  Slot:
+    Spoiler: '擾流板'
+    Hood: '發動機罩'
+    Roof: '車頂'
+    SideSkirt: '側裙'
+    Lamps: '車燈'
+    Nitro: '氮氣加速裝置'
+    Exhaust: '排氣管'
+    Wheels: '車輪輪圈'
+    Stereo: '立體聲音響'
+    Hydraulics: '液壓系統'
+    FrontBumper: '前保險槓'
+    RearBumper: '後保險槓'
+    VentRight: '右進氣口'
+    VentLeft: '左進氣口'
+    Unknown: '未知'
+    
+  Paintjob: '噴漆'
+  
+  Color:
+    Primary: '主顏色'
+    Secondary: '次顏色'
+
+Command:
+  CreateVehicle:
+    Usage: '#Name.Simple#: 快捷刷車命令用法：\\[車輛模型ID] 或者 \\[車輛名字前三位] ，比如 \\411 或者 \\tur 。'
+    InvalidID: '#Name.Simple#: 不是合法的車輛模型ID %1$d 。'
+    InvalidAbbr: '#Name.Simple#: 不存在這個車輛簡寫名稱 %1$s 。'
+    Message: '#Name.Simple#: 您的專屬座駕 %1$s 已創建！'
+    
+Textdraw:
+  VehicleWidget:
+    Format: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    IncludeHealthFormat: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    RacingExtMessage: '[RACING]'
+    
+    StatusMark:
+      Off: '~w~-'
+      AutoRepair: '~g~R'
+      InfiniteNitrous: '~r~N'
+      AutoFlip: '~b~F'
+      LockDoors: '~y~D'
+    
+Dialog:
+  DrivingRecordStatisticDialog:
+    Caption: '#Name.Simple#: 駕駛和乘坐記錄'
+    Item: '[%1$s記錄] %2$s (%3$d) - %4$s ~ %5$s'
+  
+  EmptyVehicleListDialog:
+    Caption: '#Name.Simple#: 附近空車列表 (%1$d/%2$d)'
+    Item: '%2$s  型號: %3$d  距離: %4$1.0f #Unit.M#'
+    ItemAdmin: '%2$s (ID: %1$d)    型號: %3$d  距離: %4$1.0f #Unit.M#'
+    
+  GlobalStatisticDialog:
+    Caption: '#Name.Simple#: 所有車輛的全局統計資訊'
+    Text: |
+      %1$s
+      累計刷車次數: %2$d
+      累計損傷花費: %3$1.1f輛
+      累計駕駛次數: %4$d次
+      累計駕駛時間: %5$s
+      累計駕駛里程: %6$1.3f #Unit.KM#
+      平均駕駛速度: %7$1.2f #Unit.KMH#
+      平均爆車速率: %8$1.1f輛 / 10分鐘
+      最後更新時間: %9$s
+      
+  GlobalVehicleStatisticDialog:
+    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局統計資訊'
+    Text: |
+      %1$s
+      累計刷車次數: %2$d
+      累計損傷花費: %3$1.1f輛
+      累計駕駛次數: %4$d次
+      累計駕駛時間: %5$s
+      累計駕駛里程: %6$1.3f #Unit.KM#
+      平均駕駛速度: %7$1.2f #Unit.KMH#
+      平均爆車速率: %8$1.1f輛 / 10分鐘
+      最後更新時間: %9$s
+      
+  OnceStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (%2$d) 的%3$s記錄資訊 (%4$s~%5$s)'
+    Text: |
+      %1$s
+      駕駛過的車輛: %3$s
+      累計損傷花費: %4$1.1f輛
+      累計%2$s時間: %5$s
+      累計%2$s里程: %6$1.3f #Unit.KM#
+      平均%2$s速度: %7$1.2f #Unit.KMH#
+      最高%2$s速度: %8$1.2f #Unit.KMH#
+      平均爆車速率: %9$1.1f輛 / 10分鐘
+      開始%2$s時間: %10$s
+      停止%2$s時間: %11$s
+  
+  PlayerPreferencesDialog:
+    Caption: '#Name.Simple#: 個人偏好設定'
+    VehicleWidget: '顯示速度計掛件'
+    InfiniteNitrous: '無限氮氣加速'
+    AutoRepair: '自動修覆車輛'
+    AutoFlip: '自動翻轉車輛'
+    AutoCarryPassengers: '自動攜帶乘客'
+    
+  PlayerStatisticDialog:
+    Caption: '#Name.Simple#: 所有車輛的個人統計資訊'
+    Text: |
+      %1$s
+      累計刷車次數: %2$d
+      累計損傷花費: %3$1.1f輛
+      累計駕駛次數: %4$d次
+      累計駕駛時間: %5$s
+      累計駕駛里程: %6$1.3f #Unit.KM#
+      平均駕駛速度: %7$1.2f #Unit.KMH#
+      平均爆車速率: %8$1.1f輛 / 10分鐘
+      最後更新時間: %9$s
+    
+  PlayerVehicleStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (模型: %2$d) 的個人統計資訊'
+    Text: |
+      %1$s
+      累計刷車次數: %2$d
+      累計損傷花費: %3$1.1f輛
+      累計駕駛次數: %4$d次
+      累計駕駛時間: %5$s
+      累計駕駛里程: %6$1.3f #Unit.KM#
+      平均駕駛速度: %7$1.2f #Unit.KMH#
+      平均爆車速率: %8$1.1f輛 / 10分鐘
+      最後更新時間: %9$s
+  
+  VehicleComponentAddDialog:
+    Caption: '#Name.Simple#: 改裝 %1$s: 選擇%2$s部件'
+    Item: '%1$s: %2$s'
+    AddMessage: '#Name.Simple#: 您的車子 %1$s 已安裝%2$s新元件: %3$s 。'
+  
+  VehicleComponentDialog:
+    Caption: '#Name.Simple#: 改裝 %1$s (模型：%2$d, HP：%3$1.0f％)'
+    Item: '%1$s -	當前部件: %2$s (%3$d 個可用部件)'
+  
+  VehicleComponentPaintjobDialog:
+    Caption: '#Name.Simple#: 改裝 %1$s: 選擇噴漆'
+    Item: '#Component.Paintjob#: 噴漆 %1$d'
+    PaintMessage: '#Name.Simple#: 您的車子 %1$s 已噴漆: 噴漆 %2$d 。'
+  
+  VehicleCreateListDialog:
+    Caption: '#Name.Simple#: 刷車 - 車輛選擇 - %1$s (%2$d/%3$d)'
+    Item: '%1$s (型號: %2$d , 座位數: %3$d, 駕駛次數: %4$d, 人氣: %5$d)'
+    ItemSortMode: '#Vehicle.SortMode.Text#: '
+    CreateMessage: '#Command.CreateVehicle.Message#'
+    
+  VehicleCreateMainDialog:
+    Caption: '#Name.Simple#: 刷車 - 車輛類型選擇'
+    ItemAll: '列出所有車輛'
+    ItemCommon: '常用列表: %1$s'
+    ItemType: '類型: %1$s'
+    AllVehicleText: '所有車輛'
+  
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (模型: %3$d, HP: %4$1.0f％)'
+    GetOn: '上車'
+    OwnThisVehicle: '成為我的車子'
+    FetchAndGetOn: '傳送到身邊並上車'
+    Repair: '修覆車子'
+    Flip: '翻轉車子'
+    ChangeColor: '改變顏色'
+    KickPassengers: '踢掉乘客'
+    Modifications: '改裝車子'
+    LockDoors: '鎖車門'
+    PersonalStatistics: '顯示此車輛的個人統計資訊'
+    GlobalStatistics: '顯示此車輛的全局統計資訊'
+    GetOnMessage: '#Name.Simple#: 你已傳送到車子 %1$s 裡了。'
+    OwnMessage: '#Name.Simple#: 車子 %1$s 已成為您的專屬座駕！'
+    FetchMessage: '#Name.Simple#: 車子 %1$s 已傳送到你身邊！'
+    KickPassengerMessage: '#Name.Simple#: 你被司機 %1$s 給踢下車了！'
+    KickCompleteMessage: '#Name.Simple#: 已踢出 %1$d 個乘客！'
+    
+  VehicleManagerDialog:
+    Caption: '#Name.Full#'
+    CurrentVehicle: '當前車輛 ...'
+    MyVehicle: '我的車輛 ...'
+    CreateVehicle: '刷車 ...'
+    NearbyEmptyVehicle: '搜尋附近空車 ...'
+    DrivingAndRidingRecord: '駕駛和乘坐記錄 ...'
+    PersonalPreferences: '個人偏好設定 ...'
+    PersonalStatistics: '顯示個人統計資訊'
+    GlobalStatistics: '顯示全局統計資訊'
+    Help: '顯示幫助資訊'
+    About: '關於車管系統'
+  
+  HelpDialog:
+    Caption: '#Name.Simple#: 幫助資訊'
+    Text: '偷懶中，暫無幫助資訊……'
+    
+  AboutDialog:
+    Caption: '#Name.Simple#: 關於#Name.Full#'
+    Text: |
+      --- 新未來世界 車輛管理系統元件 ---
+      版本: %1$s (Build %2$d)
+      編譯時間: %3$s
+      
+      開發: mk124
+      功能設計: mk124
+      設計顧問: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      資料採集: mk124, 52_PLA
+      測試: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      翻譯: (English) mk124, 52_PLA; (Russian) hitman249
+      感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+      
+      本元件是新未來世界項目的一部分。
+      本元件使用 AGPL v3 許可證開放原始碼。
+      本元件禁止在任何商業或盈利性伺服器上使用。
+    
+  VehicleResprayDialog:
+    Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %4$d, HP: %5$1.0f％)'
+    Item: '\t\t\t%1$s▇{FFFFFF} 顏色: %2$d %1$s▇'
+    
+  VehicleResprayGroupDialog:
+    Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Item: '\t\t\t'
+    ColorBlockText: '▇'
+    
