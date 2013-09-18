@@ -1,84 +1,84 @@
-
+ï»¿
 Name:
-  Simple: 'Ü‡¹Ü'
-  Full: 'Ü‡İv¹ÜÀíÏµ½y'
+  Simple: 'è»Šç®¡'
+  Full: 'è»Šè¼›ç®¡ç†ç³»çµ±'
 
 Time:
-  HMS: '%1$dĞ¡•r %2$d·Ö %3$dÃë'
-  Never: 'ÄÎ´'
+  HMS: '%1$då°æ™‚ %2$dåˆ† %3$dç§’'
+  Never: 'å¾æœª'
   NA: 'N/A'
   
 Unit:
-  M: 'Ã×'
-  KM: '¹«Àï'
+  M: 'ç±³'
+  KM: 'å…¬é‡Œ'
   KMH: 'km/h'
   KPH: 'KPH'
 
 Vehicle:
-  Normal: 'Ü‡İv'
-  Owned: 'ÎÒµÄÜ‡×Ó'
+  Normal: 'è»Šè¼›'
+  Owned: 'æˆ‘çš„è»Šå­'
   
   Type:
-    Bicycle: '×ÔĞĞÜ‡'
-    Motorbike: 'Ä¦ÍĞÜ‡'
-    Car: 'ÆÕÍ¨Ü‡×Ó'
-    Trailer: 'ÍÏÜ‡'
-    RemoteControl: 'ßb¿ØÑbÖÃ'
-    Train: '»ğÜ‡'
-    Boat: '´¬ëb'
-    Aircraft: 'ïw™C'
-    Helicopter: 'Ö±Éı™C'
-    Tank: 'Ì¹¿Ë'
-    Unknown: 'Î´Öª'
+    Bicycle: 'è‡ªè¡Œè»Š'
+    Motorbike: 'æ‘©æ‰˜è»Š'
+    Car: 'æ™®é€šè»Šå­'
+    Trailer: 'æ‹–è»Š'
+    RemoteControl: 'é™æ§è£ç½®'
+    Train: 'ç«è»Š'
+    Boat: 'èˆ¹éš»'
+    Aircraft: 'é£›æ©Ÿ'
+    Helicopter: 'ç›´å‡æ©Ÿ'
+    Tank: 'å¦å…‹'
+    Unknown: 'æœªçŸ¥'
     
   SortMode:
-    Text: 'ÅÅĞò·½Ê½'
-    Hot: 'ÈËšâ'
-    UseCount: 'Ê¹ÓÃ´Î”µ'
-    Seats: '×ùÎ»”µ'
-    Type: 'îĞÍ'
+    Text: 'æ’åºæ–¹å¼'
+    Hot: 'äººæ°£'
+    UseCount: 'ä½¿ç”¨æ¬¡æ•¸'
+    Seats: 'åº§ä½æ•¸'
+    Type: 'é¡å‹'
   
 Statistic:
   Type:
-    Driver: 'ñ{ñ‚'
-    Passenger: '³Ë×ø'
-    Racing: 'ÙÜ‡'
-    Unknown: 'Î´Öª'
+    Driver: 'é§•é§›'
+    Passenger: 'ä¹˜å'
+    Racing: 'è³½è»Š'
+    Unknown: 'æœªçŸ¥'
   
   MoveWay:
-    OnFoot: '²½ĞĞ'
-    Multiple: '¶à·NÒÆ„Ó·½Ê½'
+    OnFoot: 'æ­¥è¡Œ'
+    Multiple: 'å¤šç¨®ç§»å‹•æ–¹å¼'
   
 Component:
   Slot:
-    Spoiler: '”_Á÷°å'
-    Hood: '°l„Ó™CÕÖ'
-    Roof: 'Ü‡í”'
-    SideSkirt: '‚ÈÈ¹'
-    Lamps: 'Ü‡Ÿô'
-    Nitro: 'µªšâ¼ÓËÙÑbÖÃ'
-    Exhaust: 'ÅÅšâ¹Ü'
-    Wheels: 'Ü‡İ†İ†È¦'
-    Stereo: 'Á¢ówÂ•Òôí‘'
-    Hydraulics: 'Òº‰ºÏµ½y'
-    FrontBumper: 'Ç°±£ëU˜'
-    RearBumper: 'áá±£ëU˜'
-    VentRight: 'ÓÒßMšâ¿Ú'
-    VentLeft: '×óßMšâ¿Ú'
-    Unknown: 'Î´Öª'
+    Spoiler: 'æ“¾æµæ¿'
+    Hood: 'ç™¼å‹•æ©Ÿç½©'
+    Roof: 'è»Šé ‚'
+    SideSkirt: 'å´è£™'
+    Lamps: 'è»Šç‡ˆ'
+    Nitro: 'æ°®æ°£åŠ é€Ÿè£ç½®'
+    Exhaust: 'æ’æ°£ç®¡'
+    Wheels: 'è»Šè¼ªè¼ªåœˆ'
+    Stereo: 'ç«‹é«”è²éŸ³éŸ¿'
+    Hydraulics: 'æ¶²å£“ç³»çµ±'
+    FrontBumper: 'å‰ä¿éšªæ§“'
+    RearBumper: 'å¾Œä¿éšªæ§“'
+    VentRight: 'å³é€²æ°£å£'
+    VentLeft: 'å·¦é€²æ°£å£'
+    Unknown: 'æœªçŸ¥'
     
-  Paintjob: '‡ŠÆá'
+  Paintjob: 'å™´æ¼†'
   
   Color:
-    Primary: 'Ö÷îÉ«'
-    Secondary: '´ÎîÉ«'
+    Primary: 'ä¸»é¡è‰²'
+    Secondary: 'æ¬¡é¡è‰²'
 
 Command:
   CreateVehicle:
-    Usage: '#Name.Simple#: ¿ì½İË¢Ü‡ÃüÁîÓÃ·¨£º\\[Ü‡İvÄ£ĞÍID] »òÕß \\[Ü‡İvÃû×ÖÇ°ÈıÎ»] £¬±ÈÈç \\411 »òÕß \\tur ¡£'
-    InvalidID: '#Name.Simple#: ²»ÊÇºÏ·¨µÄÜ‡İvÄ£ĞÍID %1$d ¡£'
-    InvalidAbbr: '#Name.Simple#: ²»´æÔÚß@‚€Ü‡İvº†Œ‘Ãû·Q %1$s ¡£'
-    Message: '#Name.Simple#: ÄúµÄŒ£ŒÙ×ùñ{ %1$s ÒÑ„“½¨£¡'
+    Usage: '#Name.Simple#: å¿«æ·åˆ·è»Šå‘½ä»¤ç”¨æ³•ï¼š\\[è»Šè¼›æ¨¡å‹ID] æˆ–è€… \\[è»Šè¼›åå­—å‰ä¸‰ä½] ï¼Œæ¯”å¦‚ \\411 æˆ–è€… \\tur ã€‚'
+    InvalidID: '#Name.Simple#: ä¸æ˜¯åˆæ³•çš„è»Šè¼›æ¨¡å‹ID %1$d ã€‚'
+    InvalidAbbr: '#Name.Simple#: ä¸å­˜åœ¨é€™å€‹è»Šè¼›ç°¡å¯«åç¨± %1$s ã€‚'
+    Message: '#Name.Simple#: æ‚¨çš„å°ˆå±¬åº§é§• %1$s å·²å‰µå»ºï¼'
     
 Textdraw:
   VehicleWidget:
@@ -95,176 +95,176 @@ Textdraw:
     
 Dialog:
   DrivingRecordStatisticDialog:
-    Caption: '#Name.Simple#: ñ{ñ‚ºÍ³Ë×øÓ›ä›'
-    Item: '[%1$sÓ›ä›] %2$s (%3$d) - %4$s ~ %5$s'
+    Caption: '#Name.Simple#: é§•é§›å’Œä¹˜åè¨˜éŒ„'
+    Item: '[%1$sè¨˜éŒ„] %2$s (%3$d) - %4$s ~ %5$s'
   
   EmptyVehicleListDialog:
-    Caption: '#Name.Simple#: ¸½½ü¿ÕÜ‡ÁĞ±í (%1$d/%2$d)'
-    Item: '%2$s  ĞÍÌ–: %3$d  ¾àëx: %4$1.0f #Unit.M#'
-    ItemAdmin: '%2$s (ID: %1$d)    ĞÍÌ–: %3$d  ¾àëx: %4$1.0f #Unit.M#'
+    Caption: '#Name.Simple#: é™„è¿‘ç©ºè»Šåˆ—è¡¨ (%1$d/%2$d)'
+    Item: '%2$s  å‹è™Ÿ: %3$d  è·é›¢: %4$1.0f #Unit.M#'
+    ItemAdmin: '%2$s (ID: %1$d)    å‹è™Ÿ: %3$d  è·é›¢: %4$1.0f #Unit.M#'
     
   GlobalStatisticDialog:
-    Caption: '#Name.Simple#: ËùÓĞÜ‡İvµÄÈ«¾Ö½yÓ‹ÙYÓ'
+    Caption: '#Name.Simple#: æ‰€æœ‰è»Šè¼›çš„å…¨å±€çµ±è¨ˆè³‡è¨Š'
     Text: |
       %1$s
-      ÀÛÓ‹Ë¢Ü‡´Î”µ: %2$d
-      ÀÛÓ‹“p‚û»¨ÙM: %3$1.1fİv
-      ÀÛÓ‹ñ{ñ‚´Î”µ: %4$d´Î
-      ÀÛÓ‹ñ{ñ‚•rég: %5$s
-      ÀÛÓ‹ñ{ñ‚Àï³Ì: %6$1.3f #Unit.KM#
-      Æ½¾ùñ{ñ‚ËÙ¶È: %7$1.2f #Unit.KMH#
-      Æ½¾ù±¬Ü‡ËÙÂÊ: %8$1.1fİv / 10·ÖçŠ
-      ×îáá¸üĞÂ•rég: %9$s
+      ç´¯è¨ˆåˆ·è»Šæ¬¡æ•¸: %2$d
+      ç´¯è¨ˆæå‚·èŠ±è²»: %3$1.1fè¼›
+      ç´¯è¨ˆé§•é§›æ¬¡æ•¸: %4$dæ¬¡
+      ç´¯è¨ˆé§•é§›æ™‚é–“: %5$s
+      ç´¯è¨ˆé§•é§›é‡Œç¨‹: %6$1.3f #Unit.KM#
+      å¹³å‡é§•é§›é€Ÿåº¦: %7$1.2f #Unit.KMH#
+      å¹³å‡çˆ†è»Šé€Ÿç‡: %8$1.1fè¼› / 10åˆ†é˜
+      æœ€å¾Œæ›´æ–°æ™‚é–“: %9$s
       
   GlobalVehicleStatisticDialog:
-    Caption: '#Name.Simple# %1$s (Ä£ĞÍ: %2$d) µÄÈ«¾Ö½yÓ‹ÙYÓ'
+    Caption: '#Name.Simple# %1$s (æ¨¡å‹: %2$d) çš„å…¨å±€çµ±è¨ˆè³‡è¨Š'
     Text: |
       %1$s
-      ÀÛÓ‹Ë¢Ü‡´Î”µ: %2$d
-      ÀÛÓ‹“p‚û»¨ÙM: %3$1.1fİv
-      ÀÛÓ‹ñ{ñ‚´Î”µ: %4$d´Î
-      ÀÛÓ‹ñ{ñ‚•rég: %5$s
-      ÀÛÓ‹ñ{ñ‚Àï³Ì: %6$1.3f #Unit.KM#
-      Æ½¾ùñ{ñ‚ËÙ¶È: %7$1.2f #Unit.KMH#
-      Æ½¾ù±¬Ü‡ËÙÂÊ: %8$1.1fİv / 10·ÖçŠ
-      ×îáá¸üĞÂ•rég: %9$s
+      ç´¯è¨ˆåˆ·è»Šæ¬¡æ•¸: %2$d
+      ç´¯è¨ˆæå‚·èŠ±è²»: %3$1.1fè¼›
+      ç´¯è¨ˆé§•é§›æ¬¡æ•¸: %4$dæ¬¡
+      ç´¯è¨ˆé§•é§›æ™‚é–“: %5$s
+      ç´¯è¨ˆé§•é§›é‡Œç¨‹: %6$1.3f #Unit.KM#
+      å¹³å‡é§•é§›é€Ÿåº¦: %7$1.2f #Unit.KMH#
+      å¹³å‡çˆ†è»Šé€Ÿç‡: %8$1.1fè¼› / 10åˆ†é˜
+      æœ€å¾Œæ›´æ–°æ™‚é–“: %9$s
       
   OnceStatisticDialog:
-    Caption: '#Name.Simple#: %1$s (%2$d) µÄ%3$sÓ›ä›ÙYÓ (%4$s~%5$s)'
+    Caption: '#Name.Simple#: %1$s (%2$d) çš„%3$sè¨˜éŒ„è³‡è¨Š (%4$s~%5$s)'
     Text: |
       %1$s
-      ñ{ñ‚ß^µÄÜ‡İv: %3$s
-      ÀÛÓ‹“p‚û»¨ÙM: %4$1.1fİv
-      ÀÛÓ‹%2$s•rég: %5$s
-      ÀÛÓ‹%2$sÀï³Ì: %6$1.3f #Unit.KM#
-      Æ½¾ù%2$sËÙ¶È: %7$1.2f #Unit.KMH#
-      ×î¸ß%2$sËÙ¶È: %8$1.2f #Unit.KMH#
-      Æ½¾ù±¬Ü‡ËÙÂÊ: %9$1.1fİv / 10·ÖçŠ
-      é_Ê¼%2$s•rég: %10$s
-      Í£Ö¹%2$s•rég: %11$s
+      é§•é§›éçš„è»Šè¼›: %3$s
+      ç´¯è¨ˆæå‚·èŠ±è²»: %4$1.1fè¼›
+      ç´¯è¨ˆ%2$sæ™‚é–“: %5$s
+      ç´¯è¨ˆ%2$sé‡Œç¨‹: %6$1.3f #Unit.KM#
+      å¹³å‡%2$sé€Ÿåº¦: %7$1.2f #Unit.KMH#
+      æœ€é«˜%2$sé€Ÿåº¦: %8$1.2f #Unit.KMH#
+      å¹³å‡çˆ†è»Šé€Ÿç‡: %9$1.1fè¼› / 10åˆ†é˜
+      é–‹å§‹%2$sæ™‚é–“: %10$s
+      åœæ­¢%2$sæ™‚é–“: %11$s
   
   PlayerPreferencesDialog:
-    Caption: '#Name.Simple#: ‚€ÈËÆ«ºÃÔO¶¨'
-    VehicleWidget: 'ï@Ê¾ËÙ¶ÈÓ‹’ì¼ş'
-    InfiniteNitrous: 'ŸoÏŞµªšâ¼ÓËÙ'
-    AutoRepair: '×Ô„ÓĞŞ¸²Ü‡İv'
-    AutoFlip: '×Ô„Ó·­ŞDÜ‡İv'
-    AutoCarryPassengers: '×Ô„Ó”y§³Ë¿Í'
+    Caption: '#Name.Simple#: å€‹äººåå¥½è¨­å®š'
+    VehicleWidget: 'é¡¯ç¤ºé€Ÿåº¦è¨ˆæ›ä»¶'
+    InfiniteNitrous: 'ç„¡é™æ°®æ°£åŠ é€Ÿ'
+    AutoRepair: 'è‡ªå‹•ä¿®è¦†è»Šè¼›'
+    AutoFlip: 'è‡ªå‹•ç¿»è½‰è»Šè¼›'
+    AutoCarryPassengers: 'è‡ªå‹•æ”œå¸¶ä¹˜å®¢'
     
   PlayerStatisticDialog:
-    Caption: '#Name.Simple#: ËùÓĞÜ‡İvµÄ‚€ÈË½yÓ‹ÙYÓ'
+    Caption: '#Name.Simple#: æ‰€æœ‰è»Šè¼›çš„å€‹äººçµ±è¨ˆè³‡è¨Š'
     Text: |
       %1$s
-      ÀÛÓ‹Ë¢Ü‡´Î”µ: %2$d
-      ÀÛÓ‹“p‚û»¨ÙM: %3$1.1fİv
-      ÀÛÓ‹ñ{ñ‚´Î”µ: %4$d´Î
-      ÀÛÓ‹ñ{ñ‚•rég: %5$s
-      ÀÛÓ‹ñ{ñ‚Àï³Ì: %6$1.3f #Unit.KM#
-      Æ½¾ùñ{ñ‚ËÙ¶È: %7$1.2f #Unit.KMH#
-      Æ½¾ù±¬Ü‡ËÙÂÊ: %8$1.1fİv / 10·ÖçŠ
-      ×îáá¸üĞÂ•rég: %9$s
+      ç´¯è¨ˆåˆ·è»Šæ¬¡æ•¸: %2$d
+      ç´¯è¨ˆæå‚·èŠ±è²»: %3$1.1fè¼›
+      ç´¯è¨ˆé§•é§›æ¬¡æ•¸: %4$dæ¬¡
+      ç´¯è¨ˆé§•é§›æ™‚é–“: %5$s
+      ç´¯è¨ˆé§•é§›é‡Œç¨‹: %6$1.3f #Unit.KM#
+      å¹³å‡é§•é§›é€Ÿåº¦: %7$1.2f #Unit.KMH#
+      å¹³å‡çˆ†è»Šé€Ÿç‡: %8$1.1fè¼› / 10åˆ†é˜
+      æœ€å¾Œæ›´æ–°æ™‚é–“: %9$s
     
   PlayerVehicleStatisticDialog:
-    Caption: '#Name.Simple#: %1$s (Ä£ĞÍ: %2$d) µÄ‚€ÈË½yÓ‹ÙYÓ'
+    Caption: '#Name.Simple#: %1$s (æ¨¡å‹: %2$d) çš„å€‹äººçµ±è¨ˆè³‡è¨Š'
     Text: |
       %1$s
-      ÀÛÓ‹Ë¢Ü‡´Î”µ: %2$d
-      ÀÛÓ‹“p‚û»¨ÙM: %3$1.1fİv
-      ÀÛÓ‹ñ{ñ‚´Î”µ: %4$d´Î
-      ÀÛÓ‹ñ{ñ‚•rég: %5$s
-      ÀÛÓ‹ñ{ñ‚Àï³Ì: %6$1.3f #Unit.KM#
-      Æ½¾ùñ{ñ‚ËÙ¶È: %7$1.2f #Unit.KMH#
-      Æ½¾ù±¬Ü‡ËÙÂÊ: %8$1.1fİv / 10·ÖçŠ
-      ×îáá¸üĞÂ•rég: %9$s
+      ç´¯è¨ˆåˆ·è»Šæ¬¡æ•¸: %2$d
+      ç´¯è¨ˆæå‚·èŠ±è²»: %3$1.1fè¼›
+      ç´¯è¨ˆé§•é§›æ¬¡æ•¸: %4$dæ¬¡
+      ç´¯è¨ˆé§•é§›æ™‚é–“: %5$s
+      ç´¯è¨ˆé§•é§›é‡Œç¨‹: %6$1.3f #Unit.KM#
+      å¹³å‡é§•é§›é€Ÿåº¦: %7$1.2f #Unit.KMH#
+      å¹³å‡çˆ†è»Šé€Ÿç‡: %8$1.1fè¼› / 10åˆ†é˜
+      æœ€å¾Œæ›´æ–°æ™‚é–“: %9$s
   
   VehicleComponentAddDialog:
-    Caption: '#Name.Simple#: ¸ÄÑb %1$s: ßx“ñ%2$s²¿¼ş'
+    Caption: '#Name.Simple#: æ”¹è£ %1$s: é¸æ“‡%2$séƒ¨ä»¶'
     Item: '%1$s: %2$s'
-    AddMessage: '#Name.Simple#: ÄúµÄÜ‡×Ó %1$s ÒÑ°²Ñb%2$sĞÂÔª¼ş: %3$s ¡£'
+    AddMessage: '#Name.Simple#: æ‚¨çš„è»Šå­ %1$s å·²å®‰è£%2$sæ–°å…ƒä»¶: %3$s ã€‚'
   
   VehicleComponentDialog:
-    Caption: '#Name.Simple#: ¸ÄÑb %1$s (Ä£ĞÍ£º%2$d, HP£º%3$1.0f£¥)'
-    Item: '%1$s -	®”Ç°²¿¼ş: %2$s (%3$d ‚€¿ÉÓÃ²¿¼ş)'
+    Caption: '#Name.Simple#: æ”¹è£ %1$s (æ¨¡å‹ï¼š%2$d, HPï¼š%3$1.0fï¼…)'
+    Item: '%1$s -	ç•¶å‰éƒ¨ä»¶: %2$s (%3$d å€‹å¯ç”¨éƒ¨ä»¶)'
   
   VehicleComponentPaintjobDialog:
-    Caption: '#Name.Simple#: ¸ÄÑb %1$s: ßx“ñ‡ŠÆá'
-    Item: '#Component.Paintjob#: ‡ŠÆá %1$d'
-    PaintMessage: '#Name.Simple#: ÄúµÄÜ‡×Ó %1$s ÒÑ‡ŠÆá: ‡ŠÆá %2$d ¡£'
+    Caption: '#Name.Simple#: æ”¹è£ %1$s: é¸æ“‡å™´æ¼†'
+    Item: '#Component.Paintjob#: å™´æ¼† %1$d'
+    PaintMessage: '#Name.Simple#: æ‚¨çš„è»Šå­ %1$s å·²å™´æ¼†: å™´æ¼† %2$d ã€‚'
   
   VehicleCreateListDialog:
-    Caption: '#Name.Simple#: Ë¢Ü‡ - Ü‡İvßx“ñ - %1$s (%2$d/%3$d)'
-    Item: '%1$s (ĞÍÌ–: %2$d , ×ùÎ»”µ: %3$d, ñ{ñ‚´Î”µ: %4$d, ÈËšâ: %5$d)'
+    Caption: '#Name.Simple#: åˆ·è»Š - è»Šè¼›é¸æ“‡ - %1$s (%2$d/%3$d)'
+    Item: '%1$s (å‹è™Ÿ: %2$d , åº§ä½æ•¸: %3$d, é§•é§›æ¬¡æ•¸: %4$d, äººæ°£: %5$d)'
     ItemSortMode: '#Vehicle.SortMode.Text#: '
     CreateMessage: '#Command.CreateVehicle.Message#'
     
   VehicleCreateMainDialog:
-    Caption: '#Name.Simple#: Ë¢Ü‡ - Ü‡İvîĞÍßx“ñ'
-    ItemAll: 'ÁĞ³öËùÓĞÜ‡İv'
-    ItemCommon: '³£ÓÃÁĞ±í: %1$s'
-    ItemType: 'îĞÍ: %1$s'
-    AllVehicleText: 'ËùÓĞÜ‡İv'
+    Caption: '#Name.Simple#: åˆ·è»Š - è»Šè¼›é¡å‹é¸æ“‡'
+    ItemAll: 'åˆ—å‡ºæ‰€æœ‰è»Šè¼›'
+    ItemCommon: 'å¸¸ç”¨åˆ—è¡¨: %1$s'
+    ItemType: 'é¡å‹: %1$s'
+    AllVehicleText: 'æ‰€æœ‰è»Šè¼›'
   
   VehicleDialog:
-    Caption: '#Name.Simple#: %1$s %2$s (Ä£ĞÍ: %3$d, HP: %4$1.0f£¥)'
-    GetOn: 'ÉÏÜ‡'
-    OwnThisVehicle: '³ÉéÎÒµÄÜ‡×Ó'
-    FetchAndGetOn: '‚÷ËÍµ½Éíß…KÉÏÜ‡'
-    Repair: 'ĞŞ¸²Ü‡×Ó'
-    Flip: '·­ŞDÜ‡×Ó'
-    ChangeColor: '¸Ä×ƒîÉ«'
-    KickPassengers: 'Ìßµô³Ë¿Í'
-    Modifications: '¸ÄÑbÜ‡×Ó'
-    LockDoors: 'æiÜ‡éT'
-    PersonalStatistics: 'ï@Ê¾´ËÜ‡İvµÄ‚€ÈË½yÓ‹ÙYÓ'
-    GlobalStatistics: 'ï@Ê¾´ËÜ‡İvµÄÈ«¾Ö½yÓ‹ÙYÓ'
-    GetOnMessage: '#Name.Simple#: ÄãÒÑ‚÷ËÍµ½Ü‡×Ó %1$s ÑeÁË¡£'
-    OwnMessage: '#Name.Simple#: Ü‡×Ó %1$s ÒÑ³ÉéÄúµÄŒ£ŒÙ×ùñ{£¡'
-    FetchMessage: '#Name.Simple#: Ü‡×Ó %1$s ÒÑ‚÷ËÍµ½ÄãÉíß…£¡'
-    KickPassengerMessage: '#Name.Simple#: Äã±»Ë¾™C %1$s ½oÌßÏÂÜ‡ÁË£¡'
-    KickCompleteMessage: '#Name.Simple#: ÒÑÌß³ö %1$d ‚€³Ë¿Í£¡'
+    Caption: '#Name.Simple#: %1$s %2$s (æ¨¡å‹: %3$d, HP: %4$1.0fï¼…)'
+    GetOn: 'ä¸Šè»Š'
+    OwnThisVehicle: 'æˆç‚ºæˆ‘çš„è»Šå­'
+    FetchAndGetOn: 'å‚³é€åˆ°èº«é‚Šä¸¦ä¸Šè»Š'
+    Repair: 'ä¿®è¦†è»Šå­'
+    Flip: 'ç¿»è½‰è»Šå­'
+    ChangeColor: 'æ”¹è®Šé¡è‰²'
+    KickPassengers: 'è¸¢æ‰ä¹˜å®¢'
+    Modifications: 'æ”¹è£è»Šå­'
+    LockDoors: 'é–è»Šé–€'
+    PersonalStatistics: 'é¡¯ç¤ºæ­¤è»Šè¼›çš„å€‹äººçµ±è¨ˆè³‡è¨Š'
+    GlobalStatistics: 'é¡¯ç¤ºæ­¤è»Šè¼›çš„å…¨å±€çµ±è¨ˆè³‡è¨Š'
+    GetOnMessage: '#Name.Simple#: ä½ å·²å‚³é€åˆ°è»Šå­ %1$s è£¡äº†ã€‚'
+    OwnMessage: '#Name.Simple#: è»Šå­ %1$s å·²æˆç‚ºæ‚¨çš„å°ˆå±¬åº§é§•ï¼'
+    FetchMessage: '#Name.Simple#: è»Šå­ %1$s å·²å‚³é€åˆ°ä½ èº«é‚Šï¼'
+    KickPassengerMessage: '#Name.Simple#: ä½ è¢«å¸æ©Ÿ %1$s çµ¦è¸¢ä¸‹è»Šäº†ï¼'
+    KickCompleteMessage: '#Name.Simple#: å·²è¸¢å‡º %1$d å€‹ä¹˜å®¢ï¼'
     
   VehicleManagerDialog:
     Caption: '#Name.Full#'
-    CurrentVehicle: '®”Ç°Ü‡İv ...'
-    MyVehicle: 'ÎÒµÄÜ‡İv ...'
-    CreateVehicle: 'Ë¢Ü‡ ...'
-    NearbyEmptyVehicle: 'ËÑŒ¤¸½½ü¿ÕÜ‡ ...'
-    DrivingAndRidingRecord: 'ñ{ñ‚ºÍ³Ë×øÓ›ä› ...'
-    PersonalPreferences: '‚€ÈËÆ«ºÃÔO¶¨ ...'
-    PersonalStatistics: 'ï@Ê¾‚€ÈË½yÓ‹ÙYÓ'
-    GlobalStatistics: 'ï@Ê¾È«¾Ö½yÓ‹ÙYÓ'
-    Help: 'ï@Ê¾ÍÖúÙYÓ'
-    About: 'êPì¶Ü‡¹ÜÏµ½y'
+    CurrentVehicle: 'ç•¶å‰è»Šè¼› ...'
+    MyVehicle: 'æˆ‘çš„è»Šè¼› ...'
+    CreateVehicle: 'åˆ·è»Š ...'
+    NearbyEmptyVehicle: 'æœå°‹é™„è¿‘ç©ºè»Š ...'
+    DrivingAndRidingRecord: 'é§•é§›å’Œä¹˜åè¨˜éŒ„ ...'
+    PersonalPreferences: 'å€‹äººåå¥½è¨­å®š ...'
+    PersonalStatistics: 'é¡¯ç¤ºå€‹äººçµ±è¨ˆè³‡è¨Š'
+    GlobalStatistics: 'é¡¯ç¤ºå…¨å±€çµ±è¨ˆè³‡è¨Š'
+    Help: 'é¡¯ç¤ºå¹«åŠ©è³‡è¨Š'
+    About: 'é—œæ–¼è»Šç®¡ç³»çµ±'
   
   HelpDialog:
-    Caption: '#Name.Simple#: ÍÖúÙYÓ'
-    Text: 'Íµ‘ĞÖĞ£¬•ºŸoÍÖúÙYÓ¡­¡­'
+    Caption: '#Name.Simple#: å¹«åŠ©è³‡è¨Š'
+    Text: 'å·æ‡¶ä¸­ï¼Œæš«ç„¡å¹«åŠ©è³‡è¨Šâ€¦â€¦'
     
   AboutDialog:
-    Caption: '#Name.Simple#: êPì¶#Name.Full#'
+    Caption: '#Name.Simple#: é—œæ–¼#Name.Full#'
     Text: |
-      --- ĞÂÎ´íÊÀ½ç Ü‡İv¹ÜÀíÏµ½yÔª¼ş ---
-      °æ±¾: %1$s (Build %2$d)
-      ¾×g•rég: %3$s
+      --- æ–°æœªä¾†ä¸–ç•Œ è»Šè¼›ç®¡ç†ç³»çµ±å…ƒä»¶ ---
+      ç‰ˆæœ¬: %1$s (Build %2$d)
+      ç·¨è­¯æ™‚é–“: %3$s
       
-      é_°l: mk124
-      ¹¦ÄÜÔOÓ‹: mk124
-      ÔOÓ‹î™†–: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
-      ÙYÁÏ’ñ¼¯: mk124, 52_PLA
-      œyÔ‡: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      ·­×g: (English) mk124, 52_PLA; (Russian) hitman249
-      ¸ĞÖx: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+      é–‹ç™¼: mk124
+      åŠŸèƒ½è¨­è¨ˆ: mk124
+      è¨­è¨ˆé¡§å•: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      è³‡æ–™æ¡é›†: mk124, 52_PLA
+      æ¸¬è©¦: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      ç¿»è­¯: (English) mk124, 52_PLA; (Russian) hitman249
+      æ„Ÿè¬: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
-      ±¾Ôª¼şÊÇĞÂÎ´íÊÀ½çí—Ä¿µÄÒ»²¿·Ö¡£
-      ±¾Ôª¼şÊ¹ÓÃ AGPL v3 ÔS¿É×Cé_·ÅÔ­Ê¼´a¡£
-      ±¾Ôª¼ş½ûÖ¹ÔÚÈÎºÎÉÌ˜I»òÓ¯ÀûĞÔËÅ·şÆ÷ÉÏÊ¹ÓÃ¡£
+      æœ¬å…ƒä»¶æ˜¯æ–°æœªä¾†ä¸–ç•Œé …ç›®çš„ä¸€éƒ¨åˆ†ã€‚
+      æœ¬å…ƒä»¶ä½¿ç”¨ AGPL v3 è¨±å¯è­‰é–‹æ”¾åŸå§‹ç¢¼ã€‚
+      æœ¬å…ƒä»¶ç¦æ­¢åœ¨ä»»ä½•å•†æ¥­æˆ–ç›ˆåˆ©æ€§ä¼ºæœå™¨ä¸Šä½¿ç”¨ã€‚
     
   VehicleResprayDialog:
-    Caption: '#Name.Simple#: ßx“ñ %1$s µÄ%2$s (Ä£ĞÍ: %4$d, HP: %5$1.0f£¥)'
-    Item: '\t\t\t%1$s¨~{FFFFFF} îÉ«: %2$d %1$s¨~'
+    Caption: '#Name.Simple#: é¸æ“‡ %1$s çš„%2$s (æ¨¡å‹: %4$d, HP: %5$1.0fï¼…)'
+    Item: '\t\t\t%1$sâ–‡{FFFFFF} é¡è‰²: %2$d %1$sâ–‡'
     
   VehicleResprayGroupDialog:
-    Caption: '#Name.Simple#: ßx“ñ %1$s µÄ%2$s (Ä£ĞÍ: %3$d, HP: %4$1.0f£¥)'
+    Caption: '#Name.Simple#: é¸æ“‡ %1$s çš„%2$s (æ¨¡å‹: %3$d, HP: %4$1.0fï¼…)'
     Item: '\t\t\t'
-    ColorBlockText: '¨~'
+    ColorBlockText: 'â–‡'
     
