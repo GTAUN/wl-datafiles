@@ -29,7 +29,7 @@ Vehicle:
     Aircraft: '飞机'
     Helicopter: '直升机'
     Tank: '坦克'
-    Unknown: '其他'
+    Unknown: '未知'
     
   SortMode:
     Text: '排序方式'
@@ -195,7 +195,7 @@ Dialog:
     Caption: '#Name.Simple#: 刷车 - 车辆选择 - %1$s (%2$d/%3$d)'
     Item: '%1$s (型号: %2$d , 座位数: %3$d, 驾驶次数: %4$d, 人气: %5$d)'
     ItemSortMode: '#Vehicle.SortMode.Text#: '
-    CreateMessage: '#Command.Create.Message#'
+    CreateMessage: '#Command.CreateVehicle.Message#'
     
   VehicleCreateMainDialog:
     Caption: '#Name.Simple#: 刷车 - 车辆类型选择'
