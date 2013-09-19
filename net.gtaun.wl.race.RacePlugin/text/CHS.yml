@@ -1,0 +1,382 @@
+﻿#####
+# Simplified Chinese by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: '赛车'
+  Full: '赛车系统'
+
+Time:
+  Format:
+    HMS: '%1$d小时 %2$d分 %3$d秒'
+    S: '%1$d秒钟'
+    M: '%1$d分钟'
+    
+  Never: '从未'
+  
+Common:
+  None: 无
+  Allow: '允许'
+  Disallow: '禁止'
+  OK: '确定'
+  Empty: '空'
+  NA: 'N/A'
+  NoLimit: '不限制'
+  
+Unit:
+  M: '米'
+  KM: '公里'
+  KMH: 'km/h'
+  KPH: 'KPH'
+  
+  Time:
+    S: 秒
+    M: 分
+
+Track:
+  Type:
+    Normal: '普通赛道'
+    Circuit: '绕圈赛道'
+    
+  Status:
+    Editing: '编辑中'
+    Completed: '已完成'
+    Ranking: '已排名'
+    
+  Checkpoint:
+    Text: '检查点'
+    Type:
+      Normal: '赛车'
+      Air: '飞行'
+      
+  SortMode:
+    Nearest: '距离最近'
+    LongToShort: '从长到短'
+    ShortToLong: '从短到长'
+
+Racing:
+  DepartureInterval: '发车间隔'
+  
+  Type:
+    Normal: '普通'
+    Knockout: '淘汰赛'
+    
+  DeathRule:
+    WaitAndReturn: '等待并回到检查点'
+    Knockout: '淘汰'
+
+  Limit:
+    AutoRepair: '自动修车'
+    InfiniteNitrous: '无限氮气'
+    AutoFlip: '自动翻车'
+    ChangeVehicle: '更换载具'
+    
+  Message:
+    JoinMessage: '#Name.Simple#: 您已参与 %1$s 比赛 (赛道 %2$s)。'
+    PlayerJoinMessage: '#Name.Simple#: %1$s 已加入 %2$s 比赛。'
+    JoinTipMessage: '#Name.Simple#: 在参与比赛的时候，只需按两下喇叭 (默认H键) 即可快速呼出比赛菜单。'
+    
+    LeaveMessage: '#Name.Simple#: 您已离开 %1$s 比赛。'
+    PlayerLeaveMessage: '#Name.Simple#: %1$s 已退出 %2$s 比赛。'
+    
+    KickMessage: '#Name.Simple#: 您已被踢出 %1$s 比赛。'
+    KickPlayerMessage: '#Name.Simple#: %1$s 已被踢出 %2$s 比赛。'
+    
+    CancelMessage: '#Name.Simple#: 比赛 %1$s 已被取消。'
+    
+    FinishMessage: '#Name.Simple#: 您已完成 %1$s 比赛。'
+    PlayerFinishMessage: '#Name.Simple#: %1$s 已完成 %2$s 比赛。'
+    
+  GameText:
+    GoMessage: '- ~r~GO! -'
+    
+  Script:
+    ErrorMessage: '#Name.Simple#: 赛道 %1$s (检查点 %2$d): 脚本运行到第 %3$d 行时候发生错误 %4$s 。'
+    ErrorLineMessage: '#Name.Simple#:: 赛道 %1$s (检查点 %2$d): 错误代码: %3$s 。'
+    TimeOutErrorMessage: '#Name.Simple#: 赛道 %1$s (检查点 %2$d): 脚本运行时间超过规定时长，终止运行。'
+    InstructionCountLimitErrorMessage: '#Name.Simple#: 赛道 %1$s (检查点 %2$d): 脚本超过限制指令数，终止运行。'
+    
+TrackEditor:
+  StartEditingTrackMessage: '#Name.Simple#: 你现在正在编辑 %1$s 赛道。'
+  EndEditingTrackMessage: '#Name.Simple#: 已停止编辑 %1$s 赛道。'
+    
+Textdraw:
+  RacingHudWidget:
+    BottomInfoFormat: 'Completed: ~b~~h~%3$1.1f%%~w~ - Time: %4$s~n~Racing: ~y~~h~%1$s~w~ - Track: ~g~~h~%2$s~w~'
+
+Dialog:
+  CodeEditorDialog:
+    Caption: '#Name.Simple#: 代码编辑器: 编辑 %1$s 的代码 (共 %2$d 行)'
+    Item: '[%1$02d] %2$s'
+    Add: '[+] 添加新一行代码'
+    Save: '[S] 保存代码'
+  
+  CodeEditorEditLineDialog:
+    Caption: '#Name.Simple#: 代码编辑器: 编辑第 %1$d 行代码'
+    Text: |
+      您正在编辑第 %1$d 行代码，原始代码为:
+      
+      %2$s
+      
+      输入 {0000FF}INSERT{A9C4E4} 可以在本行上面插入代码；
+      输入 {FF0000}DELETE{A9C4E4} 可以删除本行代码。
+      
+      请输入新的代码，每行最长 144 字节:
+
+  CodeEditorNewLineDialog:
+    Caption: '#Name.Simple#: 代码编辑器: 添加第 %1$d 行代码'
+    Text: '请您输入第 %1$s 行的新代码，每行最长 144 字节:'
+    
+  NewRacingConfirmDialog:
+    Caption: '#Name.Simple#: 开始新比赛确认'
+    Text: '当前正在参加 %1$s 比赛，您确定要退出并举行新比赛吗？'
+    
+  NewRacingDialog:
+    Caption: '#Name.Simple#: %1$s'
+    Name: '比赛名称: %1$s'
+    Track: '赛道: %1$s (检查点数%2$d, 长度%3$1.1f#Unit.KM#)'
+    TrackType: '赛道类型: %1$s'
+    RacingType: '比赛类型:'
+    DepartureInterval: '发车间隔: %1$s'
+    DeathRule: '死亡处理:'
+    Limit: '限制:'
+    PlayersLimit: '人数限制:'
+    Password: '比赛密码:'
+    Create: '发起比赛'
+    RacingNormalCaption: '发起新比赛'
+    RacingTestCaption: '测试编辑中的赛道'
+    CircultFormat: '#Track.Type.Circuit# (%1$d 圈)'
+    PlayersLimitFormat: '%1$d ~ %2$d 人'
+    PlayersLimitNone: '无限制'
+    
+  NewRacingEditNameDialog:
+    Caption: '#Name.Simple#: %1$s: 编辑比赛名称'
+    Text: '请输入新的比赛名称:'
+    LimitAppendMessage: '比赛名称长度要求为 3 ~ 40 之间，请重新输入。'
+    
+  RaceMainDialog:
+    Caption: '#Name.Simple#'
+    Racing: '参与中的比赛: %1$s'
+    Editing: '编辑中的赛道: %1$s'
+    TrackList: '赛道列表 ...'
+    TrackFavorites: '赛道收藏夹 ...'
+    RacingList: '当前比赛列表 ...'
+    CreateTrack: '创建新赛道'
+    MyRacerInfo: '我的车手信息'
+    MyRaceRecord: '我的比赛记录 ...'
+    WorldRanking: '综合实力排名 ...'
+    PersonalPreferences: '个人偏好设置 ...'
+    Help: '帮助信息'
+    About: '关于#Name.Full#'
+    
+  CreateNewTrackNamingDialog:
+    Caption: '#Name.Simple#: 创建新赛道'
+    Text: '请您输入预想的赛道名:'
+    AlreadyExistAppendMessage: '{FF0000}* 赛道名 {FFFFFF}%1$s {FF0000}已被使用，请重新命名。'
+    IllegalNameAppendMessage: '{FF0000}* 赛道名 {FFFFFF}%1$s {FF0000}不合法，请重新命名。'
+  
+  HelpDialog:
+    Caption: '#Name.Simple#: 帮助信息'
+    Text: '偷懒中，暂无帮助信息……'
+    
+  AboutDialog:
+    Caption: '#Name.Simple#: 关于#Name.Full#'
+    Text: |
+      --- 新未来世界 : 赛车系统组件 ---
+      版本: %1$s (Build %2$d)
+      编译时间: %3$s
+      
+      开发: mk124
+      功能设计: mk124
+      设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      数据采集: mk124, 52_PLA
+      测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      翻译: (English) mk124, 52_PLA; (Russian) hitman249
+      感谢: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+      
+      本组件是新未来世界项目的一部分。
+      本组件使用 AGPL v3 许可证开放源代码。
+      本组件禁止在任何商业或盈利性服务器上使用。
+  
+  RacingDepartureSettingDialog:
+    Caption: '#Name.Simple#: 设置发车间隔时间'
+  
+  RacingDialog:
+    Caption: '#Name.Simple#: 查看比赛 %1$s 的信息'
+    Name: '比赛名称: %1$s'
+    Track: '赛道: %1$s'
+    Sponsor: '举办者: %1$s'
+    Join: '参加比赛'
+    Leave: '退出比赛'
+    Cancel: '取消比赛'
+    Start: '开始比赛'
+    Player: '参赛者: %1$s'
+  
+  RacingLeaveAndJoinConfirmDialog:
+    Caption: '#Name.Simple#: 退出并参加新比赛确认'
+    Text: '当前正在参加 %1$s 比赛，您确定要退出并参加另一个比赛 %2$s 吗？'
+  
+  RacingLeaveConfirmDialog:
+    Caption: '#Name.Simple#: 退出比赛确认'
+    Text: '当前正在参加 %1$s 比赛，您确定要退出吗？'
+  
+  RacingCancelConfirmDialog:
+    Caption: '#Name.Simple#: 取消比赛确认'
+    Text: '您确定要取消 %1$s 比赛吗？'
+  
+  RacingKickConfirmDialog:
+    Caption: '#Name.Simple#: 踢出参赛者确认'
+    Text: '您确定要踢出参赛者 %1$s 吗？'
+  
+  RacingListDialog:
+    Caption: '#Name.Simple#: 浏览所有比赛 (可加入比赛 %1$d 个, 总比赛数 %2$d 个)'
+    Text: '比赛: %1$s赛道: %2$s举办者: %3$s'
+  
+  TrackCheckpointEditDialog:
+    Caption: '#Name.Simple#: 编辑赛道 %1$s: 编辑检查点 %2$d'
+    Teleport: '传送到这个检查点'
+    Position: '坐标: x=%1$1.2f, y=%2$1.2f, z=%3$1.2f, interior=%4$d'
+    Type: '类型:'
+    Size: '大小: %1$1.1f'
+    Script: '触发代码: %1$d 行 (%2$d 个字符)'
+    UpdatePosition: '更新检查点位置'
+    Delete: '删除这个检查点'
+    CheckpointFormat: '#Track.Checkpoint.Text# %1$d'
+    UpdatePositionMessage: '#Name.Simple#: 检查点位置已更新到当前位置。'
+  
+  TrackCheckpointEditPositionDialog:
+    Caption: '#Name.Simple#: 编辑检查点坐标'
+    Text: |
+      当前坐标值为: x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4$d
+      请输入新坐标值，格式 [x] [y] [z] [interior] :
+    IllegalFormatAppendMessage: '{FF0000}* 请按照正确格式输入坐标值。'
+  
+  TrackCheckpointEditSizeDialog:
+    Caption: '#Name.Simple#: 编辑检查点大小'
+    Text: |
+      当前大小值为: %1$1.1f
+      请输入新大小值:
+    IllegalFormatAppendMessage: '{FF0000}* 请按照正确格式输入大小值。'
+  
+  TrackDialog:
+    Caption: '#Name.Simple#: 查看赛道 %1$s 的信息'
+    Name: '赛道名: %1$s'
+    Author: '作者: %1$s'
+    Desc: '描述: %1$s'
+    Status: '状态: %1$s'
+    Checkpoints: '检查点数: %1$d'
+    Length: '总长度: %1$1.2f公里'
+    Distance: '当前距离: %1$1.1f#Unit.M#'
+    Edit: '编辑赛道'
+    Test: '测试本赛道'
+    NewRacing: '发起新比赛'
+    QuickNewRacing: '快速发起新比赛'
+  
+  TrackEditConfirmDialog:
+    Caption: '#Name.Simple#: 重新编辑赛道确认'
+    Text: |
+      {FFFFFF}重新编辑已完成的赛道将会清空当前所有比赛成绩信息{A9C4E4}。
+      这将会影响到其他玩家的感受，请您务必谨慎操作。
+      
+      您确定要再次编辑赛道 %1$s 吗？
+  
+  TrackNewRacingConfirmDialog:
+    Caption: '#Name.Simple#: 开始新比赛确认'
+    Text: '当前正在参加 %1$s 比赛，您确定要退出并举行新比赛吗？'
+  
+  TrackEditDialog:
+    Caption: '#Name.Simple#: 编辑赛道: %1$s'
+    Name: '赛道名: %1$s'
+    Desc: '描述: %1$s'
+    Checkpoints: '当前检查点数: %1$d'
+    Length: '当前总长度: %1$1.2f#Unit.KM#'
+    AddCheckpoint: '添加当前地点为新检查点'
+    Setting: '赛道比赛设置'
+    Delete: '删除赛道'
+    StopEditing: '停止编辑赛道'
+    FinishEditing: '完成赛道编辑'
+    Test: '测试本赛道'
+    Checkpoint: '检查点 %1$d (距离 %2$1.1f)'
+    
+  TrackEditNameDialog:
+    Caption: '#Name.Simple#: 编辑赛道名'
+    Text: '原赛道名 %1$s ，请输入预想的新赛道名:'
+    AlreadyExistAppendMessage: '"{FF0000}* 赛道名 {FFFFFF}%1$s{FF0000} 已被使用，请重新命名。'
+    IllegalFormatAppendMessage: '{FF0000}* 赛道名 {FFFFFF}%1$s{FF0000} 不合法，请重新命名。'
+    
+  TrackEditDescDialog:
+    Caption: '#Name.Simple#: 编辑赛道描述'
+    Text: |
+      赛道 %1$s 原描述信息为:
+      
+      %2$s
+      
+      请输入新的描述信息:
+  
+  TrackDeleteConfirmDialog:
+    Caption: '#Name.Simple#: ！！！ 删除赛道确认 ！！！'
+    Text: |
+      警告！删除赛道将无法还原，所有的比赛记录也都将会消除。
+      请您务必谨慎操作，有任何疑问，请先联系管理员解决。
+      
+      请您再次输入赛道名 {FFFFFF}%1$s{A9C4E4} 以确认删除操作:
+  
+  TrackDeleteCancelDialog:
+    Caption: '#Name.Simple#: 删除赛道已取消'
+    Text: '已取消删除赛道 %1$s 。'
+    
+  TrackDeleteCompleteDialog:
+    Caption: '#Name.Simple#: 删除赛道成功'
+    Text: '赛道 %1$s 已经成功删除。'
+  
+  TrackFinishEditingConfirmDialog:
+    Caption: '#Name.Simple#: 完成赛道编辑确认'
+    Text: |
+      赛道在编辑完成以后，将开始统计比赛成绩信息。
+      尝试再次编辑赛道将会清空当前所有的比赛成绩。
+      被管理员通过审核进行正式排名(Ranking)的赛道，将无法再次编辑。
+
+      您确定要完成赛道 %1$s 吗？
+  
+  TrackListDialog:
+    Caption: '#Name.Simple#: 赛道列表 (%1$d/$2$d)'
+    Item: '赛道: %1$s	{7F7F7F}by %2$s - 长度 %3$1.1f公里, 点数 %4$d'
+    StatusFilter: '过滤状态: '
+    SortMode: '排序方式: '
+    
+  TrackListMainDialog:
+    Caption: '#Name.Simple#: 赛道列表方式一览'
+    Nearby: '搜索附近的赛道 ...'
+    ListAll: '列出所有赛道 ...'
+    MyFavorites: '我的收藏 ...'
+    MyTracks: '我的赛道 ...'
+    SearchByAuthor: '按作者搜索赛道'
+    SearchByKeyword: '按名字搜索赛道'
+    
+  TrackSearchByAuthorDialog:
+    Caption: '#Name.Simple#: 按作者搜索赛道'
+    Text: '请输入作者名字:'
+    
+  TrackSearchByKeywordDialog:
+    Caption: '#Name.Simple#: 按名字搜索赛道'
+    Text: '请输入搜索关键字，多个关键字请用空格隔开:'
+    
+  TrackNamingDialog:
+    IllegalLengthAppendMessage: '{FF0000}* 赛道名长度要求为 %1$d ~ %2$d 个字，请重新输入。'
+  
+  TrackScriptEditDialog:
+    Caption: '#Name.Simple#: 编辑赛道事件脚本: %1$s'
+    Item: '事件 %1$s	脚本: %2$d 行 (%3$d 个字符)'
+    EventFormat: '事件 %1$s'
+  
+  TrackSettingDialog:
+    Caption: '#Name.Simple#: 编辑赛道 %1$s: 比赛设置'
+    PlayersFormat: '%1$d 人'
+    MinPlayersFormat: '最少参赛人数: %1$s'
+    MaxPlayersFormat: '最多参赛人数: %1$s'
+  
+  
+  

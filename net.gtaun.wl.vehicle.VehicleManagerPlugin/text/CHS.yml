@@ -240,7 +240,7 @@ Dialog:
     PersonalStatistics: '显示个人统计信息'
     GlobalStatistics: '显示全局统计信息'
     Help: '显示帮助信息'
-    About: '关于车管系统'
+    About: '关于#Name.Full#'
   
   HelpDialog:
     Caption: '#Name.Simple#: 帮助信息'
@@ -249,7 +249,7 @@ Dialog:
   AboutDialog:
     Caption: '#Name.Simple#: 关于#Name.Full#'
     Text: |
-      --- 新未来世界 车辆管理系统组件 ---
+      --- 新未来世界 : 车辆管理系统组件 ---
       版本: %1$s (Build %2$d)
       编译时间: %3$s
       
