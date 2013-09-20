@@ -1,5 +1,5 @@
 ﻿#####
-# English by mk124, 52_PLA.
+# English by 52_PLA.
 #
 # In order to calculate the percentage of translated,
 # Please complete the translation and then remove the # comment character!
@@ -14,11 +14,17 @@ Time:
   Never: 'Never'
   NA: 'N/A'
 
-Unit: 
-  M: 'ft'
-  KM: 'miles'
-  KMH: 'miles/h'
-  KPH: 'MPH'
+Unit:
+  Meter: 'm'
+  KiloMeter: 'km'
+  Yard: 'yd'
+  Mile: 'miles'
+  
+  KMH: 'km/h'
+  MIH: 'miles/h'
+  
+  KPH: 'KPH'
+  MPH: 'MPH'
 
 Vehicle:
   Normal: 'Vehicles'
@@ -39,8 +45,8 @@ Vehicle:
     
   SortMode:
     Text: 'Sort By (High to low)'
-    Hot: 'Popular'
-    UseCount: 'Spawned Times'
+    Popular: 'Popular'
+    SpawnedTimes: 'Spawned Times'
     Seats: 'Seats'
     Type: 'Vehicle Types'
   
@@ -81,15 +87,22 @@ Component:
 
 Command:
   CreateVehicle:
-    Usage: '#Name.Simple#: Usage：For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle\'s name] ，Eg.  typing \\411 or \\tur  in order to spawn tursimo.'
+    Usage: "#Name.Simple#: Usage: For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle's name] , Eg.  typing \\411 or \\tur  in order to spawn tursimo."
     InvalidID: '#Name.Simple#: Not valid ID %1$d.'
     InvalidAbbr: '#Name.Simple#: Not vaild vehicle name %1$s. '
     Message: '#Name.Simple#: Your own vehicle: %1$s spawned successful!'
     
 Textdraw:
   VehicleWidget:
-    Format: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
-    IncludeHealthFormat: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    
+    SpeedUnit: '#Unit.MPH#'
+    
+    # %1$1.0f for KPH; %2$1.0f for MPH
+    SpeedFormat: '%2$1.0f'
+    
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.Mile#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.MPH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%5$1.2f#Unit.Mile#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.MPH#'
     RacingExtMessage: '[RACING]'
     
     StatusMark:
@@ -101,56 +114,64 @@ Textdraw:
     
 Dialog:
   DrivingRecordStatisticDialog:
-    Caption: '#Name.Simple#: Passenger and driving Log'#Origin Chinese:驾驶和乘坐记录
+    Caption: '#Name.Simple#: Passenger and driving Log'
     Item: '[%1$s Log] %2$s (%3$d) - %4$s ~ %5$s'
 
-  EmptyVehicleListDialog:
+  EmptyVehicleListDialog: #THIS
     Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
-    Item: '%2$s  Model: %3$d  Distance: %4$1.0f m'
-    ItemAdmin: '%2$s (ID: %1$d)    Model: %3$d  Distance: %4$1.0f m'
+    
+    # %4$1.0f for km; %5$1.0f for yards
+    Item: '%2$s  Model: %3$d  Distance: %5$1.0f #Unit.Yard#'
+    ItemAdmin: '%2$s (ID: %1$d)    Model: %3$d  Distance: %5$1.0f #Unit.Yard#'
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: Global vehicles statistics'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       Total spawns: %2$d
       Total damage costs: %3$1.1f cars 
       Total driving frequency: %4$d times  
       Total driving time: %5$s
-      Total distance: %6$1.3f miles   
-      Avg. driving speed: %7$1.2f mph  
-      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
-      Last updated: %9$s
+      Total distance: %7$1.3f #Unit.Mile#   
+      Avg. driving speed: %9$1.2f #Unit.MPH#  
+      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
+      Last updated: %11$s
   
   GlobalVehicleStatisticDialog:
     Caption: 'Global statistics of #Name.Simple#: %1$s (Model: %2$d) '
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       Total spawns: %2$d
       Total damage costs: %3$1.1f cars
       Total driving frequency: %4$d times
       Total driving time: %5$s
-      Total distance: %6$1.3f #Unit.KM#
-      Avg. driving speed: %7$1.2f #Unit.KMH#
+      Total distance: %6$1.3f #Unit.Mile#
+      Avg. driving speed: %7$1.2f #Unit.MPH#
       Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
       Last updated: %9$s
       
   OnceStatisticDialog:
     Caption: '#Name.Simple#: %1$s (%2$d) s%3$s Record (%4$s~%5$s)'
+    
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
     Text: |
       %1$s
-      Total spawns: %2$d
-      Total damage costs: %3$1.1f cars
-      Total driving frequency: %4$d times
-      Total driving time: %5$s
-      Total distance: %6$1.3f #Unit.KM#
-      Avg. driving speed: %7$1.2f #Unit.KMH#
-      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
-      Start%2$sTime: %10$s
-      Stop%2$sTime: %11$s
+      驾驶过的车辆: %3$s
+      累计损伤花费: %4$1.1f辆
+      累计%2$s时间: %5$s
+      累计%2$s里程: %7$1.3f #Unit.Mile#
+      平均%2$s速度: %9$1.2f #Unit.MPH#
+      最高%2$s速度: %11$1.2f #Unit.MPH#
+      平均爆车速率: %12$1.1f辆 / 10分钟
+      开始%2$s时间: %13$s
+      停止%2$s时间: %14$s
   
   PlayerPreferencesDialog:
-    Caption: '#Name.Simple#: Personal preferences...'
+    Caption: '#Name.Simple#: Personal preferences'
     VehicleWidget: 'Display Vehicle Widget'
     InfiniteNitrous: 'Infinite Nitro'
     AutoRepair: 'Auto Repair'
@@ -158,44 +179,48 @@ Dialog:
     AutoCarryPassengers: 'Auto Carry Passengers (when vehicle changed)'
     
   PlayerStatisticDialog:
-    Caption: '#Name.Simple#: Personal Statistic of all vehicle'# Origin Chinese:所有车辆的个人统计信息
+    Caption: '#Name.Simple#: Personal Statistic of all vehicle'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       Total spawns: %2$d
       Total damage costs: %3$1.1f cars
       Total driving frequency: %4$d times
       Total driving time: %5$s
-      Total distance: %6$1.3f #Unit.KM#
-      Avg. driving speed: %7$1.2f #Unit.KMH#
-      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
-      Last updated: %9$s
+      Total distance: %7$1.3f #Unit.Mile#
+      Avg. driving speed: %9$1.2f #Unit.MPH#
+      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
+      Last updated: %11$s
     
   PlayerVehicleStatisticDialog:
     Caption: '#Name.Simple#: Personal Statistic of %1$s (Modle ID: %2$d)'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       Total spawns: %2$d
       Total damage costs: %3$1.1f cars
       Total driving frequency: %4$d times
       Total driving time: %5$s
-      Total distance: %6$1.3f #Unit.KM#
-      Avg. driving speed: %7$1.2f #Unit.KMH#
-      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
-      Last updated: %9$s
+      Total distance: %7$1.3f #Unit.Mile#
+      Avg. driving speed: %9$1.2f #Unit.MPH#
+      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
+      Last updated: %11$s
   
   VehicleComponentAddDialog:
-    Caption: '#Name.Simple#: Modify %1$s: Select%2$sParts'
+    Caption: '#Name.Simple#: Modify %1$s: Select %2$s Parts'
     Item: '%1$s: %2$s'
     AddMessage: '#Name.Simple#: Your %1$s Has install a new part for%2$s : %3$s 。'
   
   VehicleComponentDialog:
-    Caption: '#Name.Simple#: Modify %1$s (Model ID：%2$d, HP：%3$1.0f％)'
+    Caption: '#Name.Simple#: Modify %1$s (Model ID: %2$d, HP: %3$1.0f%%)'
     Item: '%1$s -	Current parts: %2$s (%3$d Parts available)'
   
   VehicleComponentPaintjobDialog:
     Caption: '#Name.Simple#: Modify %1$s: Select Paint'
     Item: '#Component.Paintjob#: Paint %1$d'
-    PaintMessage: '#Name.Simple#: Your %1$s\'s paint changed to: Paint %2$d 。'
+    PaintMessage: "#Name.Simple#: Your %1$s's paint changed to: Paint %2$d 。"
   
   VehicleCreateListDialog:
     Caption: '#Name.Simple#: Vehicle Spawn - Select Vehicle - %1$s (%2$d/%3$d)'
@@ -211,10 +236,10 @@ Dialog:
     AllVehicleText: 'All Vehicle'
   
   VehicleDialog:
-    Caption: '#Name.Simple#: %1$s %2$s (Model: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: %1$s %2$s (Model: %3$d, HP: %4$1.0f%%)'
     GetOn: 'Get On'
     OwnThisVehicle: 'Own This Vehicle'
-    FetchAndGetOn: 'Spawn my vehicle and get on'
+    FetchAndGetOn: 'Fetch And Get On'
     Repair: 'Repair'
     Flip: 'Flip'
     ChangeColor: 'Change Paints'
@@ -235,7 +260,7 @@ Dialog:
     MyVehicle: 'My Vehicle ...'
     CreateVehicle: 'Spawn New Vehicle ...'
     NearbyEmptyVehicle: 'Browse Nearby Empty Vehicles ...'
-    DrivingAndRidingRecord: 'Driving And Riding Records ...'
+    DrivingAndRidingRecord: 'Passenger And Driving Log ...'
     PersonalPreferences: 'Personal Preferences ...'
     PersonalStatistics: 'Show Personal Statistics'
     GlobalStatistics: 'Show Global Statistics'
@@ -258,7 +283,7 @@ Dialog:
       Design Assistant: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       Data Collector: mk124, 52_PLA
       Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      Translation: (English) mk124, 52_PLA; (Russian) hitman249
+      Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
       Thanks: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       This component is part of The New WL-World project.
@@ -266,11 +291,10 @@ Dialog:
       Prohibit the use in any commercial or profit-purpose servers.
     
   VehicleResprayDialog:
-    Caption: '#Name.Simple#: Select %1$s \'s %2$s (Model ID: %3$d, HP: %4$1.0f％)'
-    Item: '	%1$s••••••••••{FFFFFF} Color: %2$d %1$s••••••••••'
+    Caption: "#Name.Simple#: Select %1$s 's %2$s (Model ID: %3$d, HP: %4$1.0f%%)"
+    Item: '%1$s••••••••••{FFFFFF} Color: %2$d %1$s••••••••••'
     
   VehicleResprayGroupDialog:
-    Caption: '#Name.Simple#: Select %1$s \'s%2$s (Model ID: %3$d, HP: %4$1.0f％)'
+    Caption: "#Name.Simple#: Select %1$s 's%2$s (Model ID: %3$d, HP: %4$1.0f%%)"
     Item: '	'
     ColorBlockText: '•••'
-    

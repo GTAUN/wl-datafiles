@@ -15,10 +15,16 @@ Time:
   NA: 'N/A'
   
 Unit:
-  M: '米'
-  KM: '公里'
-  KMH: 'km/h'
+  Meter: '米'
+  KiloMeter: '公里'
+  Yard: '碼'
+  Mile: '英里'
+  
+  KMH: '千米/時'
+  MIH: '英里/時'
+  
   KPH: 'KPH'
+  MPH: 'MPH'
 
 Vehicle:
   Normal: '車輛'
@@ -39,8 +45,8 @@ Vehicle:
     
   SortMode:
     Text: '排序方式'
-    Hot: '人氣'
-    UseCount: '使用次數'
+    Popular: '人氣'
+    SpawnedTimes: '使用次數'
     Seats: '座位數'
     Type: '類型'
   
@@ -88,8 +94,15 @@ Command:
     
 Textdraw:
   VehicleWidget:
-    Format: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
-    IncludeHealthFormat: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    SpeedUnit: '#Unit.KPH#'
+    
+    # %1$1.0f for KPH, %2$1.0f for MPH
+    SpeedFormat: '%1$1.0f'
+    
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    
     RacingExtMessage: '[RACING]'
     
     StatusMark:
@@ -106,48 +119,56 @@ Dialog:
   
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: 附近空車列表 (%1$d/%2$d)'
-    Item: '%2$s  型號: %3$d  距離: %4$1.0f #Unit.M#'
-    ItemAdmin: '%2$s (ID: %1$d)    型號: %3$d  距離: %4$1.0f #Unit.M#'
+    
+    # %4$1.0f for km; %5$1.0f for miles
+    Item: '%2$s  型號: %3$d  距離: %4$1.0f #Unit.Meter#'
+    ItemAdmin: '%2$s (ID: %1$d)    型號: %3$d  距離: %4$1.0f #Unit.Meter#'
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: 所有車輛的全局統計資訊'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累計刷車次數: %2$d
-      累計損傷花費: %3$1.1f輛
-      累計駕駛次數: %4$d次
+      累計損傷花費: %3$1.1f 輛
+      累計駕駛次數: %4$d 次
       累計駕駛時間: %5$s
-      累計駕駛里程: %6$1.3f #Unit.KM#
-      平均駕駛速度: %7$1.2f #Unit.KMH#
-      平均爆車速率: %8$1.1f輛 / 10分鐘
-      最後更新時間: %9$s
+      累計駕駛里程: %6$1.3f #Unit.KiloMeter#
+      平均駕駛速度: %8$1.2f #Unit.KMH#
+      平均爆車速率: %10$1.1f輛 / 10分鐘
+      最後更新時間: %11$s
       
   GlobalVehicleStatisticDialog:
-    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局統計資訊'
+    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局統計資訊
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累計刷車次數: %2$d
       累計損傷花費: %3$1.1f輛
       累計駕駛次數: %4$d次
       累計駕駛時間: %5$s
-      累計駕駛里程: %6$1.3f #Unit.KM#
-      平均駕駛速度: %7$1.2f #Unit.KMH#
-      平均爆車速率: %8$1.1f輛 / 10分鐘
-      最後更新時間: %9$s
+      累計駕駛里程: %6$1.3f #Unit.KiloMeter#
+      平均駕駛速度: %8$1.2f #Unit.KMH#
+      平均爆車速率: %10$1.1f輛 / 10分鐘
+      最後更新時間: %11$s
       
   OnceStatisticDialog:
     Caption: '#Name.Simple#: %1$s (%2$d) 的%3$s記錄資訊 (%4$s~%5$s)'
+    
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
     Text: |
       %1$s
       駕駛過的車輛: %3$s
       累計損傷花費: %4$1.1f輛
       累計%2$s時間: %5$s
-      累計%2$s里程: %6$1.3f #Unit.KM#
-      平均%2$s速度: %7$1.2f #Unit.KMH#
-      最高%2$s速度: %8$1.2f #Unit.KMH#
-      平均爆車速率: %9$1.1f輛 / 10分鐘
-      開始%2$s時間: %10$s
-      停止%2$s時間: %11$s
+      累計%2$s里程: %6$1.3f #Unit.KiloMeter#
+      平均%2$s速度: %8$1.2f #Unit.KMH#
+      最高%2$s速度: %10$1.2f #Unit.KMH#
+      平均爆車速率: %12$1.1f輛 / 10分鐘
+      開始%2$s時間: %13$s
+      停止%2$s時間: %14$s
   
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: 個人偏好設定'
@@ -159,29 +180,33 @@ Dialog:
     
   PlayerStatisticDialog:
     Caption: '#Name.Simple#: 所有車輛的個人統計資訊'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累計刷車次數: %2$d
       累計損傷花費: %3$1.1f輛
       累計駕駛次數: %4$d次
       累計駕駛時間: %5$s
-      累計駕駛里程: %6$1.3f #Unit.KM#
-      平均駕駛速度: %7$1.2f #Unit.KMH#
-      平均爆車速率: %8$1.1f輛 / 10分鐘
-      最後更新時間: %9$s
+      累計駕駛里程: %6$1.3f #Unit.KiloMeter#
+      平均駕駛速度: %8$1.2f #Unit.KMH#
+      平均爆車速率: %10$1.1f輛 / 10分鐘
+      最後更新時間: %11$s
     
   PlayerVehicleStatisticDialog:
     Caption: '#Name.Simple#: %1$s (模型: %2$d) 的個人統計資訊'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累計刷車次數: %2$d
       累計損傷花費: %3$1.1f輛
       累計駕駛次數: %4$d次
       累計駕駛時間: %5$s
-      累計駕駛里程: %6$1.3f #Unit.KM#
-      平均駕駛速度: %7$1.2f #Unit.KMH#
-      平均爆車速率: %8$1.1f輛 / 10分鐘
-      最後更新時間: %9$s
+      累計駕駛里程: %6$1.3f #Unit.KiloMeter#
+      平均駕駛速度: %8$1.2f #Unit.KMH#
+      平均爆車速率: %10$1.1f輛 / 10分鐘
+      最後更新時間: %11$s
   
   VehicleComponentAddDialog:
     Caption: '#Name.Simple#: 改裝 %1$s: 選擇%2$s部件'
@@ -240,7 +265,7 @@ Dialog:
     PersonalStatistics: '顯示個人統計資訊'
     GlobalStatistics: '顯示全局統計資訊'
     Help: '顯示幫助資訊'
-    About: '關於車管系統'
+    About: '關於#Name.Full#'
   
   HelpDialog:
     Caption: '#Name.Simple#: 幫助資訊'
@@ -249,7 +274,7 @@ Dialog:
   AboutDialog:
     Caption: '#Name.Simple#: 關於#Name.Full#'
     Text: |
-      --- 新未來世界 車輛管理系統元件 ---
+      --- 新未來世界 : 車輛管理系統元件 ---
       版本: %1$s (Build %2$d)
       編譯時間: %3$s
       
@@ -258,7 +283,7 @@ Dialog:
       設計顧問: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       資料採集: mk124, 52_PLA
       測試: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      翻譯: (English) mk124, 52_PLA; (Russian) hitman249
+      Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
       感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       本元件是新未來世界項目的一部分。
@@ -267,10 +292,10 @@ Dialog:
     
   VehicleResprayDialog:
     Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
-    Item: '	%1$s▇{FFFFFF} 顏色: %2$d %1$s▇'
+    Item: '			%1$s▇{FFFFFF} 顏色: %2$d %1$s▇'
     
   VehicleResprayGroupDialog:
     Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
-    Item: '	'
+    Item: '			'
     ColorBlockText: '▇'
     

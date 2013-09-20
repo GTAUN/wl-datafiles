@@ -15,10 +15,16 @@ Time:
   NA: 'N/A'
   
 Unit:
-  M: '米'
-  KM: '公里'
-  KMH: 'km/h'
+  Meter: '米'
+  KiloMeter: '公里'
+  Yard: '码'
+  Mile: '英里'
+  
+  KMH: '千米/时'
+  MIH: '英里/时'
+  
   KPH: 'KPH'
+  MPH: 'MPH'
 
 Vehicle:
   Normal: '车辆'
@@ -39,8 +45,8 @@ Vehicle:
     
   SortMode:
     Text: '排序方式'
-    Hot: '人气'
-    UseCount: '使用次数'
+    Popular: '人气'
+    SpawnedTimes: '使用次数'
     Seats: '座位数'
     Type: '类型'
   
@@ -88,8 +94,15 @@ Command:
     
 Textdraw:
   VehicleWidget:
-    Format: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
-    IncludeHealthFormat: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    SpeedUnit: '#Unit.KPH#'
+    
+    # %1$1.0f for KPH, %2$1.0f for MPH
+    SpeedFormat: '%1$1.0f'
+    
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    
     RacingExtMessage: '[RACING]'
     
     StatusMark:
@@ -106,48 +119,56 @@ Dialog:
   
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: 附近空车列表 (%1$d/%2$d)'
-    Item: '%2$s  型号: %3$d  距离: %4$1.0f #Unit.M#'
-    ItemAdmin: '%2$s (ID: %1$d)    型号: %3$d  距离: %4$1.0f #Unit.M#'
+    
+    # %4$1.0f for km; %5$1.0f for miles
+    Item: '%2$s  型号: %3$d  距离: %4$1.0f #Unit.Meter#'
+    ItemAdmin: '%2$s (ID: %1$d)    型号: %3$d  距离: %4$1.0f #Unit.Meter#'
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: 所有车辆的全局统计信息'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累计刷车次数: %2$d
-      累计损伤花费: %3$1.1f辆
-      累计驾驶次数: %4$d次
+      累计损伤花费: %3$1.1f 辆
+      累计驾驶次数: %4$d 次
       累计驾驶时间: %5$s
-      累计驾驶里程: %6$1.3f #Unit.KM#
-      平均驾驶速度: %7$1.2f #Unit.KMH#
-      平均爆车速率: %8$1.1f辆 / 10分钟
-      最后更新时间: %9$s
+      累计驾驶里程: %6$1.3f #Unit.KiloMeter#
+      平均驾驶速度: %8$1.2f #Unit.KMH#
+      平均爆车速率: %10$1.1f辆 / 10分钟
+      最后更新时间: %11$s
       
   GlobalVehicleStatisticDialog:
-    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局统计信息'
+    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局统计信息
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累计刷车次数: %2$d
       累计损伤花费: %3$1.1f辆
       累计驾驶次数: %4$d次
       累计驾驶时间: %5$s
-      累计驾驶里程: %6$1.3f #Unit.KM#
-      平均驾驶速度: %7$1.2f #Unit.KMH#
-      平均爆车速率: %8$1.1f辆 / 10分钟
-      最后更新时间: %9$s
+      累计驾驶里程: %6$1.3f #Unit.KiloMeter#
+      平均驾驶速度: %8$1.2f #Unit.KMH#
+      平均爆车速率: %10$1.1f辆 / 10分钟
+      最后更新时间: %11$s
       
   OnceStatisticDialog:
     Caption: '#Name.Simple#: %1$s (%2$d) 的%3$s记录信息 (%4$s~%5$s)'
+    
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
     Text: |
       %1$s
       驾驶过的车辆: %3$s
       累计损伤花费: %4$1.1f辆
       累计%2$s时间: %5$s
-      累计%2$s里程: %6$1.3f #Unit.KM#
-      平均%2$s速度: %7$1.2f #Unit.KMH#
-      最高%2$s速度: %8$1.2f #Unit.KMH#
-      平均爆车速率: %9$1.1f辆 / 10分钟
-      开始%2$s时间: %10$s
-      停止%2$s时间: %11$s
+      累计%2$s里程: %6$1.3f #Unit.KiloMeter#
+      平均%2$s速度: %8$1.2f #Unit.KMH#
+      最高%2$s速度: %10$1.2f #Unit.KMH#
+      平均爆车速率: %12$1.1f辆 / 10分钟
+      开始%2$s时间: %13$s
+      停止%2$s时间: %14$s
   
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: 个人偏好设置'
@@ -159,29 +180,33 @@ Dialog:
     
   PlayerStatisticDialog:
     Caption: '#Name.Simple#: 所有车辆的个人统计信息'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累计刷车次数: %2$d
       累计损伤花费: %3$1.1f辆
       累计驾驶次数: %4$d次
       累计驾驶时间: %5$s
-      累计驾驶里程: %6$1.3f #Unit.KM#
-      平均驾驶速度: %7$1.2f #Unit.KMH#
-      平均爆车速率: %8$1.1f辆 / 10分钟
-      最后更新时间: %9$s
+      累计驾驶里程: %6$1.3f #Unit.KiloMeter#
+      平均驾驶速度: %8$1.2f #Unit.KMH#
+      平均爆车速率: %10$1.1f辆 / 10分钟
+      最后更新时间: %11$s
     
   PlayerVehicleStatisticDialog:
     Caption: '#Name.Simple#: %1$s (模型: %2$d) 的个人统计信息'
+    
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       累计刷车次数: %2$d
       累计损伤花费: %3$1.1f辆
       累计驾驶次数: %4$d次
       累计驾驶时间: %5$s
-      累计驾驶里程: %6$1.3f #Unit.KM#
-      平均驾驶速度: %7$1.2f #Unit.KMH#
-      平均爆车速率: %8$1.1f辆 / 10分钟
-      最后更新时间: %9$s
+      累计驾驶里程: %6$1.3f #Unit.KiloMeter#
+      平均驾驶速度: %8$1.2f #Unit.KMH#
+      平均爆车速率: %10$1.1f辆 / 10分钟
+      最后更新时间: %11$s
   
   VehicleComponentAddDialog:
     Caption: '#Name.Simple#: 改装 %1$s: 选择%2$s部件'
@@ -189,7 +214,7 @@ Dialog:
     AddMessage: '#Name.Simple#: 您的车子 %1$s 已安装%2$s新组件: %3$s 。'
   
   VehicleComponentDialog:
-    Caption: '#Name.Simple#: 改装 %1$s (模型：%2$d, HP：%3$1.0f％)'
+    Caption: '#Name.Simple#: 改装 %1$s (模型：%2$d, HP：%3$1.0f%%)'
     Item: '%1$s -	当前部件: %2$s (%3$d 个可用部件)'
   
   VehicleComponentPaintjobDialog:
@@ -211,7 +236,7 @@ Dialog:
     AllVehicleText: '所有车辆'
   
   VehicleDialog:
-    Caption: '#Name.Simple#: %1$s %2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: %1$s %2$s (模型: %3$d, HP: %4$1.0f%%)'
     GetOn: '上车'
     OwnThisVehicle: '成为我的车子'
     FetchAndGetOn: '传送到身边并上车'
@@ -258,7 +283,7 @@ Dialog:
       设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       数据采集: mk124, 52_PLA
       测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      翻译: (English) mk124, 52_PLA; (Russian) hitman249
+      Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
       感谢: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       本组件是新未来世界项目的一部分。
@@ -266,11 +291,11 @@ Dialog:
       本组件禁止在任何商业或盈利性服务器上使用。
     
   VehicleResprayDialog:
-    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f%%)'
     Item: '			%1$s▇{FFFFFF} 颜色: %2$d %1$s▇'
     
   VehicleResprayGroupDialog:
-    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f%%)'
     Item: '			'
     ColorBlockText: '▇'
     
