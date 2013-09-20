@@ -91,7 +91,7 @@ Racing:
     PlayerFinishMessage: '#Name.Simple#: %1$s 已完成 %2$s 比赛。'
     
   GameText:
-    GoMessage: '- ~r~GO! -'
+    GoMessage: '- ~r~GO!~w~ -'
     
   Script:
     ErrorMessage: '#Name.Simple#: 赛道 %1$s (检查点 %2$d): 脚本运行到第 %3$d 行时候发生错误 %4$s 。'
@@ -142,7 +142,7 @@ Dialog:
     RacingType: '比赛类型:'
     DepartureInterval: '发车间隔: %1$s'
     DeathRule: '死亡处理:'
-    Limit: '限制:'
+    Limit: '比赛限制:'
     PlayersLimit: '人数限制:'
     Password: '比赛密码:'
     Create: '发起比赛'
@@ -214,6 +214,9 @@ Dialog:
     Cancel: '取消比赛'
     Start: '开始比赛'
     Player: '参赛者: %1$s'
+    
+  RacingLimitDialog:
+    Caption: '#Name.Simple#: 修改比赛限制'
   
   RacingLeaveAndJoinConfirmDialog:
     Caption: '#Name.Simple#: 退出并参加新比赛确认'
@@ -342,7 +345,7 @@ Dialog:
       您确定要完成赛道 %1$s 吗？
   
   TrackListDialog:
-    Caption: '#Name.Simple#: 赛道列表 (%1$d/$2$d)'
+    Caption: '#Name.Simple#: 赛道列表 (%1$d/%2$d)'
     Item: '赛道: %1$s	{7F7F7F}by %2$s - 长度 %3$1.1f公里, 点数 %4$d'
     StatusFilter: '过滤状态: '
     SortMode: '排序方式: '
@@ -377,6 +380,4 @@ Dialog:
     PlayersFormat: '%1$d 人'
     MinPlayersFormat: '最少参赛人数: %1$s'
     MaxPlayersFormat: '最多参赛人数: %1$s'
-  
-  
-  
+   
