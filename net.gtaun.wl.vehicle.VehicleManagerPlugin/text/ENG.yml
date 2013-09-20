@@ -101,8 +101,8 @@ Textdraw:
     
 Dialog:
   DrivingRecordStatisticDialog:
-    Caption: '#Name.Simple#: Personal imformation of the passenger and driving'#Origin Chinese:驾驶和乘坐记录
-    Item: '[%1$s记录] %2$s (%3$d) - %4$s ~ %5$s'
+    Caption: '#Name.Simple#: Passenger and driving Log'#Origin Chinese:驾驶和乘坐记录
+    Item: '[%1$s Log] %2$s (%3$d) - %4$s ~ %5$s'
 
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
