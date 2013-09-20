@@ -14,77 +14,77 @@ Time:
   Never: 'Never'
   NA: 'N/A'
 
-Unit:
-  M: 'm'
-  KM: 'km'
-  KMH: 'km/h'
-  KPH: 'KPH'
+Unit: 
+  M: 'ft'
+  KM: 'miles'
+  KMH: 'miles/h'
+  KPH: 'MPH'
 
-#Vehicle:
-#  Normal: '车辆'
-#  Owned: '我的车子'
-#  
-#  Type:
-#    Bicycle: '自行车'
-#    Motorbike: '摩托车'
-#    Car: '普通车子'
-#    Trailer: '拖车'
-#    RemoteControl: '遥控装置'
-#    Train: '火车'
-#    Boat: '船只'
-#    Aircraft: '飞机'
-#    Helicopter: '直升机'
-#    Tank: '坦克'
-#    Unknown: '其他'
-#    
-#  SortMode:
-#    Text: '排序方式'
-#    Hot: '人气'
-#    UseCount: '使用次数'
-#    Seats: '座位数'
-#    Type: '类型'
+Vehicle:
+  Normal: 'Vehicles'
+  Owned: 'My Vehicle'
   
-#Statistic:
-#  Type:
-#    Driver: '驾驶'
-#    Passenger: '乘坐'
-#    Racing: '赛车'
-#    Unknown: '未知'
-#
-#  MoveWay:
-#    OnFoot: '步行'
-#    Multiple: '多种移动方式'
+  Type:
+    Bicycle: 'Bicycles'
+    Motorbike: 'Motorbike'
+    Car: 'Cars'
+    Trailer: 'Trailers'
+    RemoteControl: 'Remote Toys'
+    Train: 'Train'
+    Boat: 'Boats'
+    Aircraft: 'Aeroplane'
+    Helicopter: 'Helicopter'
+    Tank: 'Tank'
+    Unknown: 'Other'
+    
+  SortMode:
+    Text: 'Sort By (High to low)'
+    Hot: 'Popular'
+    UseCount: 'Spawned Times'
+    Seats: 'Seats'
+    Type: 'Vehicle Types'
   
-#Component:
-#  Slot:
-#    Spoiler: '扰流板'
-#    Hood: '发动机罩'
-#    Roof: '车顶'
-#    SideSkirt: '侧裙'
-#    Lamps: '车灯'
-#    Nitro: '氮气加速装置'
-#    Exhaust: '排气管'
-#    Wheels: '车轮轮圈'
-#    Stereo: '立体声音响'
-#    Hydraulics: '液压系统'
-#    FrontBumper: '前保险杠'
-#    RearBumper: '后保险杠'
-#    VentRight: '右进气口'
-#    VentLeft: '左进气口'
-#    Unknown: '未知'
-#    
-#  Paintjob: '喷漆'
-#  
-#  Color:
-#    Primary: '主颜色'
-#    Secondary: '次颜色'
+Statistic:
+  Type:
+    Driver: 'Driving'
+    Passenger: 'As Passenger'
+    Racing: 'Race'
+    Unknown: 'Unknown'
 
-#Command:
-#  CreateVehicle:
-#    Usage: '#Name.Simple#: 快捷刷车命令用法：\\[车辆模型ID] 或者 \\[车辆名字前三位] ，比如 \\411 或者 \\tur 。'
-#    InvalidID: '#Name.Simple#: 不是合法的车辆模型ID %1$d 。'
-#    InvalidAbbr: '#Name.Simple#: 不存在这个车辆简写名称 %1$s 。'
-#    Message: '#Name.Simple#: 您的专属座驾 %1$s 已创建！'
+  MoveWay:
+    OnFoot: 'On Foot'
+    Multiple: 'Multiple ways'
+  
+Component:
+  Slot:
+    Spoiler: 'Spoiler'
+    Hood: 'Hood'
+    Roof: 'Roof'
+    SideSkirt: 'SideSkirt'
+    Lamps: 'Lamps'
+    Nitro: 'Nitro'
+    Exhaust: 'Exhaust'
+    Wheels: 'Wheels'
+    Stereo: 'Stereo'
+    Hydraulics: 'Hydraulics'
+    FrontBumper: 'Front Bumper'
+    RearBumper: 'Rear Bumper'
+    VentRight: 'Vent Right'
+    VentLeft: 'Vent Left'
+    Unknown: 'Unknown'
+    
+  Paintjob: 'Paintjob'
+  
+  Color:
+    Primary: 'Primary Color'
+    Secondary: 'Secondary Color'
+
+Command:
+  CreateVehicle:
+    Usage: '#Name.Simple#: Usage：For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle\'s name] ，Eg.  typing \\411 or \\tur  in order to spawn tursimo.'
+    InvalidID: '#Name.Simple#: Not valid ID %1$d.'
+    InvalidAbbr: '#Name.Simple#: Not vaild vehicle name %1$s. '
+    Message: '#Name.Simple#: Your own vehicle: %1$s spawned successful!'
     
 Textdraw:
   VehicleWidget:
@@ -100,9 +100,9 @@ Textdraw:
       LockDoors: '~y~D'
     
 Dialog:
-#  DrivingRecordStatisticDialog:
-#    Caption: '#Name.Simple#: 驾驶和乘坐记录'
-#    Item: '[%1$s记录] %2$s (%3$d) - %4$s ~ %5$s'
+  DrivingRecordStatisticDialog:
+    Caption: '#Name.Simple#: Personal imformation of the passenger and driving'#Origin Chinese:驾驶和乘坐记录
+    Item: '[%1$s记录] %2$s (%3$d) - %4$s ~ %5$s'
 
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
@@ -110,132 +110,132 @@ Dialog:
     ItemAdmin: '%2$s (ID: %1$d)    Model: %3$d  Distance: %4$1.0f m'
     
   GlobalStatisticDialog:
-    Caption: '#Name.Simple#: Global statistics for all vehicles'
+    Caption: '#Name.Simple#: Global vehicles statistics'
     Text: |
       %1$s
       Total spawns: %2$d
-      Total damage: %3$1.1f cars
-      Total driving times: %4$d
+      Total damage costs: %3$1.1f cars 
+      Total driving frequency: %4$d times  
       Total driving time: %5$s
-      Total miles driven: %6$1.3f km
-      Avg. driving speed: %7$1.2f km/h
-      Avg. consumption rate: %8$1.1f cars / 10 min
+      Total distance: %6$1.3f miles   
+      Avg. driving speed: %7$1.2f mph  
+      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
       Last updated: %9$s
   
-#  GlobalVehicleStatisticDialog:
-#    Caption: '#Name.Simple#: %1$s (模型: %2$d) 的全局统计信息'
-#    Text: |
-#      %1$s
-#      累计刷车次数: %2$d
-#      累计损伤花费: %3$1.1f辆
-#      累计驾驶次数: %4$d次
-#      累计驾驶时间: %5$s
-#      累计驾驶里程: %6$1.3f #Unit.KM#
-#      平均驾驶速度: %7$1.2f #Unit.KMH#
-#      平均爆车速率: %8$1.1f辆 / 10分钟
-#      最后更新时间: %9$s
+  GlobalVehicleStatisticDialog:
+    Caption: 'Global statistics of #Name.Simple#: %1$s (Model: %2$d) '
+    Text: |
+      %1$s
+      Total spawns: %2$d
+      Total damage costs: %3$1.1f cars
+      Total driving frequency: %4$d times
+      Total driving time: %5$s
+      Total distance: %6$1.3f #Unit.KM#
+      Avg. driving speed: %7$1.2f #Unit.KMH#
+      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
+      Last updated: %9$s
       
-#  OnceStatisticDialog:
-#    Caption: '#Name.Simple#: %1$s (%2$d) 的%3$s记录信息 (%4$s~%5$s)'
-#    Text: |
-#      %1$s
-#      驾驶过的车辆: %3$s
-#      累计损伤花费: %4$1.1f辆
-#      累计%2$s时间: %5$s
-#      累计%2$s里程: %6$1.3f #Unit.KM#
-#      平均%2$s速度: %7$1.2f #Unit.KMH#
-#      最高%2$s速度: %8$1.2f #Unit.KMH#
-#      平均爆车速率: %9$1.1f辆 / 10分钟
-#      开始%2$s时间: %10$s
-#      停止%2$s时间: %11$s
+  OnceStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (%2$d) s%3$s Record (%4$s~%5$s)'
+    Text: |
+      %1$s
+      Total spawns: %2$d
+      Total damage costs: %3$1.1f cars
+      Total driving frequency: %4$d times
+      Total driving time: %5$s
+      Total distance: %6$1.3f #Unit.KM#
+      Avg. driving speed: %7$1.2f #Unit.KMH#
+      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
+      Start%2$sTime: %10$s
+      Stop%2$sTime: %11$s
   
-#  PlayerPreferencesDialog:
-#    Caption: '#Name.Simple#: 个人偏好设置'
-#    VehicleWidget: '显示速度计挂件'
-#    InfiniteNitrous: '无限氮气加速'
-#    AutoRepair: '自动修复车辆'
-#    AutoFlip: '自动翻转车辆'
-#    AutoCarryPassengers: '自动携带乘客'
+  PlayerPreferencesDialog:
+    Caption: '#Name.Simple#: Personal preferences...'
+    VehicleWidget: 'Display Vehicle Widget'
+    InfiniteNitrous: 'Infinite Nitro'
+    AutoRepair: 'Auto Repair'
+    AutoFlip: 'Auto Flip'
+    AutoCarryPassengers: 'Auto Carry Passengers (when vehicle changed)'
     
-#  PlayerStatisticDialog:
-#    Caption: '#Name.Simple#: 所有车辆的个人统计信息'
-#    Text: |
-#      %1$s
-#      累计刷车次数: %2$d
-#      累计损伤花费: %3$1.1f辆
-#      累计驾驶次数: %4$d次
-#      累计驾驶时间: %5$s
-#      累计驾驶里程: %6$1.3f #Unit.KM#
-#      平均驾驶速度: %7$1.2f #Unit.KMH#
-#      平均爆车速率: %8$1.1f辆 / 10分钟
-#      最后更新时间: %9$s
+  PlayerStatisticDialog:
+    Caption: '#Name.Simple#: Personal Statistic of all vehicle'# Origin Chinese:所有车辆的个人统计信息
+    Text: |
+      %1$s
+      Total spawns: %2$d
+      Total damage costs: %3$1.1f cars
+      Total driving frequency: %4$d times
+      Total driving time: %5$s
+      Total distance: %6$1.3f #Unit.KM#
+      Avg. driving speed: %7$1.2f #Unit.KMH#
+      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
+      Last updated: %9$s
     
-#  PlayerVehicleStatisticDialog:
-#    Caption: '#Name.Simple#: %1$s (模型: %2$d) 的个人统计信息'
-#    Text: |
-#      %1$s
-#      累计刷车次数: %2$d
-#      累计损伤花费: %3$1.1f辆
-#      累计驾驶次数: %4$d次
-#      累计驾驶时间: %5$s
-#      累计驾驶里程: %6$1.3f #Unit.KM#
-#      平均驾驶速度: %7$1.2f #Unit.KMH#
-#      平均爆车速率: %8$1.1f辆 / 10分钟
-#      最后更新时间: %9$s
+  PlayerVehicleStatisticDialog:
+    Caption: '#Name.Simple#: Personal Statistic of %1$s (Modle ID: %2$d)'
+    Text: |
+      %1$s
+      Total spawns: %2$d
+      Total damage costs: %3$1.1f cars
+      Total driving frequency: %4$d times
+      Total driving time: %5$s
+      Total distance: %6$1.3f #Unit.KM#
+      Avg. driving speed: %7$1.2f #Unit.KMH#
+      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
+      Last updated: %9$s
   
-#  VehicleComponentAddDialog:
-#    Caption: '#Name.Simple#: 改装 %1$s: 选择%2$s部件'
-#    Item: '%1$s: %2$s'
-#    AddMessage: '#Name.Simple#: 您的车子 %1$s 已安装%2$s新组件: %3$s 。'
+  VehicleComponentAddDialog:
+    Caption: '#Name.Simple#: Modify %1$s: Select%2$sParts'
+    Item: '%1$s: %2$s'
+    AddMessage: '#Name.Simple#: Your %1$s Has install a new part for%2$s : %3$s 。'
   
-#  VehicleComponentDialog:
-#    Caption: '#Name.Simple#: 改装 %1$s (模型：%2$d, HP：%3$1.0f％)'
-#    Item: '%1$s -	当前部件: %2$s (%3$d 个可用部件)'
+  VehicleComponentDialog:
+    Caption: '#Name.Simple#: Modify %1$s (Model ID：%2$d, HP：%3$1.0f％)'
+    Item: '%1$s -	Current parts: %2$s (%3$d Parts available)'
   
-#  VehicleComponentPaintjobDialog:
-#    Caption: '#Name.Simple#: 改装 %1$s: 选择喷漆'
-#    Item: '#Component.Paintjob#: 喷漆 %1$d'
-#    PaintMessage: '#Name.Simple#: 您的车子 %1$s 已喷漆: 喷漆 %2$d 。'
+  VehicleComponentPaintjobDialog:
+    Caption: '#Name.Simple#: Modify %1$s: Select Paint'
+    Item: '#Component.Paintjob#: Paint %1$d'
+    PaintMessage: '#Name.Simple#: Your %1$s\'s paint changed to: Paint %2$d 。'
   
-#  VehicleCreateListDialog:
-#    Caption: '#Name.Simple#: 刷车 - 车辆选择 - %1$s (%2$d/%3$d)'
-#    Item: '%1$s (型号: %2$d , 座位数: %3$d, 驾驶次数: %4$d, 人气: %5$d)'
-#    ItemSortMode: '#Vehicle.SortMode.Text#: '
-#    CreateMessage: '#Command.CreateVehicle.Message#'
+  VehicleCreateListDialog:
+    Caption: '#Name.Simple#: Vehicle Spawn - Select Vehicle - %1$s (%2$d/%3$d)'
+    Item: '%1$s (Model ID: %2$d , Seats: %3$d, Driving Times: %4$d, Popular: %5$d)'
+    ItemSortMode: '#Vehicle.SortMode.Text#: '
+    CreateMessage: '#Command.CreateVehicle.Message#'
     
-#  VehicleCreateMainDialog:
-#    Caption: '#Name.Simple#: 刷车 - 车辆类型选择'
-#    ItemAll: '列出所有车辆'
-#    ItemCommon: '常用列表: %1$s'
-#    ItemType: '类型: %1$s'
-#    AllVehicleText: '所有车辆'
+  VehicleCreateMainDialog:
+    Caption: '#Name.Simple#: Spawn Vehicle - Select Vehicle Type'
+    ItemAll: 'List All Vehicle'
+    ItemCommon: 'Common Vehicle: %1$s'
+    ItemType: 'Type: %1$s'
+    AllVehicleText: 'All Vehicle'
   
   VehicleDialog:
     Caption: '#Name.Simple#: %1$s %2$s (Model: %3$d, HP: %4$1.0f％)'
     GetOn: 'Get On'
     OwnThisVehicle: 'Own This Vehicle'
-    FetchAndGetOn: 'Fetch and Get On'
+    FetchAndGetOn: 'Spawn my vehicle and get on'
     Repair: 'Repair'
     Flip: 'Flip'
-    ChangeColor: 'Change Color'
+    ChangeColor: 'Change Paints'
     KickPassengers: 'Kick Passengers'
     Modifications: 'Modifications'
     LockDoors: 'Lock Doors'
     PersonalStatistics: 'Show Personal Statistics'
     GlobalStatistics: 'Show Global Statistics'
     GetOnMessage: '#Name.Simple#: You have entered the vehicle %1$s.'
-    OwnMessage: '#Name.Simple#: You already own the car %1$s!'
-    FetchMessage: '#Name.Simple#: The car %1$s has been taken to your side!'
-    KickPassengerMessage: '#Name.Simple#: Driver %1$s kick you get off!'
+    OwnMessage: '#Name.Simple#: You already own the vehicle %1$s!'
+    FetchMessage: '#Name.Simple#: The car %1$s is your own vehicle now !'
+    KickPassengerMessage: '#Name.Simple#: Driver %1$s kicks you off!'
     KickCompleteMessage: '#Name.Simple#: Has kicked %1$d passengers!'
     
   VehicleManagerDialog:
     Caption: '#Name.Full#'
     CurrentVehicle: 'Current Vehicle ...'
     MyVehicle: 'My Vehicle ...'
-    CreateVehicle: 'Create New Vehicle ...'
+    CreateVehicle: 'Spawn New Vehicle ...'
     NearbyEmptyVehicle: 'Browse Nearby Empty Vehicles ...'
-    DrivingAndRidingRecord: 'Driving And Riding Record ...'
+    DrivingAndRidingRecord: 'Driving And Riding Records ...'
     PersonalPreferences: 'Personal Preferences ...'
     PersonalStatistics: 'Show Personal Statistics'
     GlobalStatistics: 'Show Global Statistics'
@@ -265,12 +265,12 @@ Dialog:
       This component uses the AGPL v3 license.
       Prohibit the use in any commercial or profit-purpose servers.
     
-#  VehicleResprayDialog:
-#    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
-#    Item: '	%1$s••••••••••{FFFFFF} 颜色: %2$d %1$s••••••••••'
+  VehicleResprayDialog:
+    Caption: '#Name.Simple#: Select %1$s \'s %2$s (Model ID: %3$d, HP: %4$1.0f％)'
+    Item: '	%1$s••••••••••{FFFFFF} Color: %2$d %1$s••••••••••'
     
   VehicleResprayGroupDialog:
-#    Caption: '#Name.Simple#: 选择 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: Select %1$s \'s%2$s (Model ID: %3$d, HP: %4$1.0f％)'
     Item: '	'
     ColorBlockText: '•••'
     
