@@ -1,5 +1,5 @@
 ﻿#####
-# Traditional Chinese by JoJLlmAn.
+# Simplified Chinese by mk124.
 #
 # In order to calculate the percentage of translated,
 # Please complete the translation and then remove the # comment character!
@@ -121,8 +121,8 @@ Dialog:
     Caption: '#Name.Simple#: 附近空車列表 (%1$d/%2$d)'
     
     # %4$1.0f for km; %5$1.0f for miles
-    Item: '%2$s  型號: %3$d  距離: %4$1.0f #Unit.Meter#'
-    ItemAdmin: '%2$s (ID: %1$d)    型號: %3$d  距離: %4$1.0f #Unit.Meter#'
+    Item: '%2$s	型號: %3$d  距離: %4$1.0f #Unit.Meter#'
+    ItemAdmin: '%2$s (ID: %1$d)	型號: %3$d  距離: %4$1.0f #Unit.Meter#'
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: 所有車輛的全局統計資訊'
@@ -214,7 +214,7 @@ Dialog:
     AddMessage: '#Name.Simple#: 您的車子 %1$s 已安裝%2$s新元件: %3$s 。'
   
   VehicleComponentDialog:
-    Caption: '#Name.Simple#: 改裝 %1$s (模型：%2$d, HP：%3$1.0f％)'
+    Caption: '#Name.Simple#: 改裝 %1$s (模型：%2$d, HP：%3$1.0f%%)'
     Item: '%1$s -	當前部件: %2$s (%3$d 個可用部件)'
   
   VehicleComponentPaintjobDialog:
@@ -223,20 +223,20 @@ Dialog:
     PaintMessage: '#Name.Simple#: 您的車子 %1$s 已噴漆: 噴漆 %2$d 。'
   
   VehicleCreateListDialog:
-    Caption: '#Name.Simple#: 刷車 - 車輛選擇 - %1$s (%2$d/%3$d)'
+    Caption: '#Name.Simple#: 刷車: 車輛選擇: %1$s (%2$d/%3$d)'
     Item: '%1$s (型號: %2$d , 座位數: %3$d, 駕駛次數: %4$d, 人氣: %5$d)'
     ItemSortMode: '#Vehicle.SortMode.Text#: '
     CreateMessage: '#Command.CreateVehicle.Message#'
     
   VehicleCreateMainDialog:
-    Caption: '#Name.Simple#: 刷車 - 車輛類型選擇'
+    Caption: '#Name.Simple#: 刷車: 車輛類型選擇'
     ItemAll: '列出所有車輛'
     ItemCommon: '常用列表: %1$s'
     ItemType: '類型: %1$s'
     AllVehicleText: '所有車輛'
   
   VehicleDialog:
-    Caption: '#Name.Simple#: %1$s %2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: %1$s %2$s (模型: %3$d, HP: %4$1.0f%%)'
     GetOn: '上車'
     OwnThisVehicle: '成為我的車子'
     FetchAndGetOn: '傳送到身邊並上車'
@@ -291,11 +291,11 @@ Dialog:
       本元件禁止在任何商業或盈利性伺服器上使用。
     
   VehicleResprayDialog:
-    Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f%%)'
     Item: '			%1$s▇{FFFFFF} 顏色: %2$d %1$s▇'
     
   VehicleResprayGroupDialog:
-    Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f％)'
+    Caption: '#Name.Simple#: 選擇 %1$s 的%2$s (模型: %3$d, HP: %4$1.0f%%)'
     Item: '			'
     ColorBlockText: '▇'
     
