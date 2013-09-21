@@ -1,5 +1,5 @@
 ﻿#####
-# Simplified Chinese by mk124.
+# Traditional Chinese by JoJLlmAn.
 #
 # In order to calculate the percentage of translated,
 # Please complete the translation and then remove the # comment character!
@@ -15,12 +15,12 @@ Time:
   NA: 'N/A'
   
 Unit:
-  Meter: '米'
+  Meter: '公尺'
   KiloMeter: '公里'
   Yard: '碼'
   Mile: '英里'
   
-  KMH: '千米/時'
+  KMH: '公里/時'
   MIH: '英里/時'
   
   KPH: 'KPH'
@@ -64,7 +64,7 @@ Statistic:
 Component:
   Slot:
     Spoiler: '擾流板'
-    Hood: '發動機罩'
+    Hood: '引擎蓋'
     Roof: '車頂'
     SideSkirt: '側裙'
     Lamps: '車燈'
@@ -73,8 +73,8 @@ Component:
     Wheels: '車輪輪圈'
     Stereo: '立體聲音響'
     Hydraulics: '液壓系統'
-    FrontBumper: '前保險槓'
-    RearBumper: '後保險槓'
+    FrontBumper: '前保險桿'
+    RearBumper: '後保險桿'
     VentRight: '右進氣口'
     VentLeft: '左進氣口'
     Unknown: '未知'
@@ -87,7 +87,7 @@ Component:
 
 Command:
   CreateVehicle:
-    Usage: '#Name.Simple#: 快捷刷車命令用法：\\[車輛模型ID] 或者 \\[車輛名字前三位] ，比如 \\411 或者 \\tur 。'
+    Usage: '#Name.Simple#: 快速刷車指令用法：\\[車輛模型ID] 或者 \\[車輛名字前三位] ，比如 \\411 或者 \\tur 。'
     InvalidID: '#Name.Simple#: 不是合法的車輛模型ID %1$d 。'
     InvalidAbbr: '#Name.Simple#: 不存在這個車輛簡寫名稱 %1$s 。'
     Message: '#Name.Simple#: 您的專屬座駕 %1$s 已創建！'
@@ -172,9 +172,9 @@ Dialog:
   
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: 個人偏好設定'
-    VehicleWidget: '顯示速度計掛件'
+    VehicleWidget: '顯示速度計小工具'
     InfiniteNitrous: '無限氮氣加速'
-    AutoRepair: '自動修覆車輛'
+    AutoRepair: '自動修復車輛'
     AutoFlip: '自動翻轉車輛'
     AutoCarryPassengers: '自動攜帶乘客'
     
@@ -209,13 +209,13 @@ Dialog:
       最後更新時間: %11$s
   
   VehicleComponentAddDialog:
-    Caption: '#Name.Simple#: 改裝 %1$s: 選擇%2$s部件'
+    Caption: '#Name.Simple#: 改裝 %1$s: 選擇%2$s元件'
     Item: '%1$s: %2$s'
     AddMessage: '#Name.Simple#: 您的車子 %1$s 已安裝%2$s新元件: %3$s 。'
   
   VehicleComponentDialog:
     Caption: '#Name.Simple#: 改裝 %1$s (模型：%2$d, HP：%3$1.0f%%)'
-    Item: '%1$s -	當前部件: %2$s (%3$d 個可用部件)'
+    Item: '%1$s -	當前元件: %2$s (%3$d 個可用元件)'
   
   VehicleComponentPaintjobDialog:
     Caption: '#Name.Simple#: 改裝 %1$s: 選擇噴漆'
@@ -240,7 +240,7 @@ Dialog:
     GetOn: '上車'
     OwnThisVehicle: '成為我的車子'
     FetchAndGetOn: '傳送到身邊並上車'
-    Repair: '修覆車子'
+    Repair: '修復車子'
     Flip: '翻轉車子'
     ChangeColor: '改變顏色'
     KickPassengers: '踢掉乘客'
@@ -286,7 +286,7 @@ Dialog:
       Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
       感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
-      本元件是新未來世界項目的一部分。
+      本元件是新未來世界專案的一部分。
       本元件使用 AGPL v3 許可證開放原始碼。
       本元件禁止在任何商業或盈利性伺服器上使用。
     
