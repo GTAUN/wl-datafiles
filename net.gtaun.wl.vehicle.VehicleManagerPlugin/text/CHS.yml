@@ -87,7 +87,7 @@ Component:
 
 Command:
   CreateVehicle:
-    Usage: "#Name.Simple#: 快捷刷车命令用法：\\[车辆模型ID] 或者 \\[车辆名字前三位] ，比如 \\411 或者 \\tur 。"
+    Usage: '#Name.Simple#: 快捷刷车命令用法：\[车辆模型ID] 或者 \[车辆名字前三位] ，比如 \411 或者 \tur 。'
     InvalidID: '#Name.Simple#: 不是合法的车辆模型ID %1$d 。'
     InvalidAbbr: '#Name.Simple#: 不存在这个车辆简写名称 %1$s 。'
     Message: '#Name.Simple#: 您的专属座驾 %1$s 已创建！'
@@ -283,7 +283,8 @@ Dialog:
       设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       数据采集: mk124, 52_PLA
       测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      翻译: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
+      翻译: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
+          (Japanese) kai; (German) Meta
       感谢: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       本组件是新未来世界项目的一部分。

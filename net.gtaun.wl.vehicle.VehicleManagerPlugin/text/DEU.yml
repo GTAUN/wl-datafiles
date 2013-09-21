@@ -1,0 +1,302 @@
+﻿#####
+# German by Meta <imeta95@gmail.com>.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+ 
+Name:
+  Simple: 'FzgMgr'
+  Full: 'Fahrzeug-Manager'
+ 
+Time:
+  HMS: '%1$d Stunden %2$d Minuten, %3$d Sekunden'
+  Never: 'Nie'
+  NA: 'N/A'
+ 
+Unit:
+  Meter: 'm'
+  KiloMeter: 'km'
+  Yard: 'yd'
+  Mile: 'miles'
+ 
+  KMH: 'km/h'
+  MIH: 'miles/h'
+ 
+  KPH: 'KPH'
+  MPH: 'MPH'
+ 
+Vehicle:
+  Normal: 'Fahrzeuge'
+  Owned: 'Mein Fahrzeug'
+ 
+  Type:
+    Bicycle: 'Zweiräder'
+    Motorbike: 'Motorräder'
+    Car: 'Autos'
+    Trailer: 'Anhänger'
+    RemoteControl: 'Fernsteuerbare'
+    Train: 'Züge'
+    Boat: 'Boote'
+    Aircraft: 'Flugzeuge'
+    Helicopter: 'Helikopter'
+    Tank: 'Panzer'
+    Unknown: 'Andere'
+   
+  SortMode:
+    Text: 'Ordnen nach (Absteigend)'
+    Popular: 'Populär'
+    SpawnedTimes: 'Gespawnt'
+    Seats: 'Sitze'
+    Type: 'Fahrzeug-Typen'
+ 
+Statistic:
+  Type:
+    Driver: 'als Fahrer'
+    Passenger: 'Als Passagier'
+    Racing: 'in einem Rennen'
+    Unknown: 'Unbekannt'
+ 
+  MoveWay:
+    OnFoot: 'Zu Fuß'
+    Multiple: 'Mehrere Arten'
+ 
+Component:
+  Slot:
+    Spoiler: 'Spoiler'
+    Hood: 'Motorhaube'
+    Roof: 'Dach'
+    SideSkirt: 'Seitenschweller'
+    Lamps: 'Lampen'
+    Nitro: 'Nitro'
+    Exhaust: 'Auspuff'
+    Wheels: 'Räder'
+    Stereo: 'Stereoanlage'
+    Hydraulics: 'Hydraulik'
+    FrontBumper: 'Frontstoßstange'
+    RearBumper: 'Heckstoßstange'
+    VentRight: 'Lufteinlass Rechts'
+    VentLeft: 'Lufteinlass Links'
+    Unknown: 'Unbekannt'
+   
+  Paintjob: 'Lackierung'
+ 
+  Color:
+    Primary: 'Erste Farbe'
+    Secondary: 'Zweite Farbe'
+ 
+Command:
+  CreateVehicle:
+    Usage: '#Name.Simple#: Verwendung: Um ein Fahrzeug zu spawnen, verwende\[ModelID] oder \[Erste drei Zeichen des Farhzeugnamen], z.B. typing \411 oder \tur für einen Tursimo.'
+    InvalidID: '#Name.Simple#: Ungültige ID: %1$d.'
+    InvalidAbbr: '#Name.Simple#: Unbekannter Fahrzeugname: %1$s.'
+    Message: '#Name.Simple#: Dein eigenes Fahrzeug %1$s erfolgreich gespawnt!'
+   
+Textdraw:
+  VehicleWidget:
+    SpeedUnit: '#Unit.KMH#'
+   
+    # %1$1.0f for KPH; %2$1.0f for MPH
+    SpeedFormat: '%1$1.0f'
+   
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.KMH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%5$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.KMH#'
+ 
+    RacingExtMessage: '[RENNEN]'
+   
+    StatusMark:
+      OffMark: '~w~-'
+      AutoRepair: '~g~R'
+      InfiniteNitrous: '~r~N'
+      AutoFlip: '~b~F'
+      LockDoors: '~y~T'
+   
+Dialog:
+  DrivingRecordStatisticDialog:
+    Caption: '#Name.Simple#: Passagier- und Fahrer-Protokoll'
+    Item: '[%1$s-Protokoll] %2$s (%3$d) - %4$s ~ %5$s'
+ 
+  EmptyVehicleListDialog:
+    Caption: '#Name.Simple#: Nahe leere Fahrzeuge (%1$d/%2$d)'
+   
+    # %4$1.0f for km; %5$1.0f for yards
+    Item: '%2$s Modell: %3$d  Distanz: %4$1.0f #Unit.KiloMeter#'
+    ItemAdmin: '%2$s (ID: %1$d) Modell: %3$d  Distanz: %4$1.0f #Unit.KiloMeter#'
+   
+  GlobalStatisticDialog:
+    Caption: '#Name.Simple#: Globale Fahrzeug-Statistiken'
+   
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Anzahl Spawns: %2$d
+      Gesamtschaden: %3$1.1f Fahrzeuge
+      Fahr-Häufigkeit: %4$d Mal
+      Gesamte Fahrzeit: %5$s
+      Gesamt-Distanz: %6$1.3f #Unit.KiloMeter#
+      Durchschnittl. Geschwindigkeit: %8$1.2f #Unit.KMH#
+      Durchschnittl. Fahrzeug-Zerstörungsrate: %10$1.1f Fahrzeuge / 10 min
+      Zuletzt aktualisiert: %11$s
+ 
+  GlobalVehicleStatisticDialog:
+    Caption: 'Globale Statistiken von #Name.Simple#: %1$s (Modell: %2$d)'
+   
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Anzahl Spawns: %2$d
+      Gesamtschaden: %3$1.1f Fahrzeuge
+      Fahr-Häufigkeit: %4$d Mal
+      Gesamte Fahrzeit: %5$s
+      Gesamt-Distanz: %6$1.3f #Unit.KiloMeter#
+      Durchschnittl. Geschwindigkeit: %8$1.2f #Unit.KMH#
+      Durchschnittl. Fahrzeug-Zerstörungsrate: %10$1.1f Fahrzeuge / 10 min
+      Zuletzt aktualisiert: %11$s
+     
+  OnceStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (%2$d) s%3$s Record (%4$s~%5$s)'
+   
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Verwendete Fahrzeuge: %3$s
+      Gesamtschaden: %4$1.1f Fahrzeuge
+      Gesamte Fahrzeit %2$s: %5$s
+      Gesamtdistanz %2$s: %6$1.3f #Unit.KiloMeter#
+      Durchschnittl. Geschwindigkeit %2$s: %8$1.2f #Unit.KMH#
+      Geschwindigkeitsrekord %2$s: %10$1.2f #Unit.KMH#
+      Durchschnittl. Fahrzeug-Zerstörungsrate: %12$1.1f Fahrzeuge / 10 min
+      Startzeit %2$s: %13$s
+      Endzeit %2$s: %14$s
+ 
+  PlayerPreferencesDialog:
+    Caption: '#Name.Simple#: Persönliche Preferenzen'
+    VehicleWidget: 'Zeige Fahrzeug-Widget'
+    InfiniteNitrous: 'Unendlich Nitro'
+    AutoRepair: 'Autoreparatur'
+    AutoFlip: 'Auto umdrehen'
+    AutoCarryPassengers: 'Passagiere (als das Fahrzeug wechselte)'
+   
+  PlayerStatisticDialog:
+    Caption: '#Name.Simple#: Persönliche Preferenzen für alle Fahrzeuge'
+   
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Anzahl Spawns: %2$d
+      Gesamtschaden: %3$1.1f Fahrzeuge
+      Fahr-Häufigkeit: %4$d Mal
+      Gesamte Fahrzeit: %5$s
+      Gesamt-Distanz: %6$1.3f #Unit.KiloMeter#
+      Durchschnittl. Geschwindigkeit: %8$1.2f #Unit.KMH#
+      Durchschnittl. Fahrzeug-Zerstörungsrate: %10$1.1f Fahrzeuge / 10 min
+      Zuletzt aktualisiert: %11$s
+   
+  PlayerVehicleStatisticDialog:
+    Caption: '#Name.Simple#: Persönliche Preferenzen von %1$s (Modell ID: %2$d)'
+   
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Anzahl Spawns: %2$d
+      Gesamtschaden: %3$1.1f Fahrzeuge
+      Fahr-Häufigkeit: %4$d Mal
+      Gesamte Fahrzeit: %5$s
+      Gesamt-Distanz: %6$1.3f #Unit.KiloMeter#
+      Durchschnittl. Geschwindigkeit: %8$1.2f #Unit.KMH#
+      Durchschnittl. Fahrzeug-Zerstörungsrate: %10$1.1f Fahrzeuge / 10 min
+      Zuletzt aktualisiert: %11$s
+ 
+  VehicleComponentAddDialog:
+    Caption: '#Name.Simple#: %1$s modifizieren: Wähle %2$s Teile'
+    Item: '%1$s: %2$s'
+    AddMessage: '#Name.Simple#: Das Teil "%3$s" vom Typ "%2$s" wurde in dein/en %1$s eingebaut.'
+ 
+  VehicleComponentDialog:
+    Caption: '#Name.Simple#: %1$s modifizieren (Modell ID: %2$d, Gesundheit: %3$1.0f%%)'
+    Item: '%1$s -       Aktuell %2$s Teile (%3$d Teile verfügbar)'
+ 
+  VehicleComponentPaintjobDialog:
+    Caption: '#Name.Simple#: %1$s modifizieren: Wähle eine Farbe'
+    Item: '#Component.Paintjob#: Farbe %1$d'
+    PaintMessage: '#Name.Simple#: Die Farbe deines %1$s(s) wurde zu %2$d geändert.'
+ 
+  VehicleCreateListDialog:
+    Caption: '#Name.Simple#: Fahrzeug spawnen: Wähle ein Fahrzeug: %1$s (%2$d/%3$d)'
+    Item: '%1$s (Modell ID: %2$d , Sitze: %3$d, %4$d Mal gefahren, Popularität: %5$d)'
+    ItemSortMode: '#Vehicle.SortMode.Text#: '
+    CreateMessage: '#Command.CreateVehicle.Message#'
+   
+  VehicleCreateMainDialog:
+    Caption: '#Name.Simple#: Spawn Vehicle: Select Vehicle Type'
+    ItemAll: 'Zeige alle Fahrzeuge'
+    ItemCommon: 'Häufiges Fahrzeug: %1$s'
+    ItemType: 'Typ: %1$s'
+    AllVehicleText: 'Alle Fahrzeuge'
+ 
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (Modell: %3$d, Gesundheit: %4$1.0f%%)'
+    GetOn: 'Einsteigen'
+    OwnThisVehicle: 'Fahrzeug übernehmen'
+    FetchAndGetOn: 'Holen und weitermachen'
+    Repair: 'Reparieren'
+    Flip: 'Umdrehen'
+    ChangeColor: 'Farbe ändern'
+    KickPassengers: 'Passagiere rauswerfen'
+    Modifications: 'Modifizierungen'
+    LockDoors: 'Türen abschließen'
+    PersonalStatistics: 'Persönliche Statistiken anzeigen'
+    GlobalStatistics: 'Globale Statistiken anzeigen'
+    GetOnMessage: '#Name.Simple#: Du hast ein Fahrzeug betreten: "%1$s".'
+    OwnMessage: '#Name.Simple#: Du besitzt das Fahrzeug "%1$s" schon!'
+    FetchMessage: '#Name.Simple#: Das Fahrzeug "%1$s" wurde zu dir gebracht!'
+    KickPassengerMessage: '#Name.Simple#: Fahrer %1$s hat dich rausgeworfen!'
+    KickCompleteMessage: '#Name.Simple#: %1$d Passagiere rausgeworfen!'
+   
+  VehicleManagerDialog:
+    Caption: '#Name.Full#'
+    CurrentVehicle: 'Aktuelles Fahrzeug ...'
+    MyVehicle: 'Mein Fahrzeug ...'
+    CreateVehicle: 'Neues Fahrzeug spawnen ...'
+    NearbyEmptyVehicle: 'Nahe, leere Fahrzeuge ansehen ...'
+    DrivingAndRidingRecord: 'Passagier- und Fahrer-Protokoll ...'
+    PersonalPreferences: 'Persönliche Preferenzen ...'
+    PersonalStatistics: 'Persönliche Statistiken anzeigen'
+    GlobalStatistics: 'Globale Statistiken anzeigen'
+    Help: 'Hilfe-Dialog anzeigen'
+    About: 'Über #Name.Full#'
+ 
+  HelpDialog:
+    Caption: '#Name.Simple#: Hilfe-Dialog'
+    Text: 'Noch nicht verfügbar ...'
+   
+  AboutDialog:
+    Caption: '#Name.Simple#: Über #Name.Full#'
+    Text: |
+      --- The New WL-World : Fahrzeug-Manager-Plugin ---
+      Version: %1$s (Build %2$d)
+      Build-Zeitpunkt: %3$s
+     
+      Entwickler: mk124
+      Design: mk124
+      Design-Assistenz: 52_PLA(alias Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      Daten-Sammler: mk124, 52_PLA
+      Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      Übersetzung: (Deutsch) Meta; (Englisch) 52_PLA; (Traditionelles Chinesisch) JoJLlmAn;
+          (Russisch) hitman249; (Japanisch) kai
+      Danke an: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+     
+      Diese Komponente ist Teil des The New WL-World Projekts.
+      Diese Komponente verwendet die AGPL v3 Lizenz.
+      Sie verbietet die Verwendung in jeglichen kommerziellen Projekten.
+   
+  VehicleResprayDialog:
+    Caption: '#Name.Simple#: Wähle %1$s''s %2$s (Modell ID: %3$d, Gesundheit: %4$1.0f%%)'
+    Item: '%1$s••••••••••{FFFFFF} Farbe: %2$d %1$s••••••••••'
+   
+  VehicleResprayGroupDialog:
+    Caption: '#Name.Simple#: Wähle %1$s''s %2$s (Modell ID: %3$d, Gesundheit: %4$1.0f%%)'
+    Item: '     '
+    ColorBlockText: '•••'
+    

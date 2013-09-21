@@ -87,7 +87,7 @@ Unit:
 
 #Command:
 #  CreateVehicle:
-#    Usage: "#Name.Simple#: Usage: For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle's name] , Eg.  typing \\411 or \\tur  in order to spawn tursimo."
+#    Usage: '#Name.Simple#: Usage: For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle''s name] , Eg.  typing \\411 or \\tur  in order to spawn tursimo.'
 #    InvalidID: '#Name.Simple#: Not valid ID %1$d.'
 #    InvalidAbbr: '#Name.Simple#: Not vaild vehicle name %1$s.'
 #    Message: '#Name.Simple#: Your own vehicle: %1$s spawned successful!'
@@ -220,7 +220,7 @@ Dialog:
 #  VehicleComponentPaintjobDialog:
 #    Caption: '#Name.Simple#: Modify %1$s: Select Paint'
 #    Item: '#Component.Paintjob#: Paint %1$d'
-#    PaintMessage: "#Name.Simple#: Your %1$s's paint changed to: Paint %2$d 。"
+#    PaintMessage: '#Name.Simple#: Your %1$s''s paint changed to: Paint %2$d 。'
   
 #  VehicleCreateListDialog:
 #    Caption: '#Name.Simple#: Vehicle Spawn: Select Vehicle: %1$s (%2$d/%3$d)'
@@ -283,7 +283,8 @@ Dialog:
       Дополнительно помощь в дизайне: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       Сбор данных: mk124, 52_PLA
       Тестирование: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
+#      Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
+#          (Japanese) kai; (German) Meta
       Спасибо: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       Этот компонент является частью The New WL-World проекта.
@@ -291,10 +292,10 @@ Dialog:
       Запрещено использовать в любых коммерческих целях.
 
 #  VehicleResprayDialog:
-#    Caption: "#Name.Simple#: Select %1$s 's %2$s (Model ID: %3$d, HP: %4$1.0f%%)"
+#    Caption: '#Name.Simple#: Select %1$s''s %2$s (Model ID: %3$d, HP: %4$1.0f%%)'
 #    Item: '%1$s••••••••••{FFFFFF} Color: %2$d %1$s••••••••••'
     
 #  VehicleResprayGroupDialog:
-#    Caption: "#Name.Simple#: Select %1$s 's%2$s (Model ID: %3$d, HP: %4$1.0f%%)"
+#    Caption: '#Name.Simple#: Select %1$s's %2$s (Model ID: %3$d, HP: %4$1.0f%%)'
 #    Item: '	'
 #    ColorBlockText: '•••'

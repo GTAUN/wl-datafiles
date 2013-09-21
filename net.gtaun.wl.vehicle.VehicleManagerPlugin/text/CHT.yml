@@ -87,7 +87,7 @@ Component:
 
 Command:
   CreateVehicle:
-    Usage: '#Name.Simple#: 快速刷車指令用法：\\[車輛模型ID] 或者 \\[車輛名字前三位] ，比如 \\411 或者 \\tur 。'
+    Usage: '#Name.Simple#: 快速刷車指令用法：\[車輛模型ID] 或者 \[車輛名字前三位] ，比如 \411 或者 \tur 。'
     InvalidID: '#Name.Simple#: 不是合法的車輛模型ID %1$d 。'
     InvalidAbbr: '#Name.Simple#: 不存在這個車輛簡寫名稱 %1$s 。'
     Message: '#Name.Simple#: 您的專屬座駕 %1$s 已創建！'
@@ -283,7 +283,8 @@ Dialog:
       設計顧問: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       資料採集: mk124, 52_PLA
       測試: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      翻譯: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
+      翻譯: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
+          (Japanese) kai; (German) Meta
       感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       本元件是新未來世界專案的一部分。
