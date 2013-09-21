@@ -89,8 +89,8 @@ Command:
   CreateVehicle:
     Usage: '#Name.Simple#: Verwendung: Um ein Fahrzeug zu spawnen, verwende\[ModelID] oder \[Erste drei Zeichen des Farhzeugnamen], z.B. typing \411 oder \tur für einen Tursimo.'
     InvalidID: '#Name.Simple#: Ungültige ID: %1$d.'
-    InvalidAbbr: '#Name.Simple#: Unbekannter Fahrzeugname: %1$s.'
-    Message: '#Name.Simple#: Dein eigenes Fahrzeug "%1$s" wurde erfolgreich gespawnt!'
+    InvalidAbbr: '#Name.Simple#: Unbekannter Fahrzeugname: %1$s.'ei
+    Message: '#Name.Simple#: Dein Fahrzeug "%1$s" wurde erfolgreich gespawnt!'
    
 Textdraw:
   VehicleWidget:
@@ -176,7 +176,7 @@ Dialog:
     InfiniteNitrous: 'Unendlich Nitro'
     AutoRepair: 'Autoreparatur'
     AutoFlip: 'Auto umdrehen'
-    AutoCarryPassengers: 'Passagiere (als das Fahrzeug wechselte)'
+    AutoCarryPassengers: 'Passagiere mitnehmen (beim Fahrzeugwechsel)'
    
   PlayerStatisticDialog:
     Caption: '#Name.Simple#: Persönliche Preferenzen für alle Fahrzeuge'
