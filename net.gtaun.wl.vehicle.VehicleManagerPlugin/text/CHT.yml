@@ -140,7 +140,7 @@ Dialog:
       最後更新時間: %11$s
       
   GlobalVehicleStatisticDialog:
-    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局統計資訊
+    Caption: '#Name.Simple# %1$s (模型: %2$d) 的全局統計資訊'
     
     # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
