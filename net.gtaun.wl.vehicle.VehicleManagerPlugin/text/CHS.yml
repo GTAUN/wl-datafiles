@@ -276,14 +276,14 @@ Dialog:
     Text: |
       --- 新未来世界 : 车辆管理系统组件 ---
       版本: %1$s (Build %2$d)
-      编译时间: %3$s
+      构建时间: %3$s
       
       开发: mk124
       功能设计: mk124
       设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       数据采集: mk124, 52_PLA
       测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
+      翻译: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249; (Japanese) kai
       感谢: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       本组件是新未来世界项目的一部分。
