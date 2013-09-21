@@ -161,14 +161,14 @@ Dialog:
     Text: |
       %1$s
       驾驶过的车辆: %3$s
-      累计损伤花费: %4$1.1f辆
-      累计%2$s时间: %5$s
-      累计%2$s里程: %7$1.3f #Unit.Mile#
-      平均%2$s速度: %9$1.2f #Unit.MPH#
-      最高%2$s速度: %11$1.2f #Unit.MPH#
-      平均爆车速率: %12$1.1f辆 / 10分钟
-      开始%2$s时间: %13$s
-      停止%2$s时间: %14$s
+      Total damage costs: %4$1.1f cars
+      Total%2$sdriving Time: %5$s
+      Total%2$sdistance: %7$1.3f #Unit.Mile#
+      Avg.%2$sspeed: %9$1.2f #Unit.MPH#
+      Top%2$sspeed: %11$1.2f #Unit.MPH#
+      Avg. vehicle scraped rate: %12$1.1fcars / 10 min
+      Start%2$stime: %13$s
+      Stop%2$stime: %14$s
   
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: Personal preferences'
