@@ -103,7 +103,7 @@ Textdraw:
     BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.Mile#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.MPH#'
     IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%5$1.2f#Unit.Mile#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.MPH#'
 
-    RacingExtMessage: '[RACING]'
+    RacingExtMessage: 'ä ö ü[RACING]'
     
     StatusMark:
       OffMark: '~w~-'
@@ -164,7 +164,7 @@ Dialog:
       Total damage costs: %4$1.1f cars
       Total %2$s driving Time: %5$s
       Total %2$s distance: %7$1.3f #Unit.Mile#
-      Avg.%2$s speed: %9$1.2f #Unit.MPH#
+      Avg. %2$s speed: %9$1.2f #Unit.MPH#
       Top %2$s speed: %11$1.2f #Unit.MPH#
       Avg. vehicle scraped rate: %12$1.1fcars / 10 min
       Start %2$s time: %13$s
@@ -194,7 +194,7 @@ Dialog:
       Last updated: %11$s
     
   PlayerVehicleStatisticDialog:
-    Caption: '#Name.Simple#: Personal Statistic of %1$s (Modle ID: %2$d)'
+    Caption: '#Name.Simple#: Personal Statistic of %1$s (Model ID: %2$d)'
     
     # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
@@ -211,7 +211,7 @@ Dialog:
   VehicleComponentAddDialog:
     Caption: '#Name.Simple#: Modify %1$s: Select %2$s Parts'
     Item: '%1$s: %2$s'
-    AddMessage: '#Name.Simple#: Your %1$s Has install a new part for%2$s : %3$s 。'
+    AddMessage: '#Name.Simple#: Your %1$s has a new part installed for %2$s : %3$s .'
   
   VehicleComponentDialog:
     Caption: '#Name.Simple#: Modify %1$s (Model ID: %2$d, HP: %3$1.0f%%)'
@@ -220,7 +220,7 @@ Dialog:
   VehicleComponentPaintjobDialog:
     Caption: '#Name.Simple#: Modify %1$s: Select Paint'
     Item: '#Component.Paintjob#: Paint %1$d'
-    PaintMessage: "#Name.Simple#: Your %1$s's paint changed to: Paint %2$d 。"
+    PaintMessage: "#Name.Simple#: Your %1$s's paint changed to: Paint %2$d ."
   
   VehicleCreateListDialog:
     Caption: '#Name.Simple#: Vehicle Spawn: Select Vehicle: %1$s (%2$d/%3$d)'

@@ -87,7 +87,7 @@ Component:
 
 Command:
   CreateVehicle:
-    Usage: '#Name.Simple#: 快捷刷车命令用法：\\[车辆模型ID] 或者 \\[车辆名字前三位] ，比如 \\411 或者 \\tur 。'
+    Usage: "#Name.Simple#: 快捷刷车命令用法：\\[车辆模型ID] 或者 \\[车辆名字前三位] ，比如 \\411 或者 \\tur 。"
     InvalidID: '#Name.Simple#: 不是合法的车辆模型ID %1$d 。'
     InvalidAbbr: '#Name.Simple#: 不存在这个车辆简写名称 %1$s 。'
     Message: '#Name.Simple#: 您的专属座驾 %1$s 已创建！'
@@ -276,7 +276,7 @@ Dialog:
     Text: |
       --- 新未来世界 : 车辆管理系统组件 ---
       版本: %1$s (Build %2$d)
-      构建时间: %3$s
+      构建日期: %3$s
       
       开发: mk124
       功能设计: mk124
