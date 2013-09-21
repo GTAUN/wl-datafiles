@@ -100,7 +100,7 @@ Textdraw:
     SpeedFormat: '%1$1.0f'
    
     # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
-    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - km: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.KMH#'
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.KMH#'
     IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Fz-HP: ~b~~h~%3$1.1f%%~w~ - ~g~~h~%5$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.KMH#'
  
     RacingExtMessage: '[RENNEN]'
