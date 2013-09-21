@@ -1,4 +1,4 @@
-﻿#####
+?#####
 # German by Meta <imeta95@gmail.com>.
 #
 # In order to calculate the percentage of translated,
@@ -52,14 +52,14 @@ Vehicle:
  
 Statistic:
   Type:
-    Driver: 'als Fahrer'
-    Passenger: 'Als Passagier'
-    Racing: 'in einem Rennen'
+    Driver: 'Fahrer'
+    Passenger: 'Passagier'
+    Racing: 'Rennen'
     Unknown: 'Unbekannt'
  
   MoveWay:
     OnFoot: 'Zu Fuß'
-    Multiple: 'Mehrere Arten'
+    Multiple: 'Anderes'
  
 Component:
   Slot:
@@ -89,8 +89,8 @@ Command:
   CreateVehicle:
     Usage: '#Name.Simple#: Verwendung: Um ein Fahrzeug zu spawnen, verwende\[ModelID] oder \[Erste drei Zeichen des Farhzeugnamen], z.B. typing \411 oder \tur für einen Tursimo.'
     InvalidID: '#Name.Simple#: Ungültige ID: %1$d.'
-    InvalidAbbr: '#Name.Simple#: Unbekannter Fahrzeugname: %1$s.'ei
-    Message: '#Name.Simple#: Dein Fahrzeug "%1$s" wurde erfolgreich gespawnt!'
+    InvalidAbbr: '#Name.Simple#: Unbekannter Fahrzeugname: %1$s.'
+    Message: '#Name.Simple#: Dein eigenes Fahrzeug "%1$s" wurde erfolgreich gespawnt!'
    
 Textdraw:
   VehicleWidget:
@@ -162,13 +162,13 @@ Dialog:
       %1$s
       Verwendete Fahrzeuge: %3$s
       Gesamtschaden: %4$1.1f Fahrzeuge
-      Gesamte Fahrzeit %2$s: %5$s
-      Gesamtdistanz %2$s: %6$1.3f #Unit.KiloMeter#
-      Durchschnittl. Geschwindigkeit %2$s: %8$1.2f #Unit.KMH#
-      Geschwindigkeitsrekord %2$s: %10$1.2f #Unit.KMH#
+      Gesamte Fahrzeit, %2$s: %5$s
+      Gesamtdistanz, %2$s: %6$1.3f #Unit.KiloMeter#
+      Durchschnittl. Geschwindigkeit, %2$s: %8$1.2f #Unit.KMH#
+      Geschwindigkeitsrekord, %2$s: %10$1.2f #Unit.KMH#
       Durchschnittl. Fahrzeug-Zerstörungsrate: %12$1.1f Fahrzeuge / 10 min
-      Startzeit %2$s: %13$s
-      Endzeit %2$s: %14$s
+      Startzeit, %2$s: %13$s
+      Endzeit, %2$s: %14$s
  
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: Persönliche Preferenzen'
@@ -176,7 +176,7 @@ Dialog:
     InfiniteNitrous: 'Unendlich Nitro'
     AutoRepair: 'Autoreparatur'
     AutoFlip: 'Auto umdrehen'
-    AutoCarryPassengers: 'Passagiere mitnehmen (beim Fahrzeugwechsel)'
+    AutoCarryPassengers: 'Passagiere (als das Fahrzeug wechselte)'
    
   PlayerStatisticDialog:
     Caption: '#Name.Simple#: Persönliche Preferenzen für alle Fahrzeuge'
