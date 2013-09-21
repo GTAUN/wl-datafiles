@@ -89,7 +89,7 @@ Command:
   CreateVehicle:
     Usage: "#Name.Simple#: Usage: For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle's name] , Eg.  typing \\411 or \\tur  in order to spawn tursimo."
     InvalidID: '#Name.Simple#: Not valid ID %1$d.'
-    InvalidAbbr: '#Name.Simple#: Not vaild vehicle name %1$s. '
+    InvalidAbbr: '#Name.Simple#: Not vaild vehicle name %1$s.'
     Message: '#Name.Simple#: Your own vehicle: %1$s spawned successful!'
     
 Textdraw:
@@ -117,7 +117,7 @@ Dialog:
     Caption: '#Name.Simple#: Passenger and driving Log'
     Item: '[%1$s Log] %2$s (%3$d) - %4$s ~ %5$s'
 
-  EmptyVehicleListDialog: #THIS
+  EmptyVehicleListDialog:
     Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
     
     # %4$1.0f for km; %5$1.0f for yards
@@ -131,16 +131,16 @@ Dialog:
     Text: |
       %1$s
       Total spawns: %2$d
-      Total damage costs: %3$1.1f cars 
-      Total driving frequency: %4$d times  
+      Total damage costs: %3$1.1f cars
+      Total driving frequency: %4$d times
       Total driving time: %5$s
-      Total distance: %7$1.3f #Unit.Mile#   
-      Avg. driving speed: %9$1.2f #Unit.MPH#  
-      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
+      Total distance: %7$1.3f #Unit.Mile#
+      Avg. driving speed: %9$1.2f #Unit.MPH#
+      Avg. vehicle scraped rate: %10$1.1f cars / 10 min
       Last updated: %11$s
   
   GlobalVehicleStatisticDialog:
-    Caption: 'Global statistics of #Name.Simple#: %1$s (Model: %2$d) '
+    Caption: 'Global statistics of #Name.Simple#: %1$s (Model: %2$d)'
     
     # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
@@ -149,10 +149,10 @@ Dialog:
       Total damage costs: %3$1.1f cars
       Total driving frequency: %4$d times
       Total driving time: %5$s
-      Total distance: %6$1.3f #Unit.Mile#
-      Avg. driving speed: %7$1.2f #Unit.MPH#
-      Avg. vehicle scraped rate: %8$1.1f cars / 10 min 
-      Last updated: %9$s
+      Total distance: %7$1.3f #Unit.Mile#
+      Avg. driving speed: %9$1.2f #Unit.MPH#
+      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
+      Last updated: %11$s
       
   OnceStatisticDialog:
     Caption: '#Name.Simple#: %1$s (%2$d) s%3$s Record (%4$s~%5$s)'
@@ -229,7 +229,7 @@ Dialog:
     CreateMessage: '#Command.CreateVehicle.Message#'
     
   VehicleCreateMainDialog:
-    Caption: '#Name.Simple#: Spawn Vehicle - Select Vehicle Type'
+    Caption: '#Name.Simple#: Spawn Vehicle: Select Vehicle Type'
     ItemAll: 'List All Vehicle'
     ItemCommon: 'Common Vehicle: %1$s'
     ItemType: 'Type: %1$s'

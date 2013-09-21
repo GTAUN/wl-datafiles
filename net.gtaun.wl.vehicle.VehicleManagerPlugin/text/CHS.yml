@@ -229,7 +229,7 @@ Dialog:
     CreateMessage: '#Command.CreateVehicle.Message#'
     
   VehicleCreateMainDialog:
-    Caption: '#Name.Simple#: 刷车 - 车辆类型选择'
+    Caption: '#Name.Simple#: 刷车: 车辆类型选择'
     ItemAll: '列出所有车辆'
     ItemCommon: '常用列表: %1$s'
     ItemType: '类型: %1$s'
