@@ -56,6 +56,16 @@ Track:
     Nearest: '距离最近'
     LongToShort: '从长到短'
     ShortToLong: '从短到长'
+    
+Gamemode:
+  MainMenuDialog:
+    Item: '赛车系统'
+    Racing: '参与中的比赛: %1$s'
+    Editing: '编辑中的赛道: %1$s'
+  
+  GameListDialog:
+    NewGame: '[+] 发起新赛车比赛'
+    Racing: '赛车: %1$s赛道: %2$s举办者: %3$s'
 
 Racing:
   DepartureInterval: '发车间隔'
@@ -236,7 +246,7 @@ Dialog:
   
   RacingListDialog:
     Caption: '#Name.Simple#: 浏览所有比赛 (可加入比赛 %1$d 个, 总比赛数 %2$d 个)'
-    Text: '比赛: %1$s赛道: %2$s举办者: %3$s'
+    Item: '比赛: %1$s赛道: %2$s举办者: %3$s'
   
   TrackCheckpointEditDialog:
     Caption: '#Name.Simple#: 编辑赛道 %1$s: 编辑检查点 %2$d'

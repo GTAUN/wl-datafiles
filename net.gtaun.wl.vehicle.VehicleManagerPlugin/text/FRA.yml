@@ -1,0 +1,302 @@
+﻿#####
+# French by Joe Zhao.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: 'SysVtr'
+  Full: 'Système Administratif de Voiture'
+
+Time:
+  HMS: '%1$dheure %2$dminute %3$dseconde'
+  Never: 'Jamais'
+  NA: 'N/A'
+  
+Unit:
+  Meter: 'mètre'
+  KiloMeter: 'kilomètre'
+  Yard: 'yard'
+  Mile: 'mile'
+  
+  KMH: 'KM/H'
+  MIH: 'MI/H'
+  
+  KPH: 'KPH'
+  MPH: 'MPH'
+
+Vehicle:
+  Normal: 'Voiture'
+  Owned: 'Ma Voiture'
+  
+  Type:
+    Bicycle: 'Vélo'
+    Motorbike: 'Moto'
+    Car: 'Voiture'
+    Trailer: 'Remorque'
+    RemoteControl: 'Contrôle Éloigné'
+    Train: 'Train'
+    Boat: 'Bateau'
+    Aircraft: 'Avion'
+    Helicopter: 'Hélicoptère'
+    Tank: 'Tank'
+    Unknown: 'Inconnu'
+    
+  SortMode:
+    Text: 'Moyen de Tri'
+    Popular: 'Popularité'
+    SpawnedTimes: "Fois d'Utilisation"
+    Seats: 'Nombre de Fauteuils'
+    Type: 'Type'
+  
+Statistic:
+  Type:
+    Driver: 'Chauffeur'
+    Passenger: 'Passager'
+    Racing: 'Coureur'
+    Unknown: 'Inconnu'
+  
+  MoveWay:
+    OnFoot: 'Marchant'
+    Multiple: 'Multiples Moyens de Mouvement'
+  
+Component:
+  Slot:
+    Spoiler: 'Aérofrein'
+    Hood: 'Capot'
+    Roof: 'Toit'
+    SideSkirt: 'Jupe Latérale'
+    Lamps: 'Lampes'
+    Nitro: 'Nitro'
+    Exhaust: 'Échappement'
+    Wheels: 'Roues'
+    Stereo: 'Stéréo'
+    Hydraulics: 'Hydraulique'
+    FrontBumper: 'Pare-chocs de Face'
+    RearBumper: 'Pare-chocs de Derrière'
+    VentRight: 'Orifice de Droit'
+    VentLeft: 'Orifice de Gauche'
+    Unknown: 'Inconnu'
+    
+  Paintjob: 'Emploi Peintre'
+  
+  Color:
+    Primary: 'Couleur Principale'
+    Secondary: 'Couleur Secondaire'
+
+Command:
+  CreateVehicle:
+    Usage: '#Name.Simple#: Usage du commandement pour produire voiture immédiatement: \[ID du modèle de voiture] ou \[Les premiers 3 alphabet du nom de voiture] ，par exemple \411 ou \tur .'
+    InvalidID: "#Name.Simple#: Ce n'est pas ID du modèle de voiture valide %1$d ."
+    InvalidAbbr: "#Name.Simple#: Il n'y a pas d'abréviation du nom de voiture comme ça %1$s ."
+    Message: '#Name.Simple#: Ta voiture exclusive %1$s est créée pour vous!'
+    
+Textdraw:
+  VehicleWidget:
+    SpeedUnit: '#Unit.KPH#'
+    
+    # %1$1.0f for KPH, %2$1.0f for MPH
+    SpeedFormat: '%1$1.0f'
+    
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    
+    RacingExtMessage: '[RACING]'
+    
+    StatusMark:
+      OffMark: '~w~-'
+      AutoRepair: '~g~R'
+      InfiniteNitrous: '~r~N'
+      AutoFlip: '~b~F'
+      LockDoors: '~y~D'
+    
+Dialog:
+  DrivingRecordStatisticDialog:
+    Caption: '#Name.Simple#: Enregistrement de conduite et de prise'
+    Item: '[%1$s Enregistrement] %2$s (%3$d) - %4$s ~ %5$s'
+  
+  EmptyVehicleListDialog:
+    Caption: '#Name.Simple#: Liste des voitures vides environnantes (%1$d/%2$d)'
+    
+    # %4$1.0f for km; %5$1.0f for miles
+    Item: '%2$s	Modèle: %3$d  Distance: %4$1.0f #Unit.Meter#'
+    ItemAdmin: '%2$s (ID: %1$d)	Modèle: %3$d  Distance: %4$1.0f #Unit.Meter#'
+    
+  GlobalStatisticDialog:
+    Caption: '#Name.Simple#: Les statistiques globaux des toutes voitures'
+    
+    # %6$1.3f, %8$1.2f pour km/KPH; %7$1.3f, %9$1.2f pour miles/MPH
+    Text: |
+      %1$s
+      Fois des productions de voiture au total: %2$d
+      Cout des dommages au total: %3$1.1f
+      Fois des conduites au total: %4$d
+      Temps des conduites au total: %5$s
+      Distance des conduites au total: %6$1.3f #Unit.KiloMeter#
+      Vitesse moyenne des conduites: %8$1.2f #Unit.KMH#
+      Vitesse moyenne des explosions de voiture: %10$1.1f / 10 minutes
+      Mise-à-jour prochaine: %11$s
+      
+  GlobalVehicleStatisticDialog:
+    Caption: 'La statistique globale de #Name.Simple# %1$s (Modèle: %2$d)'
+    
+    # %6$1.3f, %8$1.2f pour km/KPH; %7$1.3f, %9$1.2f pour miles/MPH
+    Text: |
+      %1$s
+      Fois des productions de voiture au total: %2$d
+      Cout des dommages au total: %3$1.1f
+      Fois des conduites au total: %4$d
+      Temps des conduites au total: %5$s
+      Distance des conduites au total: %6$1.3f #Unit.KiloMeter#
+      Vitesse moyenne des conduites: %8$1.2f #Unit.KMH#
+      Vitesse moyenne des explosions de voiture: %10$1.1f / 10 minutes
+      Mise-à-jour prochaine: %11$s
+      
+  OnceStatisticDialog:
+    Caption: 'La statistique de %3$s de #Name.Simple#: %1$s (%2$d) (%4$s~%5$s)'
+    
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f pour miles/MPH
+    Text: |
+      %1$s
+      Voitures conduites: %3$s
+      Cout des dommages au total: %4$1.1f
+      Temps de %2$s au total: %5$s
+      Distance de %2$s au total: %6$1.3f #Unit.KiloMeter#
+      Vitesse moyenne de %2$s: %8$1.2f #Unit.KMH#
+      La plus rapide vitesse de %2$s: %10$1.2f #Unit.KMH#
+      Vitesse moyenne des explosions de voiture: %12$1.1f / 10 minutes
+      Temps du commencement de %2$s: %13$s
+      Temps du arrêt de %2$s: %14$s
+  
+  PlayerPreferencesDialog:
+    Caption: '#Name.Simple#: Paramètres Personnels'
+    VehicleWidget: "Afficher widget d'indicateur de vitesse"
+    InfiniteNitrous: 'Nos infini'
+    AutoRepair: 'Réparation automatique de voiture'
+    AutoFlip: 'Tour automatique de voiture'
+    AutoCarryPassengers: 'Transport automatique de Passager'
+    
+  PlayerStatisticDialog:
+    Caption: '#Name.Simple#: Les statistiques personnelles des toutes voitures'
+    
+    # %6$1.3f, %8$1.2f pour km/KPH; %7$1.3f, %9$1.2f pour miles/MPH
+    Text: |
+      %1$s
+      Fois des productions de voiture au total: %2$d
+      Cout des dommages au total: %3$1.1f
+      Fois des conduites au total: %4$d
+      Temps des conduites au total: %5$s
+      Distance des conduites au total: %6$1.3f #Unit.KiloMeter#
+      Vitesse moyenne des conduites: %8$1.2f #Unit.KMH#
+      Vitesse moyenne des explosions de voiture: %10$1.1f / 10 minutes
+      Mise-à-jour prochaine: %11$s
+    
+  PlayerVehicleStatisticDialog:
+    Caption: 'La statistique personnelle de #Name.Simple#: %1$s (Modèle: %2$d)'
+    
+    # %6$1.3f, %8$1.2f pour km/KPH; %7$1.3f, %9$1.2f pour miles/MPH
+    Text: |
+      %1$s
+      Fois des productions de voiture au total: %2$d
+      Cout des dommages au total: %3$1.1f
+      Fois des conduites au total: %4$d
+      Temps des conduites au total: %5$s
+      Distance des conduites au total: %6$1.3f #Unit.KiloMeter#
+      Vitesse moyenne des conduites: %8$1.2f #Unit.KMH#
+      Vitesse moyenne des explosions de voiture: %10$1.1f / 10 minutes
+      Mise-à-jour prochaine: %11$s
+  
+  VehicleComponentAddDialog:
+    Caption: '#Name.Simple#: Modification de %1$s: Choisir composant de %2$s'
+    Item: '%1$s: %2$s'
+    AddMessage: '#Name.Simple#: Ta voiture %1$s est faite installer avec nouveau composant de %2$s : %3$s .'
+  
+  VehicleComponentDialog:
+    Caption: '#Name.Simple#: Modifier %1$s (Modèle : %2$d, HP : %3$1.0f%%)'
+    Item: '%1$s -	Ce composant : %2$s (%3$d composants disponibles)'
+  
+  VehicleComponentPaintjobDialog:
+    Caption: '#Name.Simple#: Modification de %1$s: Choisir emploi peintre'
+    Item: '#Component.Paintjob#: Peindre %1$d'
+    PaintMessage: '#Name.Simple#: Ta voiture %1$s est faite peindre: Emploi peintre %2$d 。'
+  
+  VehicleCreateListDialog:
+    Caption: '#Name.Simple#: Production de voiture: Choisir voiture: %1$s (%2$d/%3$d)'
+    Item: '%1$s (Modèle: %2$d , Nombre des fauteuils: %3$d, Fois des conduites: %4$d, Popularité: %5$d)'
+    ItemSortMode: '#Vehicle.SortMode.Text#: '
+    CreateMessage: '#Command.CreateVehicle.Message#'
+    
+  VehicleCreateMainDialog:
+    Caption: '#Name.Simple#: Production de voiture: Choisir le type de voiture'
+    ItemAll: 'Lister toutes voitures'
+    ItemCommon: 'Liste commune: %1$s'
+    ItemType: 'Type: %1$s'
+    AllVehicleText: 'Toutes voitures'
+  
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (Modèle: %3$d, HP: %4$1.0f%%)'
+    GetOn: 'Prendre'
+    OwnThisVehicle: 'Être ma voiture'
+    FetchAndGetOn: 'Téléporter et prendre'
+    Repair: 'Réparer'
+    Flip: 'Tourner'
+    ChangeColor: 'Changer la couleur'
+    KickPassengers: 'Exiler le passager'
+    Modifications: 'Modification'
+    LockDoors: 'Bloquer les portes'
+    PersonalStatistics: 'La statistique personnelle de cette voiture'
+    GlobalStatistics: 'La statistique globale de cette voiture'
+    GetOnMessage: '#Name.Simple#: Vous avez déjà téléporté dans la voiture %1$s .'
+    OwnMessage: '#Name.Simple#: La voiture %1$s est faite déjà votre voiture exclusive!'
+    FetchMessage: '#Name.Simple#: La voiture %1$s est faite déjà téléporté près vous!'
+    KickPassengerMessage: '#Name.Simple#: Vous êtes exilé de voiture %1$s!'
+    KickCompleteMessage: '#Name.Simple#: %1$d passagers sont exilés de voiture.'
+    
+  VehicleManagerDialog:
+    Caption: '#Name.Full#'
+    CurrentVehicle: 'Cette voiture ...'
+    MyVehicle: 'Ma voiture ...'
+    CreateVehicle: 'Produire voiture ...'
+    NearbyEmptyVehicle: 'Chercher les voitures vides environnantes ...'
+    DrivingAndRidingRecord: 'Enregistrements des conduites et des prises ...'
+    PersonalPreferences: 'Paramètres personnels ...'
+    PersonalStatistics: 'Afficher la statistique personnelle'
+    GlobalStatistics: 'Afficher la statistique globale'
+    Help: "Afficher l'aide"
+    About: 'À propos de #Name.Full#'
+  
+  HelpDialog:
+    Caption: '#Name.Simple#: Aide'
+    Text: "Il n'y a pas de contenu ici..."
+    
+  AboutDialog:
+    Caption: '#Name.Simple#: À propos de #Name.Full#'
+    Text: |
+      --- Nouveau Monde de l'Avenir : Le composant du Système Administratif de Voiture ---
+      Version: %1$s (Build %2$d)
+      Date de construction: %3$s
+      
+      Développeur: mk124
+      Designer: mk124
+      Consultants de dessin: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      Collecteur de données: mk124, 52_PLA
+      Testeur: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      Traduction: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
+          (Japanese) kai; (German) Meta; (French) Joe Zhao; 
+      Remerciement: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+      
+      Ce composant est une partie de projet Nouveau Monde de l'Avenir.
+      Ce composant utilise la licence d'AGPL v3 pour ouvrir ses codes.
+      Utilisation sur les serveurs commerciaux et profitables INTERDITE.
+    
+  VehicleResprayDialog:
+    Caption: '#Name.Simple#: Choisir %1$s 的%2$s (Modèle: %3$d, HP: %4$1.0f%%)'
+    Item: '			%1$s▇{FFFFFF} Couleur: %2$d %1$s▇'
+    
+  VehicleResprayGroupDialog:
+    Caption: '#Name.Simple#: Choisir %1$s 的%2$s (Modèle: %3$d, HP: %4$1.0f%%)'
+    Item: '			'
+    ColorBlockText: '▇'
+    

@@ -1,0 +1,5 @@
+mongodb:
+    host: "localhost:27017"
+    dbName: "Teleport"
+    user: ""
+    pass: ""

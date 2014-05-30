@@ -1,0 +1,276 @@
+﻿#####
+# Japanese by snwang.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: '車マネ'
+  Full: '車両マネジャー'
+
+Time:
+  HMS: '%1$d時 %2$d分 %3$d秒'
+  Never: '一度もない'
+  NA: 'N/A'
+  
+Unit:
+  M: 'メートル'
+  KM: 'キロメートル'
+  KMH: 'km/h'
+  KPH: 'KPH'
+
+Vehicle:
+  Normal: '車両'
+  Owned: '私の車両'
+  
+  Type:
+    Bicycle: '自転車'
+    Motorbike: 'バイク'
+    Car: '自動車'
+    Trailer: 'トレーラー'
+    RemoteControl: 'レモート装置'
+    Train: '電車'
+    Boat: 'ボート'
+    Aircraft: '飛行機'
+    Helicopter: 'ヘリコプター'
+    Tank: 'タンク'
+    Unknown: '未知'
+    
+  SortMode:
+    Text: '並べ方'
+    Hot: '人気'
+    UseCount: '使い回数'
+    Seats: '席数'
+    Type: 'タイプ'
+  
+Statistic:
+  Type:
+    Driver: '運転'
+    Passenger: '乗客'
+    Racing: 'レース'
+    Unknown: '未知'
+  
+  MoveWay:
+    OnFoot: '歩いて'
+    Multiple: 'ほかの移動手段'
+  
+Component:
+  Slot:
+    Spoiler: 'スポイラー'
+    Hood: 'フード'
+    Roof: 'ルーフ'
+    SideSkirt: 'サイドスカート'
+    Lamps: 'ランプ'
+    Nitro: 'ニトロプラス'
+    Exhaust: '排気'
+    Wheels: 'ホイール'
+    Stereo: 'ステレオ'
+    Hydraulics: '水力装置'
+    FrontBumper: '前バンパー'
+    RearBumper: '后バンパー'
+    VentRight: '右ベント'
+    VentLeft: '左ベント'
+    Unknown: '未知'
+    
+  Paintjob: 'ペイントジョブ'
+  
+  Color:
+    Primary: '主要色'
+    Secondary: '次要色'
+
+Command:
+  CreateVehicle:
+    Usage: '#Name.Simple#: もっと便利な車両作成コマンド：\\[車両モデルID] また \\[車両名の前の３位レター] ，例えば \\411 や \\tur など 。'
+    InvalidID: '#Name.Simple#: アブノーマル車両モデルID %1$d 。'
+    InvalidAbbr: '#Name.Simple#: こんな車両省略名は存在しねぇよ %1$s 。'
+    Message: '#Name.Simple#: あなたの専用車両 %1$s 作成成功しました！'
+    
+Textdraw:
+  VehicleWidget:
+    Format: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    IncludeHealthFormat: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    RacingExtMessage: '[RACING]'
+    
+    StatusMark:
+      OffMark: '~w~-'
+      AutoRepair: '~g~R'
+      InfiniteNitrous: '~r~N'
+      AutoFlip: '~b~F'
+      LockDoors: '~y~D'
+    
+Dialog:
+  DrivingRecordStatisticDialog:
+    Caption: '#Name.Simple#: 運転と乗りの記録'
+    Item: '[%1$s記録] %2$s (%3$d) - %4$s ~ %5$s'
+  
+  EmptyVehicleListDialog:
+    Caption: '#Name.Simple#: 近くにある車両のリスト (%1$d/%2$d)'
+    Item: '%2$s  モデルID: %3$d  距離: %4$1.0f #Unit.M#'
+    ItemAdmin: '%2$s (ID: %1$d)    モデルID: %3$d  距離: %4$1.0f #Unit.M#'
+    
+  GlobalStatisticDialog:
+    Caption: '#Name.Simple#: サーバーの全部車両のデータ'
+    Text: |
+      %1$s
+      合計作成回数: %2$d
+      合計ダメージ: %3$1.1f台
+      合計運転回数: %4$d回
+      合計運転時間: %5$s
+      合計運転距離: %6$1.3f #Unit.KM#
+      平均運転速度: %7$1.2f #Unit.KMH#
+      平均ブーム速度: %8$1.1f台 / 毎10分
+      ラストアップデート: %9$s
+      
+  GlobalVehicleStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (モデル: %2$d) のデータ'
+    Text: |
+      %1$s
+      合計作成回数: %2$d
+      合計ダメージ: %3$1.1f台
+      合計運転回数: %4$d回
+      合計運転時間: %5$s
+      合計運転距離: %6$1.3f #Unit.KM#
+      平均運転速度: %7$1.2f #Unit.KMH#
+      平均ブーム速度: %8$1.1f台 / 毎10分
+      ラストアップデート: %9$s
+      
+  OnceStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (%2$d) の%3$s統計情報 (%4$s~%5$s)'
+    Text: |
+      %1$s
+      運転された車両: %3$s
+      合計ダメージ: %4$1.1f台
+      合計%2$s時間: %5$s
+      合計%2$s距離: %6$1.3f #Unit.KM#
+      平均%2$s速度: %7$1.2f #Unit.KMH#
+      最高%2$s速度: %8$1.2f #Unit.KMH#
+      平均ブーム速度: %9$1.1f台 / 毎10分
+      %2$s開始時間: %10$s
+      %2$s終了時間: %11$s
+  
+  PlayerPreferencesDialog:
+    Caption: '#Name.Simple#: 個人設定'
+    VehicleWidget: '速度計スイッチ'
+    InfiniteNitrous: '無限ナイトロ'
+    AutoRepair: '自動修理'
+    AutoFlip: '自動フリップ'
+    AutoCarryPassengers: '自動乗客乗らせ'
+    
+  PlayerStatisticDialog:
+    Caption: '#Name.Simple#:全部車両の個人データ'
+    Text: |
+      %1$s
+      合計作成回数: %2$d
+      合計ダメージ: %3$1.1f台
+      合計運転回数: %4$d回
+      合計運転時間: %5$s
+      合計運転距離: %6$1.3f #Unit.KM#
+      平均運転速度: %7$1.2f #Unit.KMH#
+      平均ブーム速度: %8$1.1f台 / 毎10分
+      ラストアップデート: %9$s
+    
+  PlayerVehicleStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (モデル: %2$d) の個人統計情報'
+    Text: |
+      %1$s
+      合計作成回数: %2$d
+      合計ダメージ: %3$1.1f台
+      合計運転回数: %4$d回
+      合計運転時間: %5$s
+      合計運転距離: %6$1.3f #Unit.KM#
+      平均運転速度: %7$1.2f #Unit.KMH#
+      平均ブーム速度: %8$1.1f台 / 毎10分
+      ラストアップデート: %9$s
+  
+  VehicleComponentAddDialog:
+    Caption: '#Name.Simple#: 改装 %1$s: 選択%2$sパート'
+    Item: '%1$s: %2$s'
+    AddMessage: '#Name.Simple#: あなたの車 %1$s の新しいパート: %3$s は2$s付きました。'
+  
+  VehicleComponentDialog:
+    Caption: '#Name.Simple#: 改装 %1$s (モデル：%2$d, HP：%3$1.0f％)'
+    Item: '%1$s -	当前パート: %2$s (%3$d 個使えるパート)'
+  
+  VehicleComponentPaintjobDialog:
+    Caption: '#Name.Simple#: 改装 %1$s: ペイントジョブ選択'
+    Item: '#Component.Paintjob#: ペイントジョブ %1$d'
+    PaintMessage: '#Name.Simple#: あなたの車 %1$s はペイントジョブ %2$d が付きました。'
+  
+  VehicleCreateListDialog:
+    Caption: '#Name.Simple#: 作成 - 車両選択 - %1$s (%2$d/%3$d)'
+    Item: '%1$s (モデルID: %2$d , 席数: %3$d, 運転回数: %4$d, 人気: %5$d)'
+    ItemSortMode: '#Vehicle.SortMode.Text#: '
+    CreateMessage: '#Command.CreateVehicle.Message#'
+    
+  VehicleCreateMainDialog:
+    Caption: '#Name.Simple#: 作成 - 車両タイプ選択'
+    ItemAll: '全部車両リスト'
+    ItemCommon: '人気車両リスト: %1$s'
+    ItemType: 'タイプ: %1$s'
+    AllVehicleText: '全部車両'
+  
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (モデル: %3$d, HP: %4$1.0f％)'
+    GetOn: '乗る'
+    OwnThisVehicle: '俺様の車になれ！'
+    FetchAndGetOn: '近くに転送して乗る'
+    Repair: '修理'
+    Flip: 'フリップ'
+    ChangeColor: '色変わり'
+    KickPassengers: '乗客捨て'
+    Modifications: '改装'
+    LockDoors: 'ドアをロックする'
+    PersonalStatistics: 'この車両の個人情報'
+    GlobalStatistics: 'この車両の全体情報'
+    GetOnMessage: '#Name.Simple#: あなたは車両 %1$s の中に挿入しちゃった。'
+    OwnMessage: '#Name.Simple#: 車両 %1$s はあなただけの車両になっちゃった！'
+    FetchMessage: '#Name.Simple#: 車両 %1$s があなたの隣に転送しちゃった！'
+    KickPassengerMessage: '#Name.Simple#: あなたが運転手 %1$s に捨てられちゃった！'
+    KickCompleteMessage: '#Name.Simple#: %1$dつ乗客を捨てちゃった！'
+    
+  VehicleManagerDialog:
+    Caption: '#Name.Full#'
+    CurrentVehicle: '現在の車両 ...'
+    MyVehicle: '俺様の車両 ...'
+    CreateVehicle: '新車を作成 ...'
+    NearbyEmptyVehicle: '近くの車を探す ...'
+    DrivingAndRidingRecord: '運転と乗りの記録 ...'
+    PersonalPreferences: '個人設定 ...'
+    PersonalStatistics: '個人情報'
+    GlobalStatistics: '全体情報'
+    Help: 'ヘルプ'
+    About: '車マネについて'
+  
+  HelpDialog:
+    Caption: '#Name.Simple#: ヘルプ'
+    Text: '嘘だろ、あなたはここに来るなんて...'
+    
+  AboutDialog:
+    Caption: '#Name.Simple#: #Name.Full#について'
+    Text: |
+      --- 新未来世界 車両マネジャー ---
+      ヴァション: %1$s (Build %2$d)
+      ビルド日時: %3$s
+      
+      開発者: mk124
+      設計者: mk124
+      コンサルタント: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      データ収集: mk124, 52_PLA
+      テスト: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+      翻訳: (English) mk124, 52_PLA; (Russian) hitman249; (Japanese) snwang1996
+      特別感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+      
+      このモコンポーネントは新未来世界の一部分である。
+      AGPL v3 ライセンスでソースコードを開放する。
+      一切商用サーバーは利用禁止である。
+    
+  VehicleResprayDialog:
+    Caption: '#Name.Simple#: %1$s の%2$s を選択する(モデル: %3$d, HP: %4$1.0f％)'
+    Item: '		%1$s■{FFFFFF} 色: %2$d %1$s■'
+    
+  VehicleResprayGroupDialog:
+    Caption: '#Name.Simple#: %1$s の%2$s を選択する(モデル: %3$d, HP: %4$1.0f％)'
+    Item: '		'
+    ColorBlockText: '■'
+    

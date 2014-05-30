@@ -28,14 +28,14 @@ Unit:
 
 Vehicle:
   Normal: 'Vehicles'
-  Owned: 'My Vehicle'
+  Owned: 'My vehicle'
   
   Type:
     Bicycle: 'Bicycles'
     Motorbike: 'Motorbike'
     Car: 'Cars'
     Trailer: 'Trailers'
-    RemoteControl: 'Remote Toys'
+    RemoteControl: 'Remote toys'
     Train: 'Train'
     Boat: 'Boats'
     Aircraft: 'Aeroplane'
@@ -44,21 +44,21 @@ Vehicle:
     Unknown: 'Other'
     
   SortMode:
-    Text: 'Sort By (High to low)'
+    Text: 'Sort by (high to low)'
     Popular: 'Popular'
-    SpawnedTimes: 'Spawned Times'
+    SpawnedTimes: 'Times spawned'
     Seats: 'Seats'
-    Type: 'Vehicle Types'
+    Type: 'Vehicle types'
   
 Statistic:
   Type:
     Driver: 'Driving'
-    Passenger: 'As Passenger'
+    Passenger: 'As passenger'
     Racing: 'Race'
     Unknown: 'Unknown'
 
   MoveWay:
-    OnFoot: 'On Foot'
+    OnFoot: 'On foot'
     Multiple: 'Multiple ways'
   
 Component:
@@ -66,24 +66,24 @@ Component:
     Spoiler: 'Spoiler'
     Hood: 'Hood'
     Roof: 'Roof'
-    SideSkirt: 'SideSkirt'
+    SideSkirt: 'Side skirt'
     Lamps: 'Lamps'
     Nitro: 'Nitro'
     Exhaust: 'Exhaust'
     Wheels: 'Wheels'
     Stereo: 'Stereo'
     Hydraulics: 'Hydraulics'
-    FrontBumper: 'Front Bumper'
-    RearBumper: 'Rear Bumper'
-    VentRight: 'Vent Right'
-    VentLeft: 'Vent Left'
+    FrontBumper: 'Front bumper'
+    RearBumper: 'Rear bumper'
+    VentRight: 'Right vent'
+    VentLeft: 'Left vent'
     Unknown: 'Unknown'
     
   Paintjob: 'Paintjob'
   
   Color:
-    Primary: 'Primary Color'
-    Secondary: 'Secondary Color'
+    Primary: 'Primary color'
+    Secondary: 'Secondary color'
 
 Command:
   CreateVehicle:
@@ -114,11 +114,11 @@ Textdraw:
     
 Dialog:
   DrivingRecordStatisticDialog:
-    Caption: '#Name.Simple#: Passenger and driving Log'
+    Caption: '#Name.Simple#: Passenger and driving log'
     Item: '[%1$s Log] %2$s (%3$d) - %4$s ~ %5$s'
 
   EmptyVehicleListDialog:
-    Caption: '#Name.Simple#: Nearby Empty Vehicles (%1$d/%2$d)'
+    Caption: '#Name.Simple#: Nearby empty vehicles (%1$d/%2$d)'
     
     # %4$1.0f for km; %5$1.0f for yards
     Item: '%2$s	Model: %3$d  Distance: %5$1.0f #Unit.Yard#'
@@ -172,14 +172,14 @@ Dialog:
   
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: Personal preferences'
-    VehicleWidget: 'Display Vehicle Widget'
-    InfiniteNitrous: 'Infinite Nitro'
-    AutoRepair: 'Auto Repair'
-    AutoFlip: 'Auto Flip'
-    AutoCarryPassengers: 'Auto Carry Passengers (when vehicle changed)'
+    VehicleWidget: 'Display vehicle widget'
+    InfiniteNitrous: 'Infinite nitro'
+    AutoRepair: 'Auto repair'
+    AutoFlip: 'Auto flip'
+    AutoCarryPassengers: 'Auto carry passengers (when vehicle changed)'
     
   PlayerStatisticDialog:
-    Caption: '#Name.Simple#: Personal Statistic of all vehicle'
+    Caption: '#Name.Simple#: Personal statistic of all vehicle'
     
     # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
@@ -194,7 +194,7 @@ Dialog:
       Last updated: %11$s
     
   PlayerVehicleStatisticDialog:
-    Caption: '#Name.Simple#: Personal Statistic of %1$s (Model ID: %2$d)'
+    Caption: '#Name.Simple#: Personal statistic of %1$s (Model ID: %2$d)'
     
     # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
@@ -223,31 +223,31 @@ Dialog:
     PaintMessage: '#Name.Simple#: Your %1$s''s paint changed to: Paint %2$d .'
   
   VehicleCreateListDialog:
-    Caption: '#Name.Simple#: Vehicle Spawn: Select Vehicle: %1$s (%2$d/%3$d)'
-    Item: '%1$s (Model ID: %2$d , Seats: %3$d, Driving Times: %4$d, Popular: %5$d)'
+    Caption: '#Name.Simple#: Spawn vehicle: Select vehicle: %1$s (%2$d/%3$d)'
+    Item: '%1$s (Model ID: %2$d , Seats: %3$d, Driving times: %4$d, Popular: %5$d)'
     ItemSortMode: '#Vehicle.SortMode.Text#: '
     CreateMessage: '#Command.CreateVehicle.Message#'
     
   VehicleCreateMainDialog:
-    Caption: '#Name.Simple#: Spawn Vehicle: Select Vehicle Type'
-    ItemAll: 'List All Vehicle'
-    ItemCommon: 'Common Vehicle: %1$s'
+    Caption: '#Name.Simple#: Spawn vehicle: Select type of vehicle'
+    ItemAll: 'List all vehicle'
+    ItemCommon: 'Common vehicle list: %1$s'
     ItemType: 'Type: %1$s'
-    AllVehicleText: 'All Vehicle'
+    AllVehicleText: 'All vehicle'
   
   VehicleDialog:
     Caption: '#Name.Simple#: %1$s %2$s (Model: %3$d, HP: %4$1.0f%%)'
     GetOn: 'Get On'
-    OwnThisVehicle: 'Own This Vehicle'
-    FetchAndGetOn: 'Fetch And Get On'
+    OwnThisVehicle: 'Own this vehicle'
+    FetchAndGetOn: 'Fetch and Get on'
     Repair: 'Repair'
     Flip: 'Flip'
-    ChangeColor: 'Change Paints'
-    KickPassengers: 'Kick Passengers'
+    ChangeColor: 'Change paints'
+    KickPassengers: 'Kick passengers'
     Modifications: 'Modifications'
-    LockDoors: 'Lock Doors'
-    PersonalStatistics: 'Show Personal Statistics'
-    GlobalStatistics: 'Show Global Statistics'
+    LockDoors: 'Lock doors'
+    PersonalStatistics: 'Show personal statistics'
+    GlobalStatistics: 'Show global statistics'
     GetOnMessage: '#Name.Simple#: You have entered the vehicle %1$s.'
     OwnMessage: '#Name.Simple#: You already own the vehicle %1$s!'
     FetchMessage: '#Name.Simple#: The car %1$s has been taken to your side!'
@@ -256,19 +256,19 @@ Dialog:
     
   VehicleManagerDialog:
     Caption: '#Name.Full#'
-    CurrentVehicle: 'Current Vehicle ...'
-    MyVehicle: 'My Vehicle ...'
-    CreateVehicle: 'Spawn New Vehicle ...'
-    NearbyEmptyVehicle: 'Browse Nearby Empty Vehicles ...'
-    DrivingAndRidingRecord: 'Passenger And Driving Log ...'
-    PersonalPreferences: 'Personal Preferences ...'
-    PersonalStatistics: 'Show Personal Statistics'
-    GlobalStatistics: 'Show Global Statistics'
-    Help: 'Show Help Message'
+    CurrentVehicle: 'Current vehicle ...'
+    MyVehicle: 'My vehicle ...'
+    CreateVehicle: 'Spawn new vehicle ...'
+    NearbyEmptyVehicle: 'Browse nearby empty vehicles ...'
+    DrivingAndRidingRecord: 'Passenger and driving log ...'
+    PersonalPreferences: 'Personal preferences ...'
+    PersonalStatistics: 'Show personal statistics'
+    GlobalStatistics: 'Show global statistics'
+    Help: 'Show help message'
     About: 'About #Name.Full#'
   
   HelpDialog:
-    Caption: '#Name.Simple#: Help Message'
+    Caption: '#Name.Simple#: Help message'
     Text: 'Not yet available...'
     
   AboutDialog:
@@ -280,7 +280,7 @@ Dialog:
       
       Developer: mk124
       Design: mk124
-      Design Assistant: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+      Design dvisor: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       Data Collector: mk124, 52_PLA
       Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
       Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
