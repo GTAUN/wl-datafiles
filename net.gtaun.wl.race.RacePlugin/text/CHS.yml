@@ -85,6 +85,8 @@ Racing:
     ChangeVehicle: '更换载具'
     
   Message:
+    NewRacingMessage: '#Name.Simple#: %1$s 举办了新比赛 %2$s (赛道 %3$s)，请在车上按下两下 End 键来参加比赛。'
+    
     JoinMessage: '#Name.Simple#: 您已参与 %1$s 比赛 (赛道 %2$s)。'
     PlayerJoinMessage: '#Name.Simple#: %1$s 已加入 %2$s 比赛。'
     JoinTipMessage: '#Name.Simple#: 在参与比赛的时候，只需按两下喇叭 (默认H键) 即可快速呼出比赛菜单。'

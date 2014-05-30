@@ -44,7 +44,7 @@ Track:
   Status:
     Editing: 'Editing'
     Completed: 'Completed'
-    Ranking: 'Racing'
+    Ranking: 'Ranking'
     
   Checkpoint:
     Text: 'Checkpoint'
@@ -85,26 +85,28 @@ Racing:
     ChangeVehicle: 'Allows to change vehicle'
   
   Message:
-    JoinMessage: '#Name.Simple#: You joined %1$s race (Track %2$s).'
-    PlayerJoinMessage: '#Name.Simple#: %1$s has joined the %2$s game.'
+    NewRacingMessage: "#Name.Simple#: %1$s started a new game ‘%2$s’ (Track %3$s), if you are in a vehicle, you can double-press the End key on your keyboard to join this game."
+    
+    JoinMessage: "#Name.Simple#: You joined game '%1$s' (Track %2$s)."
+    PlayerJoinMessage: "#Name.Simple#: %1$s has joined the game '%2$s'."
     JoinTipMessage: '#Name.Simple#: If you are in a game, you can double-press the horn-key (default H) to open the menue of the current race.'
     
-    LeaveMessage: '#Name.Simple#: You have left the %1$s game.'
-    PlayerLeaveMessage: '#Name.Simple#: %1$s has left the %2$s game.'
+    LeaveMessage: "#Name.Simple#: You have left the game '%1$s'."
+    PlayerLeaveMessage: "#Name.Simple#: %1$s has left the game '%2$s'."
     
-    KickMessage: '#Name.Simple#: You have been kicked out of the %1$s game.'
-    KickPlayerMessage: '#Name.Simple#: %1$s has been kicked out of %2$s game.'
+    KickMessage: "#Name.Simple#: You have been kicked out of the game '%1$s'."
+    KickPlayerMessage: "#Name.Simple#: %1$s has been kicked out of game '%2$s'."
     
-    CancelMessage: '#Name.Simple#: %1$s game has been canceled.'
+    CancelMessage: "#Name.Simple#: Game '%1$s' has been canceled."
     
-    FinishMessage: '#Name.Simple#: You have completed %1$s game.'
-    PlayerFinishMessage: '#Name.Simple#: %1$s has completed the %2$s game.'
+    FinishMessage: "#Name.Simple#: You have completed game '%1$s'."
+    PlayerFinishMessage: "#Name.Simple#: %1$s has completed the game '%2$s'."
     
   GameText:
     GoMessage: '- ~r~GO!~w~ -'
     
   Script:
-    ErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script Error %4$s has occurred at line %3$d.'
+    ErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script error %4$s has occurred at line %3$d.'
     ErrorLineMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Error code: %3$s.'
     TimeOutErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script was running longer then the specified time. Operation terminating.'
     InstructionCountLimitErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script exceeds the limit of instructions. Operation terminating.'
@@ -155,7 +157,7 @@ Dialog:
     Limit: 'Limits: '
     PlayersLimit: 'Player limit: '
     Password: 'Password: '
-    Create: 'Launch new game'
+    Create: 'Start a new game'
     RacingNormalCaption: 'Start a new game'
     RacingTestCaption: 'Test the track'
     CircultFormat: '#Track.Type.Circuit# (%1$d rings)'
@@ -215,12 +217,12 @@ Dialog:
     Caption: '#Name.Simple#: Set the spawn interval'
   
   RacingDialog:
-    Caption: '#Name.Simple#: View %1$s game information'
+    Caption: "#Name.Simple#: View game '%1$s' information"
     Name: 'Racing: %1$s'
     Track: 'Track: %1$s'
     Sponsor: 'Sponsor: %1$s'
-    Join: 'Join'
-    Leave: 'Leave'
+    Join: 'Join this game'
+    Leave: 'Leave this game'
     Cancel: 'Cancel this game'
     Start: 'Start this game'
     Player: 'Player: %1$s'
@@ -230,26 +232,26 @@ Dialog:
   
   RacingLeaveAndJoinConfirmDialog:
     Caption: '#Name.Simple#: Confirm that you want to leave current game'
-    Text: 'Are you sure that you want to leave %1$s game, and join %2$s game?'
+    Text: "Are you sure that you want to leave %1$s game, and join the game '%2$s' ?"
   
   RacingLeaveConfirmDialog:
     Caption: '#Name.Simple#: Leave race'
-    Text: 'Are you sure that you want to leave the %1$s game?'
+    Text: "Are you sure that you want to leave the game '%1$s' ?"
   
   RacingCancelConfirmDialog:
     Caption: '#Name.Simple#: Cancel race'
-    Text: 'Are you sure you want to cancel the %1$s race?'
+    Text: "Are you sure you want to cancel the game '%1$s' ?"
   
   RacingKickConfirmDialog:
     Caption: '#Name.Simple#: Confirm kick'
     Text: 'Are you sure that you want to kick %1$s?'
   
   RacingListDialog:
-    Caption: '#Name.Simple#: View all games (game can be added to %1$d, the total number of %2$d race)'
+    Caption: '#Name.Simple#: View all games (Participable: %1$d, Total: %2$d)'
     Text: 'Match: %1$s Track: %2$s Sponsor: %3$s'
   
   TrackCheckpointEditDialog:
-    Caption: '#Name.Simple#: Edit %1$s track: Edit checkpoint: %2$d'
+    Caption: "#Name.Simple#: Edit track '%1$s': Edit checkpoint %2$d"
     Teleport: 'Sent to this checkpoint'
     Position: 'Position: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d'
     Type: 'Type: '
@@ -261,7 +263,7 @@ Dialog:
     UpdatePositionMessage: '#Name.Simple#: Checkpoint location has been updated to the current location.'
   
   TrackCheckpointEditPositionDialog:
-    Caption: '#Name.Simple#: Edit checkpoint coordinates'
+    Caption: '#Name.Simple#: Edit checkpoint position'
     Text: |
       Current position is: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d
       Please enter a new position in this format: [x] [y] [z] [interior]:
@@ -275,8 +277,8 @@ Dialog:
     IllegalFormatAppendMessage: '{FF0000} * You need to enter the size in the correct format.'
   
   TrackDialog:
-    Caption: '#Name.Simple#: View %1$s track information'
-    Name: 'Track Name: %1$s'
+    Caption: "#Name.Simple#: View information of track '%1$s'"
+    Name: 'Track name: %1$s'
     Author: 'Author: %1$s'
     Desc: 'Description: %1$s'
     Status: 'Status: %1$s'
@@ -302,7 +304,7 @@ Dialog:
   
   TrackEditDialog:
     Caption: '#Name.Simple#: Edit the track: %1$s'
-    Name: 'Track Name: %1$s'
+    Name: 'Track name: %1$s'
     Desc: 'Description: %1$s'
     Checkpoints: 'Checkpoints: %1$d'
     Length: 'Total length: %1$1.2f#Unit.KM#'
@@ -339,7 +341,7 @@ Dialog:
   
   TrackDeleteCancelDialog:
     Caption: '#Name.Simple#: Track deletion has been canceled'
-    Text: 'Tack deletion of track %1$s has been canceled.'
+    Text: "Track deletion of track '%1$s' has been canceled."
     
   TrackDeleteCompleteDialog:
     Caption: '#Name.Simple#: Remove track success'
@@ -386,7 +388,7 @@ Dialog:
     EventFormat: 'Event %1$s'
   
   TrackSettingDialog:
-    Caption: '#Name.Simple#: Edit track %1$s: Game setting'
+    Caption: "#Name.Simple#: Edit track '%1$s': Game setting"
     PlayersFormat: '%1$d persons'
     MinPlayersFormat: 'Minimum number of players: %1$s'
     MaxPlayersFormat: 'Max number of players: %1$s'
