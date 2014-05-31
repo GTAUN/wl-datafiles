@@ -89,7 +89,7 @@ Racing:
     
     JoinMessage: "#Name.Simple#: You joined game '%1$s' (Track %2$s)."
     PlayerJoinMessage: "#Name.Simple#: %1$s has joined the game '%2$s'."
-    JoinTipMessage: '#Name.Simple#: If you are in a game, you can double-press the horn-key (default H) to open the menue of the current race.'
+    JoinTipMessage: '#Name.Simple#: If you are in a game, you can double-press the horn-key (default H) to open the menu of the current race.'
     
     LeaveMessage: "#Name.Simple#: You have left the game '%1$s'."
     PlayerLeaveMessage: "#Name.Simple#: %1$s has left the game '%2$s'."
