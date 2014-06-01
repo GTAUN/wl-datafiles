@@ -1,0 +1,112 @@
+﻿#####
+# Simplified Chinese by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: '传送系统'
+  Full: '传送和世界系统'
+
+Command:
+  Teleport:
+    Usage: '#Name.Simple#: 传送指令用法: //[地点名称]'
+    NotFound: '#Name.Simple#: 没有叫做 %1$s 的传送点。'
+    Message: '#Name.Simple#: 你已传送到 %1$s 。'
+
+  Make:
+    Usage: '#Name.Simple#: 创建新地点指令: /tp make [地点名称]'
+    Created: '#Name.Simple#: 传送点 %1$s 已创建。'
+    AlreadyExist: '#Name.Simple#: 错误: 无法以名称 %1$s 创建新传送点，请重试。'
+
+Dialog:
+  Common:
+    InvaildFormat: "{FF0000}* 请按照正确的格式输入坐标值。"
+
+  TeleportDialog:
+    Caption: "#Name.Simple#: 传送点: %1$s"
+    Name: "名称: %1$s"
+    Creater: "创建者: %1$s"
+    Position: "坐标: x=%1$1.2f, y=%2$1.2f, z=%3$1.2f, interior=%4$d"
+    Angle: "角度: %1$1.1f"
+    UpdateDate: "更新日期: %1$s"
+    Popularity: "人气: %1$d"
+    SetPos: "更新坐标到当前位置"
+    Delete: "删除传送点"
+    Teleport: "传送"
+    Finish: "完成"
+
+    EditNameDialog:
+      Caption: "修改传送点名称"
+      Message: "当前传送点的名称为 {0000AF}%1$s{A9C4E4} 。\n请输入传送点的新名称，要求长度为 2-24 个字之间:"
+      InvaildName: "{FF0000}* 无法使用此名称，请重试。"
+
+    EditPositionDialog:
+      Caption: "编辑传送点坐标"
+      Message: "当前坐标值为: {0000AF}x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4{A9C4E4}$d\n请输入新坐标值，格式: [x] [y] [z] [interior]"
+
+    EditAngleDialog:
+      Caption: "编辑传送点角度"
+      Message: "当前角度值为: %1$1.1f\n请输入新角度值:"
+
+    SetPosConfirmDialog:
+      Caption: "更新传送点坐标"
+      Message: "您确认要将传送点 {0000AF}%1$s{A9C4E4} 的位置更新到当前位置吗？"
+
+    DeleteConfirmDialog:
+      Caption: "删除传送点"
+      Message: "您确认要删除传送点 {0000AF}%1$s{A9C4E4} 吗？\n警告，此删除操作无法恢复！！"
+
+  TeleportListDialog:
+    Caption: "#Name.Simple#: 传送点列表"
+    Operation: "操作: "
+    OpTeleport: "传送"
+    OpShowInfo: "查看信息"
+    SortMode: "排序方式: "
+    SortByDistance: "距离最近"
+    SortByPopular: "人气最高"
+    SortByDate: "最近更新"
+    Item: "%1$s    {808080}创建者: %2$s, 人气: %3$d, 更新日期: %4$s"
+
+  TeleportMainDialog:
+    Caption: "#Name.Full#"
+    TeleportList: 浏览传送点 ..."
+    MyTeleport: "我的传送点 ..."
+    MyFavorite: "传送点收藏夹 ..."
+    Create: "创建新传送点"
+    Preferences: "个人偏好设置 ..."
+    Help: "帮助信息"
+    About: "关于 #Name.Full#"
+
+    CreateDialog:
+      Caption:"创建新传送点"
+      Message: "请输入新传送点的名称，要求长度为 2-24 个字之间:"
+      Failed: "{FF0000}* 无法以此名称创建新传送点，请重试。"
+
+    HelpDialog:
+      Caption: "#Name.Simple#: 帮助信息"
+      Message: "偷懒中，暂无帮助信息……"
+
+    AboutDialog:
+      Caption: "#Name.Simple#: 关于 #Name.Full#"
+      Message: |
+        --- 新未来世界 : 传送和世界系统组件 ---
+        版本: %1$s (Build %2$d)
+        构建日期: %3$s
+        
+        开发: mk124
+        功能设计: mk124
+        设计顾问: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+        数据采集: mk124, 52_PLA
+        测试: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+        翻译: (English) MK124
+        感谢: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+        
+        本组件是新未来世界项目的一部分。
+        本组件使用 AGPL v3 许可证开放源代码。
+        本组件禁止在任何商业或盈利性服务器上使用。
+
+  TeleportNamingDialog:
+    InvaildName: "{FF0000}* 您输入的名称 {FFFFFF}%1$s{FF0000} 不合法，请重新输入。"
+    AlreadyExist: "{FF0000}* 您输入的名称 {FFFFFF}%1$s{FF0000} 已被使用，请重新输入。"
