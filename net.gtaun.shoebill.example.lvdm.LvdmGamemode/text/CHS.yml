@@ -1,0 +1,25 @@
+﻿#####
+# Simplified Chinese by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: '新未来'
+  Full: '新未来世界'
+
+GameText:
+  Welcome: 'Welcome to ~r~The New WL-World~w~!!'
+
+Message:
+  Welcome: "欢迎来到新未来世界服务器。"
+  UnknownCommand: '未知命令。'
+
+Dialog:
+  MainMenuDialog:
+    Caption: "#Name.Full#: 主菜单"
+
+  GameListDialog:
+    Caption: "#Name.Full#: 参与比赛"
+

@@ -38,24 +38,24 @@ Dialog:
     Finish: "完成"
 
     EditNameDialog:
-      Caption: "修改传送点名称"
+      Caption: "#Name.Simple#: 修改传送点名称"
       Message: "当前传送点的名称为 {0000AF}%1$s{A9C4E4} 。\n请输入传送点的新名称，要求长度为 2-24 个字之间:"
       InvaildName: "{FF0000}* 无法使用此名称，请重试。"
 
     EditPositionDialog:
-      Caption: "编辑传送点坐标"
+      Caption: "#Name.Simple#: 编辑传送点坐标"
       Message: "当前坐标值为: {0000AF}x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4{A9C4E4}$d\n请输入新坐标值，格式: [x] [y] [z] [interior]"
 
     EditAngleDialog:
-      Caption: "编辑传送点角度"
+      Caption: "#Name.Simple#: 编辑传送点角度"
       Message: "当前角度值为: %1$1.1f\n请输入新角度值:"
 
     SetPosConfirmDialog:
-      Caption: "更新传送点坐标"
+      Caption: "#Name.Simple#: 更新传送点坐标"
       Message: "您确认要将传送点 {0000AF}%1$s{A9C4E4} 的位置更新到当前位置吗？"
 
     DeleteConfirmDialog:
-      Caption: "删除传送点"
+      Caption: "#Name.Simple#: 删除传送点"
       Message: "您确认要删除传送点 {0000AF}%1$s{A9C4E4} 吗？\n警告，此删除操作无法恢复！！"
 
   TeleportListDialog:
@@ -80,7 +80,7 @@ Dialog:
     About: "关于 #Name.Full#"
 
     CreateDialog:
-      Caption:"创建新传送点"
+      Caption: "#Name.Simple#: 创建新传送点"
       Message: "请输入新传送点的名称，要求长度为 2-24 个字之间:"
       Failed: "{FF0000}* 无法以此名称创建新传送点，请重试。"
 
