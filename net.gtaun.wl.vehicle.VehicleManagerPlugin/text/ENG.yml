@@ -49,7 +49,20 @@ Vehicle:
     SpawnedTimes: 'Times spawned'
     Seats: 'Seats'
     Type: 'Vehicle types'
-  
+
+CommonVehicleGroup:
+  MuscleCar: 'Sports car / Muscle car'
+  SuperCar: 'Super car'
+  SportsCar: 'Sports car'
+  SUV: 'SUV'
+  LowChassisCar: 'Low chassis car'
+  Truck: 'Truck'
+  RacingCar: 'Racing car'
+  Car: 'Car'
+  TravelCar: 'Travel car'
+  HPV: 'HPV'
+  SpecialVehicle: 'Special vehicle'
+
 Statistic:
   Type:
     Driver: 'Driving'

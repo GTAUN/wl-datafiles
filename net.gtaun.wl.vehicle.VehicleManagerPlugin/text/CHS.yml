@@ -42,14 +42,27 @@ Vehicle:
     Helicopter: '直升机'
     Tank: '坦克'
     Unknown: '未知'
-    
+  
   SortMode:
     Text: '排序方式'
     Popular: '人气'
     SpawnedTimes: '使用次数'
     Seats: '座位数'
     Type: '类型'
-  
+
+CommonVehicleGroup:
+  MuscleCar: '跑车 / 肌肉车'
+  SuperCar: '超级跑车'
+  SportsCar: '运动跑车'
+  SUV: 'SUV'
+  LowChassisCar: '低底盘车'
+  Truck: '卡车'
+  RacingCar: '赛车'
+  Car: '轿车'
+  TravelCar: '旅行车'
+  HPV: 'HPV'
+  SpecialVehicle: '特殊车辆'
+
 Statistic:
   Type:
     Driver: '驾驶'
