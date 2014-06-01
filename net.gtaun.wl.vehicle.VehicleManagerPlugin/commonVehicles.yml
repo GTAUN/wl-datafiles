@@ -2,44 +2,44 @@
 commonVehicles:
   -
     name: "CommonVehicleGroup.MuscleCar"
-    modelId: [602, 429, 402, 506, 477, 439, 480, 555, 475, 603]
+    modelIds: [602, 429, 402, 506, 477, 439, 480, 555, 475, 603]
 
   -
     name: "CommonVehicleGroup.SuperCar"
-    modelId: [541, 415, 411, 451, 558]
+    modelIds: [541, 415, 411, 451, 558]
 
   -
     name: "CommonVehicleGroup.SportsCar"
-    modelId: [562, 589, 496, 565, 559, 587, 560, 550]
+    modelIds: [562, 589, 496, 565, 559, 587, 560, 550]
 
   -
     name: "CommonVehicleGroup.SUV"
-    modelId: [579, 400, 500, 444, 556, 557, 470, 505, 495]
+    modelIds: [579, 400, 500, 444, 556, 557, 470, 505, 495]
 
   -
     name: "CommonVehicleGroup.LowChassisCar"
-    modelId: [536, 575, 534, 567, 576, 412]
+    modelIds: [536, 575, 534, 567, 576, 412]
 
   -
     name: "CommonVehicleGroup.Truck"
-    modelId: [535, 524, 499, 422, 609, 578, 455, 403, 443, 514, 600, 515, 440, 605, 478, 456, 554]
+    modelIds: [535, 524, 499, 422, 609, 578, 455, 403, 443, 514, 600, 515, 440, 605, 478, 456, 554]
 
   -
     name: "CommonVehicleGroup.RacingCar"
-    modelId: [504, 502, 503]
+    modelIds: [504, 502, 503]
 
   -
     name: "CommonVehicleGroup.Car"
-    modelId: [566, 533, 445, 401, 518, 527, 542, 507, 585, 526, 466, 492, 474, 546, 517, 410, 516, 467, 426, 436, 547, 405, 580, 549, 540, 491, 421, 529]
+    modelIds: [566, 533, 445, 401, 518, 527, 542, 507, 585, 526, 466, 492, 474, 546, 517, 410, 516, 467, 426, 436, 547, 405, 580, 549, 540, 491, 421, 529]
 
   -
     name: "CommonVehicleGroup.TravelCar"
-    modelId: [404, 479, 458, 561]
+    modelIds: [404, 479, 458, 561]
 
   -
     name: "CommonVehicleGroup.HPV"
-    modelId: [418, 482, 582, 413, 459]
+    modelIds: [418, 482, 582, 413, 459]
 
   -
     name: "CommonVehicleGroup.SpecialVehicle"
-    modelId: [568, 424, 573, 531, 408, 552]
+    modelIds: [568, 424, 573, 531, 408, 552]
