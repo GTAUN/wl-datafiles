@@ -22,3 +22,22 @@ Dialog:
 
   GameListDialog:
     Caption: "#Name.Full#: Join a game"
+
+  HelpDialog:
+    Caption: "#Name.Full#: Help message"
+    Message: |
+      Coming soon...
+      
+      Simple help:
+        Available commands: /m /v /r /kill /help
+        For testing commands: /pos /tp
+        Spawn new vehicle: 输入 \411 或 \tur 或者 \hyd 等都可以
+        
+        Available keys:
+          Y - Open main menu dialog
+          N - Open join a game dialog
+        
+        Available keys (Driving) :
+          Double press H - Open current track / race dialog
+          LCTRL/NUM0 + NUM2/4/6/8 - Quick change vehicle color
+          End - Quick add new checkpoint (in track editing)

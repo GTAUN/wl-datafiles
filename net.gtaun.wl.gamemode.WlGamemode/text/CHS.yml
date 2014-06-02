@@ -19,6 +19,25 @@ Message:
 Dialog:
   MainMenuDialog:
     Caption: "#Name.Full#: 主菜单"
+    Help: "帮助信息"
 
   GameListDialog:
     Caption: "#Name.Full#: 参与比赛"
+
+  HelpDialog:
+    Caption: "#Name.Full#: 帮助信息"
+    Message: |
+      暂无详细的帮助信息……
+      
+      简易帮助:
+        可用命令有: /m /v /r /kill /help
+        测试用命令: /pos /tp
+        刷车: 输入 \411 或 \tur 或者 \hyd 等都可以
+        可用按键:
+          Y - 打开主菜单
+          N - 打开比赛加入菜单
+        
+        可用按键(车上) :
+          连按两下H - 打开当前赛道/比赛信息窗口
+          LCTRL/NUM0 + NUM2/4/6/8 - 改变车的颜色
+          End - 在编辑赛道的时候可以快速添加检查点
