@@ -35,8 +35,8 @@ Dialog:
         Spawn new vehicle: 输入 \411 或 \tur 或者 \hyd 等都可以
         
         Available keys:
-          Y - Open main menu dialog
-          N - Open join a game dialog
+          Y - Open join a game dialog
+          N - Open main menu dialog
         
         Available keys (Driving) :
           Double press H - Open current track / race dialog
