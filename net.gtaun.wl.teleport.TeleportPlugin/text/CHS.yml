@@ -44,7 +44,7 @@ Dialog:
 
     EditPositionDialog:
       Caption: "#Name.Simple#: 编辑传送点坐标"
-      Message: "当前坐标值为: {0000AF}x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4{A9C4E4}$d\n请输入新坐标值，格式: [x] [y] [z] [interior]"
+      Message: "当前坐标值为: {0000AF}x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4$d{A9C4E4}\n请输入新坐标值，格式: [x] [y] [z] [interior]"
 
     EditAngleDialog:
       Caption: "#Name.Simple#: 编辑传送点角度"
@@ -71,7 +71,7 @@ Dialog:
 
   TeleportMainDialog:
     Caption: "#Name.Full#"
-    TeleportList: 浏览传送点 ..."
+    TeleportList: "浏览传送点 ..."
     MyTeleport: "我的传送点 ..."
     MyFavorite: "传送点收藏夹 ..."
     Create: "创建新传送点"
