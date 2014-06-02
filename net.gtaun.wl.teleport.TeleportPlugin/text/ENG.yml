@@ -1,0 +1,112 @@
+﻿#####
+# Simplified Chinese by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: 'TeleSystem'
+  Full: 'Teleport & World Switching System'
+
+Command:
+  Teleport:
+    Usage: '#Name.Simple#: Teleport command usage: //[name]'
+    NotFound: "#Name.Simple#: No teleport called '%1$s' ."
+    Message: '#Name.Simple#: You have been sent to %1$s .'
+
+  Make:
+    Usage: '#Name.Simple#: Create a new teleport: /tp make [name]'
+    Created: '#Name.Simple#: Teleport %1$s has been created.'
+    AlreadyExist: '#Name.Simple#: Error: Cannot use %1$s to create new teleport, please try again.'
+
+Dialog:
+  Common:
+    InvaildFormat: "{FF0000}* Please confirm format of the input is correct."
+
+  TeleportDialog:
+    Caption: "#Name.Simple#: Teleport: %1$s"
+    Name: "Name: %1$s"
+    Creater: "Creater: %1$s"
+    Position: "Position: x=%1$1.2f, y=%2$1.2f, z=%3$1.2f, interior=%4$d"
+    Angle: "Angle: %1$1.1f"
+    UpdateDate: "Last update: %1$s"
+    Popularity: "Popularity: %1$d"
+    SetPos: "Set to current position"
+    Delete: "Delete this teleport"
+    Teleport: "Teleport to"
+    Finish: "Finish"
+
+    EditNameDialog:
+      Caption: "#Name.Simple#: Edit name of the teleport"
+      Message: "Current name of the teleport is {0000AF}%1$s{A9C4E4} .\nplease enter a new name, length required 2-24 characters:"
+      InvaildName: "{FF0000}* Cannot use this name, please try again."
+
+    EditPositionDialog:
+      Caption: "#Name.Simple#: Edit position of the teleport"
+      Message: "Current position is {0000AF}x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4$d{A9C4E4}\nplease enter the new value, format is [x] [y] [z] [interior] :"
+
+    EditAngleDialog:
+      Caption: "#Name.Simple#: Edit angle of the teleport"
+      Message: "Current angle is %1$1.1f ,\nplease enter a new value:"
+
+    SetPosConfirmDialog:
+      Caption: "#Name.Simple#: Set position of the teleport to current position"
+      Message: "Are you sure you want to set position of teleport {0000AF}%1$s{A9C4E4} to current position?"
+
+    DeleteConfirmDialog:
+      Caption: "#Name.Simple#: Delete teleport"
+      Message: "Are you sure you want to delete teleport {0000AF}%1$s{A9C4E4} ?\nWARNING, this operation could not be restored!!"
+
+  TeleportListDialog:
+    Caption: "#Name.Simple#: Teleport list"
+    Operation: "Operation: "
+    OpTeleport: "Teleport"
+    OpShowInfo: "Info"
+    SortMode: "Sort mode: "
+    SortByDistance: "Nearest"
+    SortByPopular: "Popular"
+    SortByDate: "Date"
+    Item: "%1$s    {808080}Creator: %2$s, Popularity: %3$d, Update date: %4$s"
+
+  TeleportMainDialog:
+    Caption: "#Name.Full#"
+    TeleportList: "Teleport list ..."
+    MyTeleport: "My teleports ..."
+    MyFavorite: "My favorites ..."
+    Create: "Create new teleport"
+    Preferences: "Personal preferences ..."
+    Help: "Help"
+    About: "About #Name.Full#"
+
+    CreateDialog:
+      Caption: "#Name.Simple#: Create new teleport"
+      Message: "Please enter a name of new teleport, length required 2-24 characters:"
+      Failed: "{FF0000}* Cannot create new teleport using this name, please try again."
+
+    HelpDialog:
+      Caption: "#Name.Simple#: Help information"
+      Message: "Coming soon..."
+
+    AboutDialog:
+      Caption: "#Name.Simple#: About #Name.Full#"
+      Message: |
+        --- The New WL-World : Teleport & World Plugin ---
+        Version: %1$s (Build %2$d)
+        Build date: %3$s
+        
+        Developer: mk124
+        Design: mk124
+        Design dvisor: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+        Data Collector: mk124, 52_PLA
+        Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+        Translation: (English) MK124
+        Thanks: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+        
+        This component is part of The New WL-World project.
+        This component uses the AGPL v3 license.
+        Prohibit the use in any commercial or profit-purpose servers.
+
+  TeleportNamingDialog:
+    InvaildName: "{FF0000}* The name {FFFFFF}%1$s{FF0000} you entered is not vaild, please enter a new name."
+    AlreadyExist: "{FF0000}* The name {FFFFFF}%1$s{FF0000} you entered is already in use, please enter a new name."

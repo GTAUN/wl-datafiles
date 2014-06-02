@@ -1,0 +1,24 @@
+﻿#####
+# English by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: 'WL-World'
+  Full: 'The New WL-World'
+
+GameText:
+  Welcome: 'Welcome to ~r~The New WL-World~w~!!'
+
+Message:
+  Welcome: "Welcome to The New WL-World server."
+  UnknownCommand: 'Unknown command.'
+
+Dialog:
+  MainMenuDialog:
+    Caption: "#Name.Full#: Main menu"
+
+  GameListDialog:
+    Caption: "#Name.Full#: Join a game"
