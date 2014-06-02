@@ -116,7 +116,7 @@ Textdraw:
     BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.Mile#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.MPH#'
     IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%5$1.2f#Unit.Mile#~w~ - Avg/Max: ~y~~h~%7$1.1f~w~/~r~~h~%9$1.1f~w~ #Unit.MPH#'
 
-    RacingExtMessage: 'ä ö ü[RACING]'
+    RacingExtMessage: '[RACING]'
     
     StatusMark:
       OffMark: '~w~-'

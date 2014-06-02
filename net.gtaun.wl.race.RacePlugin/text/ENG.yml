@@ -309,7 +309,7 @@ Dialog:
     Checkpoints: 'Checkpoints: %1$d'
     Length: 'Total length: %1$1.2f#Unit.KM#'
     AddCheckpoint: 'Add a checkpoint at the current location'
-    Setting: 'Race course set'
+    Setting: 'Race limit settings'
     Delete: 'Delete this track'
     StopEditing: 'Stop editing this track'
     FinishEditing: 'Complete track editor'
@@ -363,7 +363,7 @@ Dialog:
     SortMode: 'Sort by: '
     
   TrackListMainDialog:
-    Caption: '#Name.Simple#: Mode of listing tracks'
+    Caption: '#Name.Simple#: Type of listing tracks'
     Nearby: 'Search nearby tracks...'
     ListAll: 'Lists all tracks...'
     MyFavorites: 'My favorites...'
