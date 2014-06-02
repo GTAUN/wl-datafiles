@@ -49,7 +49,20 @@ Unit:
 #    SpawnedTimes: 'Spawned Times'
 #    Seats: 'Seats'
 #    Type: 'Vehicle Types'
-  
+
+#CommonVehicleGroup:
+#  MuscleCar: 'Sports car / Muscle car'
+#  SuperCar: 'Super car'
+#  SportsCar: 'Sports car'
+#  SUV: 'SUV'
+#  LowChassisCar: 'Low chassis car'
+#  Truck: 'Truck'
+#  RacingCar: 'Racing car'
+#  Car: 'Car'
+#  TravelCar: 'Travel car'
+#  HPV: 'HPV'
+#  SpecialVehicle: 'Special vehicle'
+
 #Statistic:
 #  Type:
 #    Driver: 'Driving'
@@ -284,7 +297,7 @@ Dialog:
       Сбор данных: mk124, 52_PLA
       Тестирование: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
       Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
-          (Japanese) kai; (German) Meta
+          (Japanese) snwang1996; (German) Meta; (French) Joe Zhao
       Спасибо: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       Этот компонент является частью The New WL-World проекта.

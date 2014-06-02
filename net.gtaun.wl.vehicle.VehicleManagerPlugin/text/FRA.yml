@@ -49,7 +49,20 @@ Vehicle:
     SpawnedTimes: "Fois d'Utilisation"
     Seats: 'Nombre de Fauteuils'
     Type: 'Type'
-  
+
+#CommonVehicleGroup:
+#  MuscleCar: 'Sports car / Muscle car'
+#  SuperCar: 'Super car'
+#  SportsCar: 'Sports car'
+#  SUV: 'SUV'
+#  LowChassisCar: 'Low chassis car'
+#  Truck: 'Truck'
+#  RacingCar: 'Racing car'
+#  Car: 'Car'
+#  TravelCar: 'Travel car'
+#  HPV: 'HPV'
+#  SpecialVehicle: 'Special vehicle'
+
 Statistic:
   Type:
     Driver: 'Chauffeur'
@@ -284,7 +297,7 @@ Dialog:
       Collecteur de données: mk124, 52_PLA
       Testeur: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
       Traduction: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
-          (Japanese) kai; (German) Meta; (French) Joe Zhao; 
+          (Japanese) snwang1996; (German) Meta; (French) Joe Zhao
       Remerciement: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       Ce composant est une partie de projet Nouveau Monde de l'Avenir.

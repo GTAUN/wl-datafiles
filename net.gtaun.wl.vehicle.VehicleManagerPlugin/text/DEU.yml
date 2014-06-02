@@ -49,7 +49,20 @@ Vehicle:
     SpawnedTimes: 'Gespawnt'
     Seats: 'Sitze'
     Type: 'Fahrzeug-Typen'
- 
+
+#CommonVehicleGroup:
+#  MuscleCar: 'Sports car / Muscle car'
+#  SuperCar: 'Super car'
+#  SportsCar: 'Sports car'
+#  SUV: 'SUV'
+#  LowChassisCar: 'Low chassis car'
+#  Truck: 'Truck'
+#  RacingCar: 'Racing car'
+#  Car: 'Car'
+#  TravelCar: 'Travel car'
+#  HPV: 'HPV'
+#  SpecialVehicle: 'Special vehicle'
+
 Statistic:
   Type:
     Driver: 'Fahrer'
@@ -284,7 +297,7 @@ Dialog:
       Daten-Sammler: mk124, 52_PLA
       Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
       Übersetzung: (Deutsch) Meta; (Englisch) 52_PLA; (Traditionelles Chinesisch) JoJLlmAn;
-          (Russisch) hitman249; (Japanisch) kai
+          (Russisch) hitman249; (Japanisch) snwang1996; (Französisch) Joe Zhao
       Danke an: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
      
       Diese Komponente ist Teil des The New WL-World Projekts.

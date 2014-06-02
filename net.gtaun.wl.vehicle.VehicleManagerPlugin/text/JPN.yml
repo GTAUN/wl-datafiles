@@ -1,4 +1,4 @@
-﻿#####
+﻿
 # Japanese by snwang.
 #
 # In order to calculate the percentage of translated,
@@ -15,10 +15,16 @@ Time:
   NA: 'N/A'
   
 Unit:
-  M: 'メートル'
-  KM: 'キロメートル'
+  Meter: 'メートル'
+  KiloMeter: 'キロメートル'
+#  Yard: 'yd'
+#  Mile: 'miles'
+
   KMH: 'km/h'
+  MIH: 'miles/h'
+
   KPH: 'KPH'
+  MPH: 'MPH'
 
 Vehicle:
   Normal: '車両'
@@ -43,7 +49,20 @@ Vehicle:
     UseCount: '使い回数'
     Seats: '席数'
     Type: 'タイプ'
-  
+
+#CommonVehicleGroup:
+#  MuscleCar: 'Sports car / Muscle car'
+#  SuperCar: 'Super car'
+#  SportsCar: 'Sports car'
+#  SUV: 'SUV'
+#  LowChassisCar: 'Low chassis car'
+#  Truck: 'Truck'
+#  RacingCar: 'Racing car'
+#  Car: 'Car'
+#  TravelCar: 'Travel car'
+#  HPV: 'HPV'
+#  SpecialVehicle: 'Special vehicle'
+
 Statistic:
   Type:
     Driver: '運転'
@@ -88,8 +107,15 @@ Command:
     
 Textdraw:
   VehicleWidget:
-    Format: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
-    IncludeHealthFormat: '%11$s%1$s [%7$s%8$s%9$s%10$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%5$1.1f~w~/~r~~h~%6$1.1f~w~ KPH'
+    SpeedUnit: '#Unit.KPH#'
+
+    # %1$1.0f for KPH, %2$1.0f for MPH
+    SpeedFormat: '%1$1.0f'
+    
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2fKM~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    
     RacingExtMessage: '[RACING]'
     
     StatusMark:
@@ -106,48 +132,56 @@ Dialog:
   
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: 近くにある車両のリスト (%1$d/%2$d)'
-    Item: '%2$s  モデルID: %3$d  距離: %4$1.0f #Unit.M#'
-    ItemAdmin: '%2$s (ID: %1$d)    モデルID: %3$d  距離: %4$1.0f #Unit.M#'
+
+    # %4$1.0f for km; %5$1.0f for yards
+    Item: '%2$s  モデルID: %3$d  距離: %4$1.0f #Unit.KiloMeter#'
+    ItemAdmin: '%2$s (ID: %1$d)    モデルID: %3$d  距離: %4$1.0f #Unit.Meter#'
     
   GlobalStatisticDialog:
     Caption: '#Name.Simple#: サーバーの全部車両のデータ'
+
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       合計作成回数: %2$d
       合計ダメージ: %3$1.1f台
       合計運転回数: %4$d回
       合計運転時間: %5$s
-      合計運転距離: %6$1.3f #Unit.KM#
-      平均運転速度: %7$1.2f #Unit.KMH#
-      平均ブーム速度: %8$1.1f台 / 毎10分
-      ラストアップデート: %9$s
+      合計運転距離: %6$1.3f #Unit.KiloMeter#
+      平均運転速度: %8$1.2f #Unit.KiloMeterH#
+      平均ブーム速度: %10$1.1f台 / 毎10分
+      ラストアップデート: %11$s
       
   GlobalVehicleStatisticDialog:
     Caption: '#Name.Simple#: %1$s (モデル: %2$d) のデータ'
+
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       合計作成回数: %2$d
       合計ダメージ: %3$1.1f台
       合計運転回数: %4$d回
       合計運転時間: %5$s
-      合計運転距離: %6$1.3f #Unit.KM#
-      平均運転速度: %7$1.2f #Unit.KMH#
-      平均ブーム速度: %8$1.1f台 / 毎10分
-      ラストアップデート: %9$s
+      合計運転距離: %6$1.3f #Unit.KiloMeter#
+      平均運転速度: %8$1.2f #Unit.KiloMeterH#
+      平均ブーム速度: %10$1.1f台 / 毎10分
+      ラストアップデート: %11$s
       
   OnceStatisticDialog:
     Caption: '#Name.Simple#: %1$s (%2$d) の%3$s統計情報 (%4$s~%5$s)'
+
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
     Text: |
       %1$s
       運転された車両: %3$s
       合計ダメージ: %4$1.1f台
       合計%2$s時間: %5$s
-      合計%2$s距離: %6$1.3f #Unit.KM#
-      平均%2$s速度: %7$1.2f #Unit.KMH#
-      最高%2$s速度: %8$1.2f #Unit.KMH#
-      平均ブーム速度: %9$1.1f台 / 毎10分
-      %2$s開始時間: %10$s
-      %2$s終了時間: %11$s
+      合計%2$s距離: %6$1.3f #Unit.KiloMeter#
+      平均%2$s速度: %8$1.2f #Unit.KiloMeterH#
+      最高%2$s速度: %10$1.2f #Unit.KiloMeterH#
+      平均ブーム速度: %12$1.1f台 / 毎10分
+      %2$s開始時間: %13$s
+      %2$s終了時間: %14$s
   
   PlayerPreferencesDialog:
     Caption: '#Name.Simple#: 個人設定'
@@ -159,29 +193,33 @@ Dialog:
     
   PlayerStatisticDialog:
     Caption: '#Name.Simple#:全部車両の個人データ'
+
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       合計作成回数: %2$d
       合計ダメージ: %3$1.1f台
       合計運転回数: %4$d回
       合計運転時間: %5$s
-      合計運転距離: %6$1.3f #Unit.KM#
-      平均運転速度: %7$1.2f #Unit.KMH#
-      平均ブーム速度: %8$1.1f台 / 毎10分
-      ラストアップデート: %9$s
+      合計運転距離: %6$1.3f #Unit.KiloMeter#
+      平均運転速度: %8$1.2f #Unit.KiloMeterH#
+      平均ブーム速度: %10$1.1f台 / 毎10分
+      ラストアップデート: %11$s
     
   PlayerVehicleStatisticDialog:
     Caption: '#Name.Simple#: %1$s (モデル: %2$d) の個人統計情報'
+
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
     Text: |
       %1$s
       合計作成回数: %2$d
       合計ダメージ: %3$1.1f台
       合計運転回数: %4$d回
       合計運転時間: %5$s
-      合計運転距離: %6$1.3f #Unit.KM#
-      平均運転速度: %7$1.2f #Unit.KMH#
-      平均ブーム速度: %8$1.1f台 / 毎10分
-      ラストアップデート: %9$s
+      合計運転距離: %6$1.3f #Unit.KiloMeter#
+      平均運転速度: %8$1.2f #Unit.KiloMeterH#
+      平均ブーム速度: %10$1.1f台 / 毎10分
+      ラストアップデート: %11$s
   
   VehicleComponentAddDialog:
     Caption: '#Name.Simple#: 改装 %1$s: 選択%2$sパート'
@@ -258,7 +296,8 @@ Dialog:
       コンサルタント: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
       データ収集: mk124, 52_PLA
       テスト: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
-      翻訳: (English) mk124, 52_PLA; (Russian) hitman249; (Japanese) snwang1996
+      翻訳: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
+          (Japanese) snwang1996; (German) Meta
       特別感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       このモコンポーネントは新未来世界の一部分である。

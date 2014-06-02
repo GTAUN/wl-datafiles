@@ -46,7 +46,7 @@ Vehicle:
   SortMode:
     Text: 'Sort by (high to low)'
     Popular: 'Popular'
-    SpawnedTimes: 'Times spawned'
+    SpawnedTimes: 'Spawned times'
     Seats: 'Seats'
     Type: 'Vehicle types'
 
@@ -297,7 +297,7 @@ Dialog:
       Data Collector: mk124, 52_PLA
       Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
       Translation: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
-          (Japanese) kai; (German) Meta
+          (Japanese) snwang1996; (German) Meta; (French) Joe Zhao
       Thanks: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       This component is part of The New WL-World project.
