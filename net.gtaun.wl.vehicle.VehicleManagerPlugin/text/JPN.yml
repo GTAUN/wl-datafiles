@@ -1,4 +1,4 @@
-﻿
+﻿#####
 # Japanese by snwang.
 #
 # In order to calculate the percentage of translated,
@@ -45,8 +45,8 @@ Vehicle:
     
   SortMode:
     Text: '並べ方'
-    Hot: '人気'
-    UseCount: '使い回数'
+    Popular: '人気'
+    SpawnedTimes: '使い回数'
     Seats: '席数'
     Type: 'タイプ'
 
@@ -297,7 +297,7 @@ Dialog:
       データ収集: mk124, 52_PLA
       テスト: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
       翻訳: (English) 52_PLA; (Traditional Chinese) JoJLlmAn; (Russian) hitman249;
-          (Japanese) snwang1996; (German) Meta
+          (Japanese) snwang1996; (German) Meta; (French) Joe Zhao
       特別感謝: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
       
       このモコンポーネントは新未来世界の一部分である。
