@@ -22,7 +22,7 @@ Command:
 
 Dialog:
   Common:
-    InvaildFormat: "{FF0000}* Please confirm format of the input is correct."
+    InvaildFormat: "{FF0000}* Please confirm that input format is correct."
 
   TeleportDialog:
     Caption: "#Name.Simple#: Teleport: %1$s"
@@ -39,7 +39,7 @@ Dialog:
 
     EditNameDialog:
       Caption: "#Name.Simple#: Edit name of the teleport"
-      Message: "Current name of the teleport is {0000AF}%1$s{A9C4E4} .\nplease enter a new name, length required 2-24 characters:"
+      Message: "Current name of the teleport is {0000AF}%1$s{A9C4E4} .\nplease enter a new name, length limit 2-24 characters:"
       InvaildName: "{FF0000}* Cannot use this name, please try again."
 
     EditPositionDialog:
@@ -81,7 +81,7 @@ Dialog:
 
     CreateDialog:
       Caption: "#Name.Simple#: Create new teleport"
-      Message: "Please enter a name of new teleport, length required 2-24 characters:"
+      Message: "Please enter a name of new teleport, length limit 2-24 characters:"
       Failed: "{FF0000}* Cannot create new teleport using this name, please try again."
 
     HelpDialog:
