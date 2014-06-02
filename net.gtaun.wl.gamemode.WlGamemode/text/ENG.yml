@@ -1,4 +1,4 @@
-﻿#####
+#####
 # English by mk124.
 #
 # In order to calculate the percentage of translated,
@@ -19,6 +19,7 @@ Message:
 Dialog:
   MainMenuDialog:
     Caption: "#Name.Full#: Main menu"
+    Help: "Help"
 
   GameListDialog:
     Caption: "#Name.Full#: Join a game"
