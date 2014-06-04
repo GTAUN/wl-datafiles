@@ -279,14 +279,14 @@ Dialog:
     PersonalStatistics: 'Показать личную статистику'
     GlobalStatistics: 'Показать глобальную статистику'
     Help: 'Показать помощь'
-    About: 'Об #Name.Full#'
+    About: 'Об автомобильном менеджере'
   
   HelpDialog:
     Caption: '#Name.Simple#: Помощь'
     Text: 'Пока недоступно...'
     
   AboutDialog:
-    Caption: '#Name.Simple#: О #Name.Full#'
+    Caption: '#Name.Simple#: Об автомобильном менеджере'
     Text: |
       --- The New WL-World : Плагин автомобильного менеджера ---
       Версия: %1$s (Билд %2$d)
