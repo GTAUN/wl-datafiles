@@ -6,8 +6,8 @@
 #
 
 Name:
-  Simple: 'АвтоМенеджер'
-  Full: 'Автомобильный Менеджер'
+  Simple: 'Транспорт'
+  Full: 'Автомобильный менеджер'
 
 Time:
   HMS: '%1$d часа %2$d минуты %3$d секунды'
@@ -262,7 +262,7 @@ Dialog:
     LockDoors: 'Блокировка дверей'
     PersonalStatistics: 'Просмотр личной статистики'
     GlobalStatistics: 'Просмотр глобальной статистики'
-    GetOnMessage: '#Name.Simple#: Вы сели в транспрот %1$s.'
+    GetOnMessage: '#Name.Simple#: Вы сели в транспорт %1$s.'
     OwnMessage: '#Name.Simple#: У Вас уже есть автомобиль %1$s!'
     FetchMessage: '#Name.Simple#: Автомобиль %1$s был доставлен к вам!'
     KickPassengerMessage: '#Name.Simple#: Водитель %1$s выбросил вас!'
@@ -286,9 +286,9 @@ Dialog:
     Text: 'Пока недоступно...'
     
   AboutDialog:
-    Caption: '#Name.Simple#: Об #Name.Full#'
+    Caption: '#Name.Simple#: О #Name.Full#'
     Text: |
-      --- The New WL-World : Плагин Автомобильного Менеджера ---
+      --- The New WL-World : Плагин автомобильного менеджера ---
       Версия: %1$s (Билд %2$d)
       Дата билда: %3$s
       
