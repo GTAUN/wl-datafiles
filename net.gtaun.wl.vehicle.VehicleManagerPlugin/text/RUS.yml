@@ -1,4 +1,4 @@
-﻿#####
+#####
 # Russian by hitman249.
 #
 # In order to calculate the percentage of translated,
@@ -12,123 +12,124 @@ Name:
 Time:
   HMS: '%1$d часа %2$d минуты %3$d секунды'
   Never: 'Никогда'
-#  NA: 'N/A'
+  NA: 'N/A'
 
 Unit:
   Meter: 'м'
   KiloMeter: 'км'
-#  Yard: 'yd'
-#  Mile: 'miles'
+  Yard: 'ярд.'
+  Mile: 'миль'
 #  
   KMH: 'км/ч'
-#  MIH: 'miles/h'
+  MIH: 'миль/ч'
 #  
   KPH: 'KPH'
-#  MPH: 'MPH'
+  MPH: 'MPH'
  
-#Vehicle:
-#  Normal: 'Vehicle'
-#  Owned: 'My Vehicle'
+Vehicle:
+  Normal: 'Транспорт'
+  Owned: 'Мой транспорт'
 #
-#  Type:
-#    Bicycle: 'Bicycles'
-#    Motorbike: 'Motorbike'
-#    Car: 'Cars'
-#    Trailer: 'Trailers'
-#    RemoteControl: 'Remote Toys'
-#    Train: 'Train'
-#    Boat: 'Boats'
-#    Aircraft: 'Aeroplane'
-#    Helicopter: 'Helicopter'
-#    Tank: 'Tank'
-#    Unknown: 'Other'
+  Type:
+    Bicycle: 'Велосипеды'
+    Motorbike: 'Мотоциклы'
+    Car: 'Машины'
+    Trailer: 'Грузовики'
+    RemoteControl: 'Радиоуправляемые игрушки'
+    Train: 'Поезда'
+    Boat: 'Лодки'
+    Aircraft: 'Самолёты'
+    Helicopter: 'Вертолёты'
+    Tank: 'Танки'
+    Unknown: 'Прочее'
 #    
-#  SortMode:
-#    Text: 'Sort By'
-#    Popular: 'Popular'
-#    SpawnedTimes: 'Spawned Times'
-#    Seats: 'Seats'
-#    Type: 'Vehicle Types'
+  SortMode:
+    Text: 'Сортировать по'
+    Popular: 'Популярности'
+    SpawnedTimes: 'Времени спавна'
+    Seats: 'Места'
+    Type: 'Тип транспорта'
 
-#CommonVehicleGroup:
-#  MuscleCar: 'Sports car / Muscle car'
-#  SuperCar: 'Super car'
-#  SportsCar: 'Sports car'
-#  SUV: 'SUV'
-#  LowChassisCar: 'Low chassis car'
-#  Truck: 'Truck'
-#  RacingCar: 'Racing car'
-#  Car: 'Car'
-#  TravelCar: 'Travel car'
-#  HPV: 'HPV'
-#  SpecialVehicle: 'Special vehicle'
+CommonVehicleGroup:
+  MuscleCar: 'Спортивные машины / Мощные машины'
+  SuperCar: 'Суперкары'
+  SportsCar: 'Спортивные машины'
+  SUV: 'Внедорожники'
+  LowChassisCar: 'Машины с низкой посадкой'
+  Truck: 'Грузовики'
+  RacingCar: 'Гоночные автомобили'
+  Car: 'Машина'
+  TravelCar: 'Автомобили для путешествий'
+  HPV: 'Велосипеды'
+  SpecialVehicle: 'Специальная техника'
 
-#Statistic:
-#  Type:
-#    Driver: 'Driving'
-#    Passenger: 'As Passenger'
-#    Racing: 'Race'
-#    Unknown: 'Unknown'
+Statistic:
+  Type:
+    Driver: 'Проехал'
+    Passenger: 'Как пассажир'
+    Racing: 'В гонках'
+    Unknown: 'Остальное'
 
-#  MoveWay:
-#    OnFoot: 'On Foot'
-#    Multiple: 'Multiple ways'
+  MoveWay:
+    OnFoot: 'Пешком'
+    Multiple: 'Другими способами'
   
-#Component:
-#  Slot:
-#    Spoiler: 'Spoiler'
-#    Hood: 'Hood'
-#    Roof: 'Roof'
+Component:
+  Slot:
+    Spoiler: 'Спойлер'
+    Hood: 'Капот'
+    Roof: 'Крыша'
 #    SideSkirt: 'SideSkirt'
-#    Lamps: 'Lamps'
-#    Nitro: 'Nitro'
-#    Exhaust: 'Exhaust'
-#    Wheels: 'Wheels'
-#    Stereo: 'Stereo'
-#    Hydraulics: 'Hydraulics'
-#    FrontBumper: 'Front Bumper'
-#    RearBumper: 'Rear Bumper'
-#    VentRight: 'Vent Right'
-#    VentLeft: 'Vent Left'
-#    Unknown: 'Unknown'
-#    
-#  Paintjob: 'Paintjob'
-#  
-#  Color:
-#    Primary: 'Primary Color'
-#    Secondary: 'Secondary Color'
+    SideSkirt: 'Обвесы'
+    Lamps: 'Фары'
+    Nitro: 'Нитро'
+    Exhaust: 'Выхлопная труба'
+    Wheels: 'Колёса'
+    Stereo: 'Стереосистема'
+    Hydraulics: 'Гидравлика'
+    FrontBumper: 'Передний бампер'
+    RearBumper: 'Задний бампер'
+    VentRight: 'Правый воздухозаборник'
+    VentLeft: 'Левый воздухозаборник'
+    Unknown: 'Прочее'
 
-#Command:
-#  CreateVehicle:
-#    Usage: '#Name.Simple#: Usage: For spawn vehicle, type\\[ModelID] or \\[Top 3 Letters of the Vehicle''s name] , Eg.  typing \\411 or \\tur  in order to spawn tursimo.'
-#    InvalidID: '#Name.Simple#: Not valid ID %1$d.'
-#    InvalidAbbr: '#Name.Simple#: Not vaild vehicle name %1$s.'
-#    Message: '#Name.Simple#: Your own vehicle: %1$s spawned successful!'
+  Paintjob: 'Рисовать'
+
+  Color:
+    Primary: 'Основной цвет'
+    Secondary: 'Второй цвет'
+
+Command:
+  CreateVehicle:
+    Usage: '#Name.Simple#: Используйте: Для спавна транспортного средства, наберите \\[ModelID] или \\[Первые 3 буквы названия транспортного средства], например наберите \\411 или \\tur для того чтобы заспавнить Turismo.'
+    InvalidID: '#Name.Simple#: Id не доступен %1$d.'
+    InvalidAbbr: '#Name.Simple#: Название транспортного средства недоступно %1$s.'
+    Message: '#Name.Simple#: Ваше транспортное средство: %1$s успешно заспавнено!'
     
-#Textdraw:
-#  VehicleWidget:
-#    SpeedUnit: '#Unit.KPH#'
-#    
-#    # %1$1.0f for KPH, %2$1.0f for MPH
-#    SpeedFormat: '%1$1.0f'
-#    
-#    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
-#    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Dmg: ~p~~h~%2$1.0f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
-#    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~VHP: ~b~~h~%3$1.1f%%~w~ - Odo: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Avg/Max: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
-#    
-#    RacingExtMessage: '[RACING]'
-#    
-#    StatusMark:
-#      OffMark: '~w~-'
-#      AutoRepair: '~g~R'
-#      InfiniteNitrous: '~r~N'
-#      AutoFlip: '~b~F'
-#      LockDoors: '~y~D'
+Textdraw:
+  VehicleWidget:
+    SpeedUnit: '#Unit.KPH#'
+
+    # %1$1.0f for KPH, %2$1.0f for MPH
+    SpeedFormat: '%1$1.0f'
+
+    # %4$1.2f, %6$1.1f, %8$1.1f for km/KPH; %5$1.2f, %7$1.1f, %9$1.1f for miles/MPH
+    BottomFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Урон: ~p~~h~%2$1.0f%%~w~ - Пробег: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Средн./Макс.: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+    IncludeHealthFormat: '%14$s%1$s [%10$s%11$s%12$s%13$s~w~]~n~Велосипед: ~b~~h~%3$1.1f%%~w~ - Пробег: ~g~~h~%4$1.2f#Unit.KiloMeter#~w~ - Средн./Макс.: ~y~~h~%6$1.1f~w~/~r~~h~%8$1.1f~w~ #Unit.KPH#'
+
+    RacingExtMessage: '[ГОНКА]'
+
+    StatusMark:
+      OffMark: '~w~-'
+      AutoRepair: '~g~R'
+      InfiniteNitrous: '~r~N'
+      AutoFlip: '~b~F'
+      LockDoors: '~y~D'
 
 Dialog:
-#  DrivingRecordStatisticDialog:
-#    Caption: '#Name.Simple#: Passenger and driving Log'
-#    Item: '[%1$s Log] %2$s (%3$d) - %4$s ~ %5$s'
+  DrivingRecordStatisticDialog:
+    Caption: '#Name.Simple#: Проехал пассажиром'
+    Item: '[%1$s Log] %2$s (%3$d) - %4$s ~ %5$s'
     
   EmptyVehicleListDialog:
     Caption: '#Name.Simple#: Ближайшие пустые автомобили (%1$d/%2$d)'
@@ -152,120 +153,120 @@ Dialog:
       Средний расход: %10$1.1f машин / 10 минут
       Последнее обновление: %11$s
 
-#  GlobalVehicleStatisticDialog:
-#    Caption: 'Global statistics of #Name.Simple#: %1$s (Model: %2$d)'
+  GlobalVehicleStatisticDialog:
+    Caption: 'Глобальная статистика по #Name.Simple#: %1$s (Модель: %2$d)'
 #    
 #    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
-#    Text: |
-#      %1$s
-#      Total spawns: %2$d
-#      Total damage costs: %3$1.1f cars
-#      Total driving frequency: %4$d times
-#      Total driving time: %5$s
-#      Total distance: %6$1.3f #Unit.KiloMeter#
-#      Avg. driving speed: %8$1.2f #Unit.KPH#
-#      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
-#      Last updated: %11$s
+    Text: |
+      %1$s
+      Всего заспавнено: %2$d
+      Всего разбито: %3$1.1f машин
+      Общая частота вождения: %4$d раз
+      Общее время вождения: %5$s
+      Общее расстояние: %6$1.3f #Unit.KiloMeter#
+      Средняя скорость движения: %8$1.2f #Unit.KPH#
+      Средняя скорость уничтожения машины: %10$1.1f машин / 10 минут
+      Последнее обновление: %11$s
       
-#  OnceStatisticDialog:
-#    Caption: '#Name.Simple#: %1$s (%2$d) s%3$s Record (%4$s~%5$s)'
+  OnceStatisticDialog:
+    Caption: '#Name.Simple#: %1$s (%2$d) s%3$s Записано (%4$s~%5$s)'
 #    
-#    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
-#    Text: |
-#      %1$s
-#      Used vehicles: %3$s
-#      Total damage costs: %4$1.1f cars
-#      Total %2$s driving Time: %5$s
-#      Total %2$s distance: %6$1.3f #Unit.KiloMeter#
-#      Avg.%2$s speed: %8$1.2f #Unit.KPH#
-#      Top %2$s speed: %10$1.2f #Unit.KPH#
-#      Avg. vehicle scraped rate: %12$1.1fcars / 10 min
-#      Start %2$s time: %13$s
-#      Stop %2$s time: %14$s
-  
-#  PlayerPreferencesDialog:
-#    Caption: '#Name.Simple#: Personal preferences'
-#    VehicleWidget: 'Display Vehicle Widget'
-#    InfiniteNitrous: 'Infinite Nitro'
-#    AutoRepair: 'Auto Repair'
-#    AutoFlip: 'Auto Flip'
-#    AutoCarryPassengers: 'Auto Carry Passengers (when vehicle changed)'
+    # %6$1.3f, %8$1.2f, %10$1.2f for km/KPH; %7$1.3f, %9$1.2f, %11$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Использовано транспортных средств: %3$s
+      Общий ущерб: %4$1.1f машин
+      Всего %2$s вождения Время: %5$s
+      Всего %2$s дистанции: %6$1.3f #Unit.KiloMeter#
+      Средняя %2$s скорость: %8$1.2f #Unit.KPH#
+      Наибольшая %2$s скорость: %10$1.2f #Unit.KPH#
+      Средняя скорость уничтожения машины: %12$1.1f машин / 10 минут
+      Стартовое %2$s время: %13$s
+      Конечное %2$s время: %14$s
+
+  PlayerPreferencesDialog:
+    Caption: '#Name.Simple#: Личные предпочтения'
+    VehicleWidget: 'Отобразить транспортный виджет'
+    InfiniteNitrous: 'Бесконечное нитро'
+    AutoRepair: 'Авторемонт'
+    AutoFlip: 'Автопереворот'
+    AutoCarryPassengers: 'Автопересадка пассажиров (при изменении транспорта)'
     
-#  PlayerStatisticDialog:
-#    Caption: '#Name.Simple#: Personal Statistic of all vehicle'
+  PlayerStatisticDialog:
+    Caption: '#Name.Simple#: Личная статистика по всему транспорту'
+
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Всего заспавнено: %2$d
+      Всего разбито: %3$1.1f машин
+      Общая частота вождения: %4$d раз
+      Общее время вождения: %5$s
+      Общее расстояние: %6$1.3f #Unit.KiloMeter#
+      Средняя скорость движения: %8$1.2f #Unit.KPH#
+      Средняя скорость уничтожения машины: %10$1.1f машин / 10 минут
+      Последнее обновление: %11$s
+    
+  PlayerVehicleStatisticDialog:
+    Caption: '#Name.Simple#: Личная статистика %1$s (ID модели: %2$d)'
 #    
-#    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
-#    Text: |
-#      %1$s
-#      Total spawns: %2$d
-#      Total damage costs: %3$1.1f cars
-#      Total driving frequency: %4$d times
-#      Total driving time: %5$s
-#      Total distance: %6$1.3f #Unit.KiloMeter#
-#      Avg. driving speed: %8$1.2f #Unit.KPH#
-#      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
-#      Last updated: %11$s
+    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
+    Text: |
+      %1$s
+      Всего заспавнено: %2$d
+      Всего разбито: %3$1.1f машин
+      Общая частота вождения: %4$d раз
+      Общее время вождения: %5$s
+      Общее расстояние: %6$1.3f #Unit.KiloMeter#
+      Средняя скорость движения: %8$1.2f #Unit.KPH#
+      Средняя скорость уничтожения машины: %10$1.1f машин / 10 минут
+      Последнее обновление: %11$s
+
+  VehicleComponentAddDialog:
+    Caption: '#Name.Simple#: Изменить %1$s: Выбрать %2$s запчастей'
+    Item: '%1$s: %2$s'
+    AddMessage: '#Name.Simple#: Вы %1$s можете установить новую запчасть для %2$s : %3$s 。'
+  
+  VehicleComponentDialog:
+    Caption: '#Name.Simple#: Изменить %1$s (ID модели: %2$d, HP: %3$1.0f%%)'
+    Item: '%1$s -	Текущая запчасть: %2$s (%3$d Запчастей в наличии)'
+  
+  VehicleComponentPaintjobDialog:
+    Caption: '#Name.Simple#: Изменить %1$s: Выбрать краску'
+    Item: '#Component.Paintjob#: Краска %1$d'
+    PaintMessage: '#Name.Simple#: Ваша %1$s краска изменена на: %2$d краску 。'
+  
+  VehicleCreateListDialog:
+    Caption: '#Name.Simple#: Спавн транспорта: Выбрать транспорт: %1$s (%2$d/%3$d)'
+    Item: '%1$s (ID модели: %2$d , Мест: %3$d, Время вождения: %4$d, Популярность: %5$d)'
+    ItemSortMode: '#Vehicle.SortMode.Text#: '
+    CreateMessage: '#Command.CreateVehicle.Message#'
     
-#  PlayerVehicleStatisticDialog:
-#    Caption: '#Name.Simple#: Personal Statistic of %1$s (Modle ID: %2$d)'
-#    
-#    # %6$1.3f, %8$1.2f for km/KPH; %7$1.3f, %9$1.2f for miles/MPH
-#    Text: |
-#      %1$s
-#      Total spawns: %2$d
-#      Total damage costs: %3$1.1f cars
-#      Total driving frequency: %4$d times
-#      Total driving time: %5$s
-#      Total distance: %6$1.3f #Unit.KiloMeter#
-#      Avg. driving speed: %8$1.2f #Unit.KPH#
-#      Avg. vehicle scraped rate: %10$1.1f cars / 10 min 
-#      Last updated: %11$s
+  VehicleCreateMainDialog:
+    Caption: '#Name.Simple#: Спавн транспорта: Выберите вид транспорта'
+    ItemAll: 'Список всего транспорта'
+    ItemCommon: 'Общий транспорт: %1$s'
+    ItemType: 'Вид: %1$s'
+    AllVehicleText: 'Весь транспорт'
   
-#  VehicleComponentAddDialog:
-#    Caption: '#Name.Simple#: Modify %1$s: Select %2$s Parts'
-#    Item: '%1$s: %2$s'
-#    AddMessage: '#Name.Simple#: Your %1$s Has install a new part for%2$s : %3$s 。'
-  
-#  VehicleComponentDialog:
-#    Caption: '#Name.Simple#: Modify %1$s (Model ID: %2$d, HP: %3$1.0f%%)'
-#    Item: '%1$s -	Current parts: %2$s (%3$d Parts available)'
-  
-#  VehicleComponentPaintjobDialog:
-#    Caption: '#Name.Simple#: Modify %1$s: Select Paint'
-#    Item: '#Component.Paintjob#: Paint %1$d'
-#    PaintMessage: '#Name.Simple#: Your %1$s''s paint changed to: Paint %2$d 。'
-  
-#  VehicleCreateListDialog:
-#    Caption: '#Name.Simple#: Vehicle Spawn: Select Vehicle: %1$s (%2$d/%3$d)'
-#    Item: '%1$s (Model ID: %2$d , Seats: %3$d, Driving Times: %4$d, Popular: %5$d)'
-#    ItemSortMode: '#Vehicle.SortMode.Text#: '
-#    CreateMessage: '#Command.CreateVehicle.Message#'
-    
-#  VehicleCreateMainDialog:
-#    Caption: '#Name.Simple#: Spawn Vehicle: Select Vehicle Type'
-#    ItemAll: 'List All Vehicle'
-#    ItemCommon: 'Common Vehicle: %1$s'
-#    ItemType: 'Type: %1$s'
-#    AllVehicleText: 'All Vehicle'
-  
-#  VehicleDialog:
-#    Caption: '#Name.Simple#: %1$s %2$s (Model: %3$d, HP: %4$1.0f%%)'
-#    GetOn: 'Get On'
-#    OwnThisVehicle: 'Own This Vehicle'
-#    FetchAndGetOn: 'Fetch And Get On'
-#    Repair: 'Repair'
-#    Flip: 'Flip'
-#    ChangeColor: 'Change Paints'
-#    KickPassengers: 'Kick Passengers'
-#    Modifications: 'Modifications'
-#    LockDoors: 'Lock Doors'
-#    PersonalStatistics: 'Show Personal Statistics'
-#    GlobalStatistics: 'Show Global Statistics'
-#    GetOnMessage: '#Name.Simple#: You have entered the vehicle %1$s.'
-#    OwnMessage: '#Name.Simple#: You already own the vehicle %1$s!'
-#    FetchMessage: '#Name.Simple#: The car %1$s has been taken to your side!'
-#    KickPassengerMessage: '#Name.Simple#: Driver %1$s kicks you off!'
-#    KickCompleteMessage: '#Name.Simple#: Has kicked %1$d passengers!'
+  VehicleDialog:
+    Caption: '#Name.Simple#: %1$s %2$s (Модель: %3$d, HP: %4$1.0f%%)'
+    GetOn: 'Сесть'
+    OwnThisVehicle: 'Собственный транспорт'
+    FetchAndGetOn: 'Подойти и сесть'
+    Repair: 'Ремонт'
+    Flip: 'Перевернуть'
+    ChangeColor: 'Изменить краску'
+    KickPassengers: 'Выбросить пассажиров'
+    Modifications: 'Модификации'
+    LockDoors: 'Блокировка дверей'
+    PersonalStatistics: 'Просмотр личной статистики'
+    GlobalStatistics: 'Просмотр глобальной статистики'
+    GetOnMessage: '#Name.Simple#: Вы сели в транспрот %1$s.'
+    OwnMessage: '#Name.Simple#: У Вас уже есть автомобиль %1$s!'
+    FetchMessage: '#Name.Simple#: Автомобиль %1$s был доставлен к вам!'
+    KickPassengerMessage: '#Name.Simple#: Водитель %1$s выбросил вас!'
+    KickCompleteMessage: '#Name.Simple#: Выкинул %1$d пассажиров!'
     
   VehicleManagerDialog:
     Caption: '#Name.Full#'
@@ -304,11 +305,11 @@ Dialog:
       Этот компонент использует AGPL v3 лицензию.
       Запрещено использовать в любых коммерческих целях.
 
-#  VehicleResprayDialog:
-#    Caption: '#Name.Simple#: Select %1$s''s %2$s (Model ID: %3$d, HP: %4$1.0f%%)'
-#    Item: '%1$s••••••••••{FFFFFF} Color: %2$d %1$s••••••••••'
+  VehicleResprayDialog:
+    Caption: '#Name.Simple#: Выбран %1$s %2$s (ID модели: %3$d, HP: %4$1.0f%%)'
+    Item: '%1$s••••••••••{FFFFFF} Цвет: %2$d %1$s••••••••••'
     
-#  VehicleResprayGroupDialog:
-#    Caption: '#Name.Simple#: Select %1$s's %2$s (Model ID: %3$d, HP: %4$1.0f%%)'
-#    Item: '	'
-#    ColorBlockText: '•••'
+  VehicleResprayGroupDialog:
+    Caption: '#Name.Simple#: Выбран %1$s %2$s (ID модели: %3$d, HP: %4$1.0f%%)'
+    Item: '	'
+    ColorBlockText: '•••'
