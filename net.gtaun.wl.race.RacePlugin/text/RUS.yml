@@ -1,395 +1,396 @@
 #####
-# English by 123marvin123 & mk124.
+# Russian by hitman249.
 #
 # In order to calculate the percentage of translated,
-# Please complete the translation and then remove the#comment character!
+# Please complete the translation and then remove the # comment character!
 #
 
 Name:
-  Simple: 'Racing'
-  Full: 'Racing System'
+  Simple: 'Гонки'
+  Full: 'Менеджер гонок'
 
 Time:
   Format:
-    HMS: '%1$d hours %2$d minutes %3$d seconds'
-    S: '%1$d seconds'
-    M: '%1$d minutes'
+    HMS: '%1$d часов %2$d минут %3$d секунд'
+    S: '%1$d секунд'
+    M: '%1$d минут'
   
-  Never: 'Never'
+  Never: 'Никогда'
 
 Common:
   None: None
-  Allow: 'Allow'
-  Disallow: 'Disallow'
+  Allow: 'Разрешено'
+  Disallow: 'Запрещено'
   OK: 'OK'
-  Empty: 'Empty'
+  Empty: 'Пусто'
   NA: 'N/A'
-  NoLimit: 'Not limited'
+  NoLimit: 'Без ограничений'
 
 Unit:
-  M: 'm'
-  KM: 'km'
-  KMH: 'km/h'
+  M: 'м'
+  KM: 'км'
+  KMH: 'км/ч'
   KPH: 'KPH'
   
   Time:
-    S: 'seconds'
-    M: 'minutes'
+    S: 'секунд'
+    M: 'минут'
 
 Track:
   Type:
-    Normal: 'Normal track'
-    Circuit: 'Circuit track'
+    Normal: 'Нормальная трасса'
+    Circuit: 'Круговая трасса'
     
   Status:
-    Editing: 'Editing'
-    Completed: 'Completed'
+    Editing: 'Редактирование'
+    Completed: 'Готово'
     Ranking: 'Ranking'
     
   Checkpoint:
-    Text: 'Checkpoint'
+    Text: 'Констрольная точка'
     Type:
-      Normal: 'Racing'
-      Air: 'Flight'
+      Normal: 'Гоночная'
+      Air: 'С прыжком'
       
   SortMode:
-    Nearest: 'Nearest'
-    LongToShort: 'Long to short'
-    ShortToLong: 'Short to long'
+    Nearest: 'Ближайший'
+    LongToShort: 'От больших к маленьким'
+    ShortToLong: 'От маленьких к большим'
 
 Gamemode:
   MainMenuDialog:
-    Item: 'Racing System'
-    Racing: 'Racing: %1$s'
-    Editing: 'Editing track: %1$s'
+    Item: 'Менеджер гонок'
+    Racing: 'Гонка: %1$s'
+    Editing: 'Редактировать трассу: %1$s'
   
   GameListDialog:
-    NewGame: '[+] Start a new race'
-    Racing: 'Racing: %1$s Track: %2$s Sponsor: %3$s'
+    NewGame: '[+] Начать новую гонку'
+    Racing: 'Гонка: %1$s Трасса: %2$s Организатор: %3$s'
 
 Racing:
-  DepartureInterval: 'Departure interval'
+  DepartureInterval: 'Интервал старта'
   
   Type:
-    Normal: 'Normal'
-    Knockout: 'Knockout'
+    Normal: 'Нормальный'
+    Knockout: 'С поражением'
   
   DeathRule:
-    WaitAndReturn: 'Wait and go back to the last checkpoint'
-    Knockout: 'Knockout'
+    WaitAndReturn: 'Вернитесь к последней контрольной точке!'
+    Knockout: 'Поражение!'
 
   Limit:
-    AutoRepair: 'Auto repair'
-    InfiniteNitrous: 'Unlimited nitrogen'
-    AutoFlip: 'Automatic flip'
-    ChangeVehicle: 'Allows to change vehicle'
+    AutoRepair: 'Авторемонт'
+    InfiniteNitrous: 'Бесконечное нитро'
+    AutoFlip: 'Автопереворот'
+    ChangeVehicle: 'Разрешено менять транспорт'
   
   Message:
-    NewRacingMessage: "#Name.Simple#: %1$s started a new game ‘%2$s’ (Track %3$s), if you are in a vehicle, you can double-press the End key on your keyboard to join this game."
+    NewRacingMessage: "#Name.Simple#: %1$s начал новую игру ‘%2$s’ (Трасса %3$s), если вы находитесь в автомобиле, вы можете нажать дважды клавишу End, чтобы присоединиться к этой игре."
     
-    JoinMessage: "#Name.Simple#: You joined game '%1$s' (Track %2$s)."
-    PlayerJoinMessage: "#Name.Simple#: %1$s has joined the game '%2$s'."
-    JoinTipMessage: '#Name.Simple#: If you are in a game, you can double-press the horn-key (default H) to open the menu of the current race.'
+    JoinMessage: "#Name.Simple#: Вы присоединились к игре '%1$s' (Трасса %2$s)."
+    PlayerJoinMessage: "#Name.Simple#: %1$s присоединился к игре '%2$s'."
+    JoinTipMessage: '#Name.Simple#: Если вы подключились к игре, нажмите дважды клавишу H, чтобы открыть меню текущей гонки.'
     
-    LeaveMessage: "#Name.Simple#: You have left the game '%1$s'."
-    PlayerLeaveMessage: "#Name.Simple#: %1$s has left the game '%2$s'."
+    LeaveMessage: "#Name.Simple#: Вы вышли из гонки '%1$s'."
+    PlayerLeaveMessage: "#Name.Simple#: %1$s вышел из гонки '%2$s'."
     
-    KickMessage: "#Name.Simple#: You have been kicked out of the game '%1$s'."
-    KickPlayerMessage: "#Name.Simple#: %1$s has been kicked out of game '%2$s'."
+    KickMessage: "#Name.Simple#: Вы были кикнуты из игры '%1$s'."
+    KickPlayerMessage: "#Name.Simple#: %1$s был кикнут из игры '%2$s'."
     
-    CancelMessage: "#Name.Simple#: Game '%1$s' has been canceled."
+    CancelMessage: "#Name.Simple#: Игра '%1$s' была отменена."
     
-    FinishMessage: "#Name.Simple#: You have completed game '%1$s'."
-    PlayerFinishMessage: "#Name.Simple#: %1$s has completed the game '%2$s'."
+    FinishMessage: "#Name.Simple#: Вы завершили игру '%1$s'."
+    PlayerFinishMessage: "#Name.Simple#: %1$s завершил игру '%2$s'."
     
   GameText:
-    GoMessage: '- ~r~GO!~w~ -'
+    GoMessage: '- ~r~СТАРТ!~w~ -'
     
   Script:
-    ErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script error %4$s has occurred at line %3$d.'
-    ErrorLineMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Error code: %3$s.'
-    TimeOutErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script was running longer then the specified time. Operation terminating.'
-    InstructionCountLimitErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script exceeds the limit of instructions. Operation terminating.'
+    ErrorMessage: '#Name.Simple#: Трасса %1$s (Контрольная точка %2$d): Ошибка скрипта %4$s произошла на линии %3$d.'
+    ErrorLineMessage: '#Name.Simple#: Трасса %1$s (Контрольная точка %2$d): Код ошибки: %3$s.'
+    TimeOutErrorMessage: '#Name.Simple#: Трасса %1$s (Контрольная точка %2$d): Скрипт выполнялся слишком долго и был остановлен.'
+    InstructionCountLimitErrorMessage: '#Name.Simple#: Трасса %1$s (Контрольная точка %2$d): Скрипт превысил предел инструкций и был завершён.'
     
 TrackEditor:
-  StartEditingTrackMessage: '#Name.Simple#: You are now editing %1$s track.'
-  EndEditingTrackMessage: '#Name.Simple#: Stopped edit %1$s track.'
+  StartEditingTrackMessage: '#Name.Simple#: Редактирование %1$s трассы.'
+  EndEditingTrackMessage: '#Name.Simple#: Закончить редактирование %1$s трассы.'
     
 Textdraw:
   RacingHudWidget:
-    BottomInfoFormat: 'Completed: ~b~~h~%3$1.1f%%~w~- Time: %4$s~n~ Racing:~y~~h~%1$s~w~ - Track:~g~~h~%2$s~w~'
+    BottomInfoFormat: 'Готово: ~b~~h~%3$1.1f%%~w~- Время: %4$s~n~ Гонка:~y~~h~%1$s~w~ - Трасса:~g~~h~%2$s~w~'
 
 Dialog:
   CodeEditorDialog:
-    Caption: '#Name.Simple#: Code Editor : Edit %1$s code (of %2$d line)'
+    Caption: '#Name.Simple#: Редактор кода : Редактировать %1$s код (из %2$d строки)'
     Item: '[%1$02d]%2$s'
-    Add: '[+] Add a new line'
-    Save: '[S] Save the code'
+    Add: '[+] Добавить новую строку'
+    Save: '[S] Сохранить код'
   
   CodeEditorEditLineDialog:
-    Caption: '#Name.Simple#: Code editor: Edit the first line of code %1$d'
+    Caption: '#Name.Simple#: Редактор кода: Измените первую строку кода %1$d'
     Text: |
-      You are editing the first %1$d lines of code, the original code is:
+      Вы редактируете первые %1$d строк кода, оригинальный код:
       
       %2$s
       
-      Enter {0000FF} INSERT {A9C4E4} to insert new code above the line;
-      Enter {FF0000} DELETE {A9C4E4} to delete this line.
+      Enter {0000FF} INSERT {A9C4E4} вставить новый код выше этой строки;
+      Enter {FF0000} DELETE {A9C4E4} удалить эту строку.
       
-      Please enter new code, max length is 144 bytes per line:
+      Пожалуйста, введите новый код, максимальная длина составляет 144 байта в каждой строке:
 
   CodeEditorNewLineDialog:
-    Caption: '#Name.Simple#: Code Editor: Adding the first line of code %1$d'
-    Text: 'Please enter the first %1$s line of new code , max length is 144 bytes per line: '
+    Caption: '#Name.Simple#: Редактор кода: Добавление первой строки кода %1$d'
+    Text: 'Пожалуйста введите первую %1$s строку нового кода, максимальная длина составляет 144 байт на строку: '
     
   NewRacingConfirmDialog:
-    Caption: '#Name.Simple#: Confirm that you want to start a new game.'
-    Text: 'You are currently in %1$s game. Are you sure you want to quit to start a new game?'
+    Caption: '#Name.Simple#: Подтвердите, что вы хотите начать новую игру.'
+    Text: 'Вы сейчас в %1$s игре. Вы уверены, что хотите выйти и начать новую игру?'
     
   NewRacingDialog:
     Caption: '#Name.Simple#: %1$s'
-    Name: 'Racing Name: %1$s'
-    Track: 'Track: %1$s (Checkpoint %2$d, Length %3$1.1f#Unit.KM#)'
-    TrackType: 'Track type: %1$s'
-    RacingType: 'Game type: '
-    DepartureInterval: 'Start interval: %1$s'
-    DeathRule: 'Death rule: '
-    Limit: 'Limits: '
-    PlayersLimit: 'Player limit: '
-    Password: 'Password: '
-    Create: 'Start a new game'
-    RacingNormalCaption: 'Start a new game'
-    RacingTestCaption: 'Test the track'
-    CircultFormat: '#Track.Type.Circuit# (%1$d rings)'
-    PlayersLimitFormat: '%1$d ~%2$d persons'
-    PlayersLimitNone: 'Unlimited'
+    Name: 'Название гонки: %1$s'
+    Track: 'Трасса: %1$s (Контрольная точка %2$d, Длина %3$1.1f#Unit.KM#)'
+    TrackType: 'Вид трассы: %1$s'
+    RacingType: 'Вид игры: '
+    DepartureInterval: 'Стартовый интервал: %1$s'
+    DeathRule: 'Правила смерти: '
+    Limit: 'Лимиты: '
+    PlayersLimit: 'Лимит игроков: '
+    Password: 'Пароль: '
+    Create: 'Начать новую игру'
+    RacingNormalCaption: 'Начать новую игру'
+    RacingTestCaption: 'Проверка трассы'
+    CircultFormat: '#Track.Type.Circuit# (%1$d кругов)'
+    PlayersLimitFormat: '%1$d ~%2$d человек'
+    PlayersLimitNone: 'Неограниченно'
     
   NewRacingEditNameDialog:
-    Caption: '#Name.Simple#: %1$s: Edit the name of the game'
-    Text: 'Please type the new name of the game: '
-    LimitAppendMessage: 'Event name length requirement of 3 to 40, please re-enter.'
+    Caption: '#Name.Simple#: %1$s: Изменить название игры'
+    Text: 'Пожалуйста, введите новое название игры: '
+    LimitAppendMessage: 'Название игры должно сождержать от 3 до 40 символов, попробуйте ещё раз.'
     
   RaceMainDialog:
     Caption: '#Name.Simple#'
-    Racing: 'Now racing: %1$s'
-    Editing: 'Editing track: %1$s'
-    TrackList: 'Track list...'
-    TrackFavorites: 'My Favorite tracks...'
-    RacingList: 'Current race list...'
-    CreateTrack: 'Create new track'
-    MyRacerInfo: 'My driver information'
-    MyRaceRecord: 'My game records...'
-    WorldRanking: 'World ranking records...'
-    PersonalPreferences: 'Personal preferences...'
-    Help: 'Help'
-    About: 'About #Name.Full#'
+    Racing: 'Текущая гонка: %1$s'
+    Editing: 'Редактирование трассы: %1$s'
+    TrackList: 'Список трасс...'
+    TrackFavorites: 'Мои любимые трассы...'
+    RacingList: 'Текущий список трасс...'
+    CreateTrack: 'Создать новую трассу'
+    MyRacerInfo: 'Информация по моему гонщику'
+    MyRaceRecord: 'Мои записанные игры...'
+    WorldRanking: 'Мировой рейтинг...'
+    PersonalPreferences: 'Личные предпочтения...'
+    Help: 'Помощь'
+    About: 'О менеджере гонок'
     
   CreateNewTrackNamingDialog:
-    Caption: '#Name.Simple#: Create a new track'
-    Text: 'Please enter your desired track name: '
-    AlreadyExistAppendMessage: '{FF0000} * Track name {FFFFFF}%1$s {FF0000} is already in use, please rename it.'
-    IllegalNameAppendMessage: '{FF0000} * Track name {FFFFFF}%1$s {FF0000} not available, please rename it.'
+    Caption: '#Name.Simple#: Создать новую трассу'
+    Text: 'Пожалуйста, введите желаемое название трассы: '
+    AlreadyExistAppendMessage: '{FF0000} * Трасса {FFFFFF}%1$s {FF0000} уже используется, пожалуйста, переименуйте её.'
+    IllegalNameAppendMessage: '{FF0000} * Трасса {FFFFFF}%1$s {FF0000} недоступна, пожалуйста, переименуйте её.'
   
   HelpDialog:
-    Caption: '#Name.Simple#: Help'
-    Text: 'Coming soon......'
+    Caption: '#Name.Simple#: Помощь'
+    Text: 'Скоро......'
     
   AboutDialog:
-    Caption: '#Name.Simple#: About #Name.Full#'
+    Caption: '#Name.Simple#: О менеджере гонок'
     Text: |
       --- The New WL-World : Race Plugin ---
-      Version: %1$s (Build%2$d)
-      Build date: %3$s
+      Версия: %1$s (Build%2$d)
+      Дата компиляции: %3$s
       
-      Developer: mk124
-      Design: mk124
-      Design Advisor: 52_PLA (aka. Yin.J), [ITC] 1314, [ITC] KTS, snwang1996
-      Data Collector: mk124, 52_PLA
-      Test: 52_PLA, [ITC] 1314, [ITC] KTS, SMALL_KR, snwang1996
-      Translation: (English) 123marvin123, MK124
-      Thanks: yezhizhu, vvg, fangye, Luck, Waunny, Shindo, 123marvin123
+      Разработчики: mk124
+      Дизайн: mk124
+      Дизайн структуры: 52_PLA (aka. Yin.J), [ITC] 1314, [ITC] KTS, snwang1996
+      Сбор данных: mk124, 52_PLA
+      Тестирование: 52_PLA, [ITC] 1314, [ITC] KTS, SMALL_KR, snwang1996
+      Перевод: (English) 123marvin123, MK124, (Russian) hitman249
+      Спасибо: yezhizhu, vvg, fangye, Luck, Waunny, Shindo, 123marvin123
       
-      This component is part of The New WL-World project.
-      This component uses the AGPL v3 license.
-      Prohibit the use in any commercial or profit-purpose servers.
+      Этот компонент является частью проекта The New WL-World.
+      Этот компонент использует AGPL v3 лицензию.
+      Запрещено использовать в любых коммерческих целях.
   
   RacingDepartureSettingDialog:
-    Caption: '#Name.Simple#: Set the spawn interval'
+    Caption: '#Name.Simple#: Установить интервал спавна'
   
   RacingDialog:
-    Caption: "#Name.Simple#: View game '%1$s' information"
-    Name: 'Racing: %1$s'
-    Track: 'Track: %1$s'
-    Sponsor: 'Sponsor: %1$s'
-    Join: 'Join this game'
-    Leave: 'Leave this game'
-    Cancel: 'Cancel this game'
-    Start: 'Start this game'
-    Player: 'Player: %1$s'
+    Caption: "#Name.Simple#: Просмотр информации о игре '%1$s'"
+    Name: 'Гонка: %1$s'
+    Track: 'Трасса: %1$s'
+    Sponsor: 'Организатор: %1$s'
+    Join: 'Присоединиться к этой игре'
+    Leave: 'Покинуть эту игру'
+    Cancel: 'Отменить эту игру'
+    Start: 'Начать эту игру'
+    Player: 'Игрок: %1$s'
     
   RacingLimitDialog:
-    Caption: '#Name.Simple#: Modify game limits'
+    Caption: '#Name.Simple#: Изменить лимиты игры'
   
   RacingLeaveAndJoinConfirmDialog:
-    Caption: '#Name.Simple#: Confirm that you want to leave current game'
-    Text: "Are you sure that you want to leave %1$s game, and join the game '%2$s' ?"
+    Caption: '#Name.Simple#: Подтвердите, что вы хотите покинуть текущую игру'
+    Text: "Вы уверены, что хотите покинуть %1$s игру, и присоединиться к '%2$s' игре?"
   
   RacingLeaveConfirmDialog:
-    Caption: '#Name.Simple#: Leave race'
-    Text: "Are you sure that you want to leave the game '%1$s' ?"
+    Caption: '#Name.Simple#: Покинуть гонку'
+    Text: "Вы уверены, что хотите выйти из игры '%1$s' ?"
   
   RacingCancelConfirmDialog:
-    Caption: '#Name.Simple#: Cancel race'
-    Text: "Are you sure you want to cancel the game '%1$s' ?"
+    Caption: '#Name.Simple#: Отменить гонку'
+    Text: "Вы уверены, что хотите отменить гонку '%1$s' ?"
   
   RacingKickConfirmDialog:
-    Caption: '#Name.Simple#: Confirm kick'
-    Text: 'Are you sure that you want to kick %1$s?'
+    Caption: '#Name.Simple#: Подветдите кик'
+    Text: 'Вы уверены, что хотите выбросить %1$s?'
   
   RacingListDialog:
-    Caption: '#Name.Simple#: View all games (Participable: %1$d, Total: %2$d)'
-    Text: 'Match: %1$s Track: %2$s Sponsor: %3$s'
+    Caption: '#Name.Simple#: Все игры (Учавствуют: %1$d, Всего: %2$d)'
+    Text: 'Матч: %1$s Трасса: %2$s Организатор: %3$s'
   
   TrackCheckpointEditDialog:
-    Caption: "#Name.Simple#: Edit track '%1$s': Edit checkpoint %2$d"
-    Teleport: 'Sent to this checkpoint'
-    Position: 'Position: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d'
-    Type: 'Type: '
-    Size: 'Size: %1$1.1f'
-    Script: 'Trigger code: %1$d line (%2$d characters)'
-    UpdatePosition: 'Update the checkpoint position'
-    Delete: 'Delete this checkpoint'
+    Caption: "#Name.Simple#: Редактировать трассу '%1$s': Редактировать контрольную точку %2$d"
+    Teleport: 'Создать здесь контрольную точку'
+    Position: 'Позиция: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d'
+    Type: 'Вид: '
+    Size: 'Размер: %1$1.1f'
+    Script: 'Код триггера: %1$d строк (%2$d символов)'
+    UpdatePosition: 'Обновление позиции контрольной точки'
+    Delete: 'Удалить эту контрольную точку'
     CheckpointFormat: '#Track.Checkpoint.Text#%1$d'
-    UpdatePositionMessage: '#Name.Simple#: Checkpoint location has been updated to the current location.'
+    UpdatePositionMessage: '#Name.Simple#: Расположение контрольной точки обновлено до текущего местоположения.'
   
   TrackCheckpointEditPositionDialog:
-    Caption: '#Name.Simple#: Edit checkpoint position'
+    Caption: '#Name.Simple#: Редактировать местоположение контрольной точки'
     Text: |
-      Current position is: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d
-      Please enter a new position in this format: [x] [y] [z] [interior]:
-    IllegalFormatAppendMessage: '{FF0000} * You need to enter the position in the correct format.'
+      Текущее местоположение: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d
+      Пожалуйста, введите новую позицию в этом формате: [x] [y] [z] [interior]:
+    IllegalFormatAppendMessage: '{FF0000} * Вы должны ввести позицию в правильном формате.'
   
   TrackCheckpointEditSizeDialog:
-    Caption: '#Name.Simple#: Editing checkpoint size'
+    Caption: '#Name.Simple#: Изменить размер контрольной точки'
     Text: |
-      Current size is: %1$1.1f
-      Please enter a new size:
-    IllegalFormatAppendMessage: '{FF0000} * You need to enter the size in the correct format.'
+      Текущий размер: %1$1.1f
+      Пожалуйста, введите новый размер:
+    IllegalFormatAppendMessage: '{FF0000} * Вы должны ввести размер в правильном формате.'
   
   TrackDialog:
-    Caption: "#Name.Simple#: View information of track '%1$s'"
-    Name: 'Track name: %1$s'
-    Author: 'Author: %1$s'
-    Desc: 'Description: %1$s'
-    Status: 'Status: %1$s'
-    Checkpoints: 'Checkpoints: %1$d'
-    Length: 'Total length: %1$1.2f km'
-    Distance: 'Current distance: %1$1.1f#Unit.M#'
-    Edit: 'Edit this track'
-    Test: 'Test this track'
-    NewRacing: 'Start a new game'
-    QuickNewRacing: 'Quick launch a new game'
+    Caption: "#Name.Simple#: Просмотр информации о трассе '%1$s'"
+    Name: 'Название трассы: %1$s'
+    Author: 'Автор: %1$s'
+    Desc: 'Описание: %1$s'
+    Status: 'Статус: %1$s'
+    Checkpoints: 'Контрольных точек: %1$d'
+    Length: 'Полная длина: %1$1.2f км'
+    Distance: 'Текущее расстояние: %1$1.1f#Unit.M#'
+    Edit: 'Редактировать эту трассу'
+    Test: 'Тестировать эту трассу'
+    NewRacing: 'Начать новую игру'
+    QuickNewRacing: 'Быстрый запуск новой игры'
   
   TrackEditConfirmDialog:
-    Caption: '#Name.Simple#: Edit the track'
+    Caption: '#Name.Simple#: Изменить трассу'
     Text: |
-      {FFFFFF}If you edit the track, all saved records will be cleared!{A9C4E4}.
-      This will affect other players, so please be careful
+      {FFFFFF}При редактировании трассы, все сохранения будут удалены!{A9C4E4}.
+      Это повлияет на других игроков, поэтому, пожалуйста будьте осторожны.
       
-      Are you sure that you want to edit %1$s ?  
+      Вы уверены, что вы хотите изменить %1$s ?
   
   TrackNewRacingConfirmDialog:
-    Caption: '#Name.Simple#: Start a new game'
-    Text: 'You are participating in %1$s game, are you sure that you want to quit, and start a new game?'
+    Caption: '#Name.Simple#: Начать новую игру'
+    Text: 'Вы участвуете в %1$s игре, вы уверены, что хотите выйти и начать новую игру?'
   
   TrackEditDialog:
-    Caption: '#Name.Simple#: Edit the track: %1$s'
-    Name: 'Track name: %1$s'
-    Desc: 'Description: %1$s'
-    Checkpoints: 'Checkpoints: %1$d'
-    Length: 'Total length: %1$1.2f#Unit.KM#'
-    AddCheckpoint: 'Add a checkpoint at the current location'
-    Setting: 'Race limit settings'
-    Delete: 'Delete this track'
-    StopEditing: 'Stop editing this track'
-    FinishEditing: 'Complete track editor'
-    Test: 'Test this track'
-    Checkpoint: 'Checkpoint %1$d (distance %2$1.1f)'
+    Caption: '#Name.Simple#: Редактирование трассы: %1$s'
+    Name: 'Название трассы: %1$s'
+    Desc: 'Описание: %1$s'
+    Checkpoints: 'Контрольных точек: %1$d'
+    Length: 'Длина трассы: %1$1.2f#Unit.KM#'
+    AddCheckpoint: 'Добавить контрольную точку в текущем местоположении.'
+    Setting: 'Параметры гонки'
+    Delete: 'Удалить трассу'
+    StopEditing: 'Остановить редактирование трассы'
+    FinishEditing: 'Закончить редактирование'
+    Test: 'Тестировать трассу'
+    Checkpoint: 'Контрольная точка %1$d (дистанция %2$1.1f)'
     
   TrackEditNameDialog:
-    Caption: '#Name.Simple#: Edit the track name'
-    Text: 'Original track name: %1$s, please enter the new desired name of the track: '
-    AlreadyExistAppendMessage: '"{FF0000} * Track name {FFFFFF}%1$s {FF0000} is already in use, please rename it.'
-    IllegalFormatAppendMessage: '{FF0000} * Track name {FFFFFF}%1$s {FF0000} is not acceptable, please rename it.'
+    Caption: '#Name.Simple#: Изменить название трассы'
+    Text: 'Оригинальное название трассы: %1$s, пожалуйста, введите новое желаемое имя трассе: '
+    AlreadyExistAppendMessage: '"{FF0000} * Трасса {FFFFFF}%1$s {FF0000} уже используется, пожалуйста, переименуйте её.'
+    IllegalFormatAppendMessage: '{FF0000} * Трасса {FFFFFF}%1$s {FF0000} недоступна, пожалуйста, переименуйте её.'
     
   TrackEditDescDialog:
-    Caption: '#Name.Simple#: Edit the track description'
+    Caption: '#Name.Simple#: Изменение описание трассы'
     Text: |
-      Track %1$s original description is:
+      Трасса %1$s, оригинальное описание:
       
       %2$s
       
-      Please enter a new description :
+      Пожалуйста введите новое описание:
   
   TrackDeleteConfirmDialog:
-    Caption: '#Name.Simple#:! ! ! Delete track confirmation ! ! !'
+    Caption: '#Name.Simple#:! ! ! Подтвердите удаление трассы ! ! !'
     Text: |
-      WARNING ! The following changes can not be undone, all the games record also will be eliminated.
-      Please be sure that you want to delete this track. If you have any questions, please ask a admin.
+      ВНИМАНИЕ! Следующие изменения не могут быть отменены, все записи игры также будут удалены.
+      Пожалуйста, убедитесь, что хотите удалить эту трассу.
+      Если у вас есть какие-либо вопросы, пожалуйста, обратитесь к администратору.
       
-      Please enter the track name {FFFFFF}%1$s{A9C4E4} to confirm the deletion:
+      Пожалуйста, введите название трассы {FFFFFF}%1$s{A9C4E4} для подтверждения удаления:
   
   TrackDeleteCancelDialog:
-    Caption: '#Name.Simple#: Track deletion has been canceled'
-    Text: "Track deletion of track '%1$s' has been canceled."
+    Caption: '#Name.Simple#: Удаление трассы было отменено'
+    Text: "Удаление трассы '%1$s' было отменено."
     
   TrackDeleteCompleteDialog:
-    Caption: '#Name.Simple#: Remove track success'
-    Text: 'Track %1$s has been successfully deleted.'
+    Caption: '#Name.Simple#: Трасса успешно удалена'
+    Text: 'Трасса %1$s была успешно удалена.'
   
   TrackFinishEditingConfirmDialog:
-    Caption: '#Name.Simple#: Complete track edit confirmation'
+    Caption: '#Name.Simple#: Полностью закончить трассу'
     Text: |
-      If the track completion is finished, people can play it, so be sure that everything is finished.
-      When you re-edit the track, all the records will be cleared.
-      Tracks that are in the ranking list, can't be edited
+      Если создание трека закончено, другие игроки могут играть в неё.
+      Если вы повторно отредактируете трассу, все записи о ней будут удалены.
+      Трассы которые находятся в рейтинговом списке не могут быть отредактированы.
       
-      Are you sure you want to finish the track %1$s ?
+      Вы уверены, что вы полностью закончили трассу %1$s ?
   
   TrackListDialog:
-    Caption: '#Name.Simple#: Track list (%1$d /%2$d)'
-    Item: 'Track: %1$s {7F7F7F} by %2$s - Length: %3$1.1f#Unit.KM# Checkpoints: %4$d'
-    StatusFilter: 'Filtering state: '
-    SortMode: 'Sort by: '
+    Caption: '#Name.Simple#: Список трасс (%1$d /%2$d)'
+    Item: 'Трасса: %1$s {7F7F7F} по %2$s - Длина: %3$1.1f#Unit.KM# Контрольных точек: %4$d'
+    StatusFilter: 'Фильтр по статусу: '
+    SortMode: 'Сортировать по: '
     
   TrackListMainDialog:
-    Caption: '#Name.Simple#: Type of listing tracks'
-    Nearby: 'Search nearby tracks...'
-    ListAll: 'Lists all tracks...'
-    MyFavorites: 'My favorites...'
-    MyTracks: 'My tracks...'
-    SearchByAuthor: 'Search track by by author'
-    SearchByKeyword: 'Search track by name'
+    Caption: '#Name.Simple#: Вид просматриваемых трасс'
+    Nearby: 'Поиск трасс поблизости...'
+    ListAll: 'Просмотр всех трасс...'
+    MyFavorites: 'Избранное...'
+    MyTracks: 'Мои трассы...'
+    SearchByAuthor: 'Поиск трасс по автору'
+    SearchByKeyword: 'Поиск трасс по названию'
     
   TrackSearchByAuthorDialog:
-    Caption: '#Name.Simple#: Search track by author'
-    Text: 'Please enter the name of the author: '
+    Caption: '#Name.Simple#: Поиск трасс по автору'
+    Text: 'Пожалуйста, введите имя автора: '
     
   TrackSearchByKeywordDialog:
-    Caption: '#Name.Simple#: Search track by name'
-    Text: 'Please enter a search keyword, multiple keywords separated by spaces: '
+    Caption: '#Name.Simple#: Поиск трасс по названию'
+    Text: 'Пожалуйста, введите ключевое слово для поиска, или несколько ключевых слов, разделенных пробелами: '
     
   TrackNamingDialog:
-    IllegalLengthAppendMessage: '{FF0000} * Track name length requirements for the %1$d ~%2$d characters, please re-enter.'
+    IllegalLengthAppendMessage: '{FF0000} * Длина названия трассы должна быть %1$d ~%2$d символов, пожалуйста повторите.'
   
   TrackScriptEditDialog:
-    Caption: '#Name.Simple#: Edit the track event script: %1$s'
-    Item: 'Event %1$s script: %2$d lines (%3$d characters)'
-    EventFormat: 'Event %1$s'
+    Caption: '#Name.Simple#: Редактирование скриптовых событий трассы: %1$s'
+    Item: 'Событие %1$s скрипта: %2$d строк (%3$d символов)'
+    EventFormat: 'Событие %1$s'
   
   TrackSettingDialog:
-    Caption: "#Name.Simple#: Edit track '%1$s': Game setting"
-    PlayersFormat: '%1$d persons'
-    MinPlayersFormat: 'Minimum number of players: %1$s'
-    MaxPlayersFormat: 'Max number of players: %1$s'
- 
+    Caption: "#Name.Simple#: Редактирование трассы '%1$s': Установки игры"
+    PlayersFormat: '%1$d игроков'
+    MinPlayersFormat: 'Минимум игроков: %1$s'
+    MaxPlayersFormat: 'Максимум игроков: %1$s'
+    
