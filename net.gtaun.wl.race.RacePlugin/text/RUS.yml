@@ -47,7 +47,7 @@ Track:
     Ranking: 'Ranking'
     
   Checkpoint:
-    Text: 'Констрольная точка'
+    Text: 'Контрольная точка'
     Type:
       Normal: 'Гоночная'
       Air: 'С прыжком'
