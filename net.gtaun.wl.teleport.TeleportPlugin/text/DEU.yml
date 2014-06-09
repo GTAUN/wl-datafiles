@@ -1,0 +1,112 @@
+﻿#####
+# German by 123marvin123 (Marvin H).
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: 'TeleSystem'
+  Full: 'Teleport & Welt Switching System'
+
+Command:
+  Teleport:
+    Usage: '#Name.Simple#: Teleport-Befehl Benutzung: //[name]'
+    NotFound: "#Name.Simple#: Es existiert kein Befehl mit dem Namen '%1$s'."
+    Message: '#Name.Simple#: Du hast dich zum Teleport %1$s teleportiert.'
+
+  Make:
+    Usage: '#Name.Simple#: Ein neuen Teleport erstellen: /tp make [name]'
+    Created: '#Name.Simple#: Teleport %1$s wurde erstellt.'
+    AlreadyExist: '#Name.Simple#: Fehler: Der Name %1$s konnte nicht verwendet werden, bitte erneut versuchen.'
+
+Dialog:
+  Common:
+    InvaildFormat: "{FF0000}* Bitte stelle sicher, dass das Format korrekt ist."
+
+  TeleportDialog:
+    Caption: "#Name.Simple#: Teleport: %1$s"
+    Name: "Name: %1$s"
+    Creater: "Ersteller: %1$s"
+    Position: "Position: x=%1$1.2f, y=%2$1.2f, z=%3$1.2f, interior=%4$d"
+    Angle: "Angle: %1$1.1f"
+    UpdateDate: "Letztes Update: %1$s"
+    Popularity: "Beliebtheit: %1$d"
+    SetPos: "Zur aktuellen Position setzen"
+    Delete: "Teleport löschen"
+    Teleport: "Dorthin teleportieren"
+    Finish: "Fertig"
+
+    EditNameDialog:
+      Caption: "#Name.Simple#: Name des Teleports ändern"
+      Message: "Der aktuelle Name lautet {0000AF}%1$s{A9C4E4}.\nGebe nun den neuen Namen ein (Max. 2-24 Charakter):"
+      InvaildName: "{FF0000}* Dieser Name kann nicht verwendet werden, bitte erneut versuchen."
+
+    EditPositionDialog:
+      Caption: "#Name.Simple#: Position vom Teleport verändern"
+      Message: "Die aktuelle Position ist {0000AF}x=%1$1.2f, y=%2$1.2f z=%3$1.2f interior=%4$d{A9C4E4}\nGebe nun bitte die neue Position ein.\nDas Format lautet [x] [y] [z] [interior]:"
+
+    EditAngleDialog:
+      Caption: "#Name.Simple#: Angle des Teleports verändern"
+      Message: "Aktuelle Angle lautet %1$1.1f,\nGebe nun bitte den neuen Wert ein:"
+
+    SetPosConfirmDialog:
+      Caption: "#Name.Simple#: Position des Teleports zur aktuellen Position setzen"
+      Message: "Bist du dir sicher, dass du die Position vom Teleport {0000AF}%1$s{A9C4E4}\nzu der aktuellen Position ändern möchtest?"
+
+    DeleteConfirmDialog:
+      Caption: "#Name.Simple#: Teleport löschen"
+      Message: "Bist du dir sicher, dass du den Teleport {0000AF}%1$s{A9C4E4} löschen möchtest?\nWARNUNG: Dieser Vorgang kann nicht rückgängig gemacht werden!"
+
+  TeleportListDialog:
+    Caption: "#Name.Simple#: Verügbare Teleports"
+    Operation: "Operation: "
+    OpTeleport: "Teleport"
+    OpShowInfo: "Info"
+    SortMode: "Sortierung: "
+    SortByDistance: "Nähste"
+    SortByPopular: "Beliebteste"
+    SortByDate: "Datum"
+    Item: "%1$s    {808080}Ersteller: %2$s, Beliebtheit: %3$d, Letztes Update: %4$s"
+
+  TeleportMainDialog:
+    Caption: "#Name.Full#"
+    TeleportList: "Teleports ..."
+    MyTeleport: "Meine Teleports ..."
+    MyFavorite: "Meine Favoriten ..."
+    Create: "Neuen Teleport erstellen"
+    Preferences: "Persönliche Einstellungen ..."
+    Help: "Hilfe"
+    About: "Über #Name.Full#"
+
+    CreateDialog:
+      Caption: "#Name.Simple#: Neuen Teleport erstellen"
+      Message: "Gebe bitte den Namen für den Teleport ein (Max. 2-24 Charakter):"
+      Failed: "{FF0000}* Ein Teleport mit diesem Namen konnte nicht angelegt werden.\nBitte erneut versuchen."
+
+    HelpDialog:
+      Caption: "#Name.Simple#: Hilfsinformationen"
+      Message: "Coming soon..."
+
+    AboutDialog:
+      Caption: "#Name.Simple#: Über #Name.Full#"
+      Message: |
+        --- Die neue WL-Welt : Teleport & Welt Plugin ---
+        Version: %1$s (Build %2$d)
+        Build date: %3$s
+        
+        Developer: mk124
+        Design: mk124
+        Design dvisor: 52_PLA(aka. Yin.J), [ITC]1314, [ITC]KTS, snwang1996
+        Data Collector: mk124, 52_PLA
+        Test: 52_PLA, [ITC]1314, [ITC]KTS, SMALL_KR, snwang1996
+        Translation: (Englisch) MK124, (Deutsche) 123marvin123
+        Thanks: yezhizhu, vvg, fangye, Luck, Waunny, Shindo
+        
+        Diese Komponente ist Teil des The New WL-World Projekts.
+        Diese Komponente verwendet die AGPL v3 Lizenz.
+        Sie verbietet die Verwendung in jeglichen kommerziellen Projekten.
+
+  TeleportNamingDialog:
+    InvaildName: "{FF0000}* Der Name {FFFFFF}%1$s{FF0000} den du eingegeben hast, ist nicht gültig."
+    AlreadyExist: "{FF0000}* Der Name {FFFFFF}%1$s{FF0000} den du eingegeben hast, ist bereits in Benutzung."
