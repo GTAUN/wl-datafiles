@@ -252,11 +252,11 @@ Dialog:
   
   TrackCheckpointEditDialog:
     Caption: "#Name.Simple#: Edit track '%1$s': Edit checkpoint %2$d"
-    Teleport: 'Sent to this checkpoint'
+    Teleport: 'Goto checkpoint'
     Position: 'Position: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d'
     Type: 'Type: '
     Size: 'Size: %1$1.1f'
-    Script: 'Trigger code: %1$d line (%2$d characters)'
+    Script: 'Code: %1$d line (%2$d characters)'
     UpdatePosition: 'Update the checkpoint position'
     Delete: 'Delete this checkpoint'
     CheckpointFormat: '#Track.Checkpoint.Text#%1$d'

@@ -1,0 +1,396 @@
+#####
+# German by 123marvin123 (Marvin H)
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the#comment character!
+#
+
+Name:
+  Simple: 'Rennen'
+  Full: 'Renn System'
+
+Time:
+  Format:
+    HMS: '%1$d Stunden %2$d Minuten %3$d Sekunden'
+    S: '%1$d Sekunden'
+    M: '%1$d Minuten'
+  
+  Never: 'Nie'
+
+Common:
+  None: Keine
+  Allow: 'Erlauben'
+  Disallow: 'Verweigern'
+  OK: 'OK'
+  Empty: 'Leer'
+  NA: 'N/A'
+  NoLimit: 'Kein Limit'
+
+Unit:
+  M: 'm'
+  KM: 'km'
+  KMH: 'km/h'
+  KPH: 'KPH'
+  
+  Time:
+    S: 'Sekunden'
+    M: 'Minuten'
+
+Track:
+  Type:
+    Normal: 'Normaler track'
+    Circuit: 'Kreis track'
+    
+  Status:
+    Editing: 'Am editieren'
+    Completed: 'Komplett'
+    Ranking: 'Ranking'
+    
+  Checkpoint:
+    Text: 'Checkpoint'
+    Type:
+      Normal: 'Rennen'
+      Air: 'Flug'
+      
+  SortMode:
+    Nearest: 'Nähste'
+    LongToShort: 'Lang zu kurz'
+    ShortToLong: 'Kurz zu lang'
+
+Gamemode:
+  MainMenuDialog:
+    Item: 'Renn System'
+    Racing: 'Am Rennen: %1$s'
+    Editing: 'Track editieren: %1$s'
+  
+  GameListDialog:
+    NewGame: '[+] Neues Rennen starten'
+    Racing: 'Rennen: %1$s Track: %2$s Gastgeber: %3$s'
+
+Racing:
+  DepartureInterval: 'Startinterval'
+  
+  Type:
+    Normal: 'Normal'
+    Knockout: 'Knockout'
+  
+  DeathRule:
+    WaitAndReturn: 'Warte und gehe zum letzen Checkpoint zurück'
+    Knockout: 'Knockout'
+
+  Limit:
+    AutoRepair: 'Automatisches reparieren'
+    InfiniteNitrous: 'Unlimitiertes Nitro'
+    AutoFlip: 'Automatisches drehen'
+    ChangeVehicle: 'Erlauben, Fahrzeug zu verändern'
+  
+  Message:
+    NewRacingMessage: "#Name.Simple#: %1$s startete ein neues Spiel ‘%2$s’ (Track %3$s), wenn du dich in einem Fahrzeug befindest kannst du zwei mal die End-Taste drücken um zu joinen."
+    
+    JoinMessage: "#Name.Simple#: Du bist dem Spiel '%1$s' (Track %2$s) beigetreten."
+    PlayerJoinMessage: "#Name.Simple#: %1$s ist dem Spiel '%2$s' beigetreten."
+    JoinTipMessage: '#Name.Simple#: Wenn du dich in einem Spiel befindest, kann du die Huppe zwei mal betätigen (normalerweise H) um das Menü des Rennens zu öffnen.'
+    
+    LeaveMessage: "#Name.Simple#: Du hast das Spiel '%1$s' verlassen."
+    PlayerLeaveMessage: "#Name.Simple#: %1$s hat das Spiel '%2$s' verlassen."
+    
+    KickMessage: "#Name.Simple#: Du wurdest aus dem Spiel '%1$s' geworfen."
+    KickPlayerMessage: "#Name.Simple#: %1$s wurde aus dem Spiel '%2$s' geworfen."
+    
+    CancelMessage: "#Name.Simple#: Spiel '%1$s' wurde abgebrochen."
+    
+    FinishMessage: "#Name.Simple#: Du hast das Spiel '%1$s' abgeschlossen."
+    PlayerFinishMessage: "#Name.Simple#: %1$s hat das Spiel '%2$s' abgeschlossen."
+    
+  GameText:
+    GoMessage: '- ~r~LOS!~w~ -'
+    
+  Script:
+    ErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script Fehler %4$s wurde in der Zeile %3$d gefunden.'
+    ErrorLineMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Fehler code: %3$s.'
+    TimeOutErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Das Script läuft länger als die angegebene Zeit. Script wird beendet.'
+    InstructionCountLimitErrorMessage: '#Name.Simple#: Track %1$s (Checkpoint %2$d): Script hat das Limit der Befehle überschritten. Script wird beendet.'
+    
+TrackEditor:
+  StartEditingTrackMessage: '#Name.Simple#: Du editierst den Track %1$s.'
+  EndEditingTrackMessage: '#Name.Simple#: Du editierst den Track %1$s nun nicht mehr.'
+    
+Textdraw:
+  RacingHudWidget:
+    BottomInfoFormat: 'Abgeschlossen: ~b~~h~%3$1.1f%%~w~- Zeit: %4$s~n~ Rennen:~y~~h~%1$s~w~ - Track:~g~~h~%2$s~w~'
+
+Dialog:
+  CodeEditorDialog:
+    Caption: '#Name.Simple#: Code Editor : %1$s editieren (von der Zeile %2$d)'
+    Item: '[%1$02d]%2$s'
+    Add: '[+] neue Zeile'
+    Save: '[S] den Code speichern'
+  
+  CodeEditorEditLineDialog:
+    Caption: '#Name.Simple#: Code editor: Erste Zeile des Codes ändern %1$d'
+    Text: |
+      Du änderst die ersten %1$d Zeilen des Codes. Aktueller Code:
+      
+      %2$s
+      
+      Gebe {0000FF} INSERT {A9C4E4} ein, um neuen Code über der Zeile hinzuzufügen;
+      Gebe {FF0000} DELETE {A9C4E4} ein, um die Zeile zu löschen.
+      
+      Gebe nun bitte Code ein (Max. 144 Bytes pro Zeile):
+
+  CodeEditorNewLineDialog:
+    Caption: '#Name.Simple#: Code Editor: Hinzufügen vom Code der ersten Zeile %1$d'
+    Text: 'Gebe nun bitte den ersten Code von Zeile %1$s ein (Max 144 Bytes pro Zeile): '
+    
+  NewRacingConfirmDialog:
+    Caption: '#Name.Simple#: Besätige das du ein neues Spiel starte möchtest'
+    Text: 'Du bist momentan im Spiel %1$s. Bist du dir sicher, dass du das aktuelle Spiel verlassen möchtest, um ein neues zu starten?'
+    
+  NewRacingDialog:
+    Caption: '#Name.Simple#: %1$s'
+    Name: 'Name des Rennens: %1$s'
+    Track: 'Track: %1$s (Checkpoint %2$d, Länge %3$1.1f#Unit.KM#)'
+    TrackType: 'Track Typ: %1$s'
+    RacingType: 'Spiel Typ: '
+    DepartureInterval: 'Startinterval: %1$s'
+    DeathRule: 'Todesregel: '
+    Limit: 'Limitierungen: '
+    PlayersLimit: 'Spielerlimit: '
+    Password: 'Passwort: '
+    Create: 'Ein neues Spiel starten'
+    RacingNormalCaption: 'Neues Spiel starten'
+    RacingTestCaption: 'Track testen'
+    CircultFormat: '#Track.Type.Circuit# (%1$d Ringe)'
+    PlayersLimitFormat: '%1$d ~%2$d Personen'
+    PlayersLimitNone: 'Nicht limitiert'
+    
+  NewRacingEditNameDialog:
+    Caption: '#Name.Simple#: %1$s: Name vom Spiel editieren'
+    Text: 'Gebe nun bitte den Namen des Spieles ein: '
+    LimitAppendMessage: 'Der Name muss zwischen 3 und 40 Charakter enthalten.'
+    
+  RaceMainDialog:
+    Caption: '#Name.Simple#'
+    Racing: 'Jetzt am spielen: %1$s'
+    Editing: 'Am editieren: %1$s'
+    TrackList: 'Trackliste...'
+    TrackFavorites: 'Meine lieblings Tracks...'
+    RacingList: 'Aktuelle Rennliste...'
+    CreateTrack: 'Neuen Track erstellen'
+    MyRacerInfo: 'Mein Fahrer Informationen'
+    MyRaceRecord: 'Meine Rennrekorde...'
+    WorldRanking: 'Weltrekorde...'
+    PersonalPreferences: 'Persönliche Einstellungen...'
+    Help: 'Hilfe'
+    About: 'Über #Name.Full#'
+    
+  CreateNewTrackNamingDialog:
+    Caption: '#Name.Simple#: Einen neuen Track erstellen'
+    Text: 'Bitte gebe den Namen des Tracks ein: '
+    AlreadyExistAppendMessage: '{FF0000} * Track Name {FFFFFF}%1$s{FF0000} ist bereits in Benutzung, gebe bitte einen anderen ein.'
+    IllegalNameAppendMessage: '{FF0000} * Track Name {FFFFFF}%1$s{FF0000} ist nicht verfügbar, gebe bitte einen anderen ein.'
+  
+  HelpDialog:
+    Caption: '#Name.Simple#: Hilfe'
+    Text: 'Coming soon......'
+    
+  AboutDialog:
+    Caption: '#Name.Simple#: Über #Name.Full#'
+    Text: |
+      --- Die Neue WL-Welt : Renn Plugin ---
+      Version: %1$s (Build%2$d)
+      Build date: %3$s
+      
+      Developer: mk124
+      Design: mk124
+      Design Advisor: 52_PLA (aka. Yin.J), [ITC] 1314, [ITC] KTS, snwang1996
+      Data Collector: mk124, 52_PLA
+      Test: 52_PLA, [ITC] 1314, [ITC] KTS, SMALL_KR, snwang1996
+      Translation: (Englisch) 123marvin123, (Deutsch) 123marvin123 MK124
+      Thanks: yezhizhu, vvg, fangye, Luck, Waunny, Shindo, 123marvin123
+      
+      Diese Komponente ist Teil des The New WL-World Projekts.
+      Diese Komponente verwendet die AGPL v3 Lizenz.
+      Sie verbietet die Verwendung in jeglichen kommerziellen Projekten.
+  
+  RacingDepartureSettingDialog:
+    Caption: '#Name.Simple#: Spawninterval setzen'
+  
+  RacingDialog:
+    Caption: "#Name.Simple#: Spielinformationen '%1$s' einsehen"
+    Name: 'Rennen: %1$s'
+    Track: 'Track: %1$s'
+    Sponsor: 'Gastgeber: %1$s'
+    Join: 'Diesem Spiel beitreten'
+    Leave: 'Dieses Spiel verlassen'
+    Cancel: 'Spiel abbrechen'
+    Start: 'Dieses Spiel starten'
+    Player: 'Spieler: %1$s'
+    
+  RacingLimitDialog:
+    Caption: '#Name.Simple#: Spiel Limitierungen verändern'
+  
+  RacingLeaveAndJoinConfirmDialog:
+    Caption: '#Name.Simple#: Spiel verlassen, neues beitreten'
+    Text: "Bist du dir sicher, dass du das Spiel %1$s verlassen möchtest, und dem Spiel '%2$s' beitreten möchtest?"
+  
+  RacingLeaveConfirmDialog:
+    Caption: '#Name.Simple#: Spiel verlassen'
+    Text: "Bist du dir sicher, dass du das Spiel '%1$s' verlassen möchtest?"
+  
+  RacingCancelConfirmDialog:
+    Caption: '#Name.Simple#: Spiel abbrechen'
+    Text: "Bist du dir sicher, dass du das Spiel '%1$s' abbrechen möchtest?"
+  
+  RacingKickConfirmDialog:
+    Caption: '#Name.Simple#: Kick bestätigen'
+    Text: 'Bist du dir sicher, dass du Spieler %1$s kicken möchtest?'
+  
+  RacingListDialog:
+    Caption: '#Name.Simple#: Alle Spiele zeigwen (Participable: %1$d, Zusammen: %2$d)'
+    Text: 'Spiel: %1$s Track: %2$s Gastgeber: %3$s'
+  
+  TrackCheckpointEditDialog:
+    Caption: "#Name.Simple#: Track editieren '%1$s': Checkpoint editieren %2$d"
+    Teleport: 'Zu diesem Checkpoint springen'
+    Position: 'Position: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d'
+    Type: 'Typ: '
+    Size: 'Größe: %1$1.1f'
+    Script: 'Code: %1$d Zeilen (%2$d Charakter)'
+    UpdatePosition: 'Checkpoint Position aktualisieren'
+    Delete: 'Checkpoint löschen'
+    CheckpointFormat: '#Track.Checkpoint.Text#%1$d'
+    UpdatePositionMessage: '#Name.Simple#: Die Position des Checkpoints wurde zu deiner aktuellen geändert.'
+  
+  TrackCheckpointEditPositionDialog:
+    Caption: '#Name.Simple#: Checkpoint Position verändern'
+    Text: |
+      Aktuelle Position: x = %1$1.2f, y = %2$1.2f, z = %3$1.2f, interior = %4$d
+      Gebe nun eine neue Position in diesem Format ein: [x] [y] [z] [interior]:
+    IllegalFormatAppendMessage: '{FF0000} * Du hast die Position nicht im korrekten Format eingegeben.'
+  
+  TrackCheckpointEditSizeDialog:
+    Caption: '#Name.Simple#: Checkpoint Größe verändern'
+    Text: |
+      Aktuelle Größe: %1$1.1f
+      Gebe nun die neue Größe ein:
+    IllegalFormatAppendMessage: '{FF0000} * Du musst die Größe im korrekten Format eingeben.'
+  
+  TrackDialog:
+    Caption: "#Name.Simple#: Informationen zum Track '%1$s'"
+    Name: 'Track Name: %1$s'
+    Author: 'Autor: %1$s'
+    Desc: 'Beschreibung: %1$s'
+    Status: 'Status: %1$s'
+    Checkpoints: 'Checkpoints: %1$d'
+    Length: 'Totale Länge: %1$1.2f km'
+    Distance: 'Aktuelle Distanz: %1$1.1f#Unit.M#'
+    Edit: 'Diesen Track löschen'
+    Test: 'Diesen Track testen'
+    NewRacing: 'Ein neues Spiel starten'
+    QuickNewRacing: 'Ein schnelles Spiel starten'
+  
+  TrackEditConfirmDialog:
+    Caption: '#Name.Simple#: Diesen Track editieren'
+    Text: |
+      {FFFFFF}Wenn du diesen Track editierst, gehen alle Rekorde verloren!{A9C4E4}.
+      Das wird andere Spieler eventuell beeinflussen.
+      
+      Bist du dir sicher, dass du den Track %1$s editieren möchtest?  
+  
+  TrackNewRacingConfirmDialog:
+    Caption: '#Name.Simple#: Neues Spiel starten'
+    Text: 'Du bist momentan im Spiel %1$s, bist du sicher, dass du dein aktuelles Spiel verlassen möchtest, um ein neues zu starten?'
+  
+  TrackEditDialog:
+    Caption: '#Name.Simple#: Track editieren: %1$s'
+    Name: 'Track Name: %1$s'
+    Desc: 'Beschreibung: %1$s'
+    Checkpoints: 'Checkpoints: %1$d'
+    Length: 'Totale Länge: %1$1.2f#Unit.KM#'
+    AddCheckpoint: 'Checkpoint an der aktuellen Position hinzufügen'
+    Setting: 'Spieleinstellungen'
+    Delete: 'Track löschen'
+    StopEditing: 'Editierung stoppen'
+    FinishEditing: 'Editierung beenden'
+    Test: 'Track testen'
+    Checkpoint: 'Checkpoint %1$d (Distanz %2$1.1f)'
+    
+  TrackEditNameDialog:
+    Caption: '#Name.Simple#: Track Name editieren'
+    Text: 'Aktueller Track Name: %1$s, gebe nun den neuen Track Namen ein: '
+    AlreadyExistAppendMessage: '"{FF0000} * Track Name {FFFFFF}%1$s{FF0000} ist in Benutzung, wähle einen anderen.'
+    IllegalFormatAppendMessage: '{FF0000} * Track Name {FFFFFF}%1$s{FF0000} kann nicht benutzt werden, wähle einen anderen.'
+    
+  TrackEditDescDialog:
+    Caption: '#Name.Simple#: Trackbeschreibung editieren'
+    Text: |
+      Track %1$ss aktuelle Beschreibung lautet:
+      
+      %2$s
+      
+      Gebe nun die neue Beschreibung ein:
+  
+  TrackDeleteConfirmDialog:
+    Caption: '#Name.Simple#:! ! ! Tracklöschung ! ! !'
+    Text: |
+      WARNUNG ! Die folgenden Änderungen können nicht rückgängig gemacht werden,
+      auch alle Rekorde werden gelöscht.
+      Bitte gehe sicher, dass du weißt was du tust. Wenn du Fragen hast, kannst du eine Admin fragen.
+      
+      Gebe nun bitte den Track Namen {FFFFFF}%1$s{A9C4E4} ein, um zu bestätigen:
+  
+  TrackDeleteCancelDialog:
+    Caption: '#Name.Simple#: Die Tracklöschung wurde abgebrochen.'
+    Text: "Die Löscung des Tracks '%1$s' wurde abgebrochen."
+    
+  TrackDeleteCompleteDialog:
+    Caption: '#Name.Simple#: Track gelöscht'
+    Text: 'Der Track %1$s wurde erfolgreich gelöscht.'
+  
+  TrackFinishEditingConfirmDialog:
+    Caption: '#Name.Simple#: Trackvervollständigung bestätigen'
+    Text: |
+      Wenn du den Track als fertig markierst, kann er gespielt werden, gehe also sicher,
+      dass alles funktioniert. Wenn du den Track danach änderst, weden alle Rekorde gelöscht.
+      Tracks die sich im Ranking befinden, können nicht verändert werden.
+      
+      Bist du dir sicher, dass du den Track %1$s fertigstellen möchtest?
+  
+  TrackListDialog:
+    Caption: '#Name.Simple#: Trackliste (%1$d /%2$d)'
+    Item: 'Track: %1$s {7F7F7F} von %2$s - Länge: %3$1.1f#Unit.KM# Checkpoints: %4$d'
+    StatusFilter: 'Filterstatus: '
+    SortMode: 'Sortierung: '
+    
+  TrackListMainDialog:
+    Caption: '#Name.Simple#: Typen der Tracks'
+    Nearby: 'Tracks in der Nähe suchen...'
+    ListAll: 'Alle Tracks auflisten...'
+    MyFavorites: 'Meine Favoriten...'
+    MyTracks: 'Meine Tracks...'
+    SearchByAuthor: 'Tracks vom Autor suchen'
+    SearchByKeyword: 'Track über den Namen suchen'
+    
+  TrackSearchByAuthorDialog:
+    Caption: '#Name.Simple#: Tracks vom Autor suchen'
+    Text: 'Gebe bitte den Namen des Autors ein: '
+    
+  TrackSearchByKeywordDialog:
+    Caption: '#Name.Simple#: Track über den Namen suchen'
+    Text: 'Gebe nun bitte Schlüsselwörter ein, mehrere Wörter werden mit einem Leerzeichen gekennzeichnet.'
+    
+  TrackNamingDialog:
+    IllegalLengthAppendMessage: '{FF0000} * Track Namen Länge für %1$d sind ~%2$d Charakter, bitte neu eingeben.'
+  
+  TrackScriptEditDialog:
+    Caption: '#Name.Simple#: Track Event Script ändern: %1$s'
+    Item: 'Event %1$s Script: %2$d Zeilen (%3$d Charakter)'
+    EventFormat: 'Event %1$s'
+  
+  TrackSettingDialog:
+    Caption: "#Name.Simple#: Track editieren '%1$s': Spieleinstellungen"
+    PlayersFormat: '%1$d Personen'
+    MinPlayersFormat: 'Minimale Spieleranzahl: %1$s'
+    MaxPlayersFormat: 'Maximale Spieler: %1$s'
+    
