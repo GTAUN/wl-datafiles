@@ -1,0 +1,44 @@
+#####
+# English by mk124.
+#
+# In order to calculate the percentage of translated,
+# Please complete the translation and then remove the # comment character!
+#
+
+Name:
+  Simple: 'WL-Welt'
+  Full: 'Die neue WL-Welt'
+
+GameText:
+  Welcome: 'Wilkommen zur ~r~neuen WL-Welt~w~!!'
+
+Message:
+  Welcome: "Wilkommen auf dem neuen WL-Welt Server."
+  UnknownCommand: 'Unbekannter Befehl.'
+
+Dialog:
+  MainMenuDialog:
+    Caption: "#Name.Full#: Hauptmenü"
+    Help: "Hilfe"
+
+  GameListDialog:
+    Caption: "#Name.Full#: Spiel beitreten"
+
+  HelpDialog:
+    Caption: "#Name.Full#: Hilfsnachricht"
+    Message: |
+      In kürze verfügbar...
+      
+      Einfache Hilfe:
+        Verfügbare Befehle: /m /v /r /kill /help
+        Testbefehle: /pos /tp
+        Fahrzeuge spawnen: 输入 \411 或 \tur 或者 \hyd 等都可以
+        
+        Shortcuts:
+          Y - Öffnet das 'Spiel beitreten' Menü
+          N - Öffnet das Hauptmenü
+        
+        Shortcuts (Beim fahren) :
+          Doppelt H - Öffnet das aktuelle Track Menü
+          LSTRG/NUM0 + NUM2/4/6/8 - Fahrzeugfarbe ändern
+          End - Neuen Checkpoint hinzufügen (während dem editieren)
